@@ -13,11 +13,14 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="home" element={<Home />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/about" element={<About />} />
+      <Route path="services" element={<Services />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="about" element={<About />} />
     </Route>
-  )
+  ),
+  {
+    basename: "/SolarNest", // 👈 This is crucial for GitHub Pages and local testing
+  }
 )
 
 createRoot(document.getElementById('root')).render(
