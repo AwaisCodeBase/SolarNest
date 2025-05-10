@@ -1,0 +1,137 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.main_section {
+  flex: 1;
+  width: 100%;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.service_box {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service_box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service_box h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #20562E;
+  margin-bottom: 1rem;
+}
+
+.service_box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+@media (max-width: 1200px) {
+  .main_section {
+    margin: 1.5rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .main_section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .services_grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .services_grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .service_box {
+    padding: 1.5rem;
+  }
+
+  .service_box h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main_section {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .services_grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service_box {
+    padding: 1.2rem;
+  }
+
+  .service_box h3 {
+    font-size: 1.2rem;
+  }
+
+  .service_box p {
+    font-size: 0.95rem;
+  }
+}

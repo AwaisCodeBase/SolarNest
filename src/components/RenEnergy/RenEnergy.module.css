@@ -1,0 +1,251 @@
+.energy_section {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2B2B2B;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.content_wrapper {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 4rem;
+}
+
+.image_container {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  position: relative;
+  align-items: center;
+  background-image: url("/solar_panel.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.energy_image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  margin-top: -4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.description_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.description_container h2 {
+  color: #20562E;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #282828;
+  text-align: left;
+}
+
+/* Large devices (desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .content_wrapper {
+    max-width: 1140px;
+    gap: 3rem;
+  }
+  
+  .description_container h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Medium devices (tablets, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .content_wrapper {
+    max-width: 960px;
+    gap: 2.5rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .image_container {
+    min-height: 300px;
+  }
+}
+
+/* Small devices (landscape phones, less than 992px) */
+@media (max-width: 991.98px) {
+  .energy_section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .content_wrapper {
+    max-width: 720px;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .description_container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+  
+  .image_container {
+    min-height: 280px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .energy_section {
+    padding: 2.5rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .content_wrapper {
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .image_container {
+    order: 1;
+    width: 100%;
+    min-height: 250px;
+    flex: none;
+  }
+  
+  .description_container {
+    order: 2;
+    width: 100%;
+    flex: none;
+    padding: 0;
+  }
+  
+  .description_container h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .energy_image {
+    margin-top: -2rem;
+  }
+}
+
+/* Extra extra small devices (small phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .energy_section {
+    padding: 2rem 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content_wrapper {
+    gap: 2rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .image_container {
+    min-height: 200px;
+  }
+  
+  .description_container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .energy_image {
+    margin-top: -1.5rem;
+  }
+}
+
+/* Very small devices (small phones, less than 400px) */
+@media (max-width: 399.98px) {
+  .energy_section {
+    padding: 1.5rem 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .image_container {
+    min-height: 180px;
+  }
+  
+  .description_container h2 {
+    font-size: 1.3rem;
+  }
+  
+  .energy_image {
+    margin-top: -1rem;
+  }
+}

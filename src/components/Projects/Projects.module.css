@@ -1,0 +1,126 @@
+.projects_section {
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: #2B2B2B;
+}
+
+.slider_wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 60px; /* Adds space for out-of-bound buttons */
+}
+
+.slider {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.project_card {
+  min-width: calc(33.333% - 1rem);
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.project_card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project_title {
+  font-size: 1.2rem;
+  color: #20562E;
+  margin: 1rem 0 0.5rem;
+}
+
+.project_description {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 1rem 1rem;
+}
+
+.nav_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #20562E;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav_button:hover {
+  background-color: #133b1d;
+}
+
+.nav_button:first-of-type {
+  left: 10px;
+}
+
+.nav_button:last-of-type {
+  right: 10px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 992px) {
+  .project_card {
+    min-width: calc(50% - 1rem);
+  }
+
+  .slider_wrapper {
+    padding: 0 40px;
+  }
+
+  .nav_button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project_card {
+    min-width: 100%;
+  }
+
+  .slider_wrapper {
+    padding: 0;
+  }
+
+  .nav_button {
+    display: none;
+  }
+}
