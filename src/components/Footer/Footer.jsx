@@ -14,7 +14,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className={styles.icon}
             >
-              <img className={styles.icons} src="./facebook_icon.png" alt="" />
+              <img className={styles.icons} src="/SolarNest/assets/facebook_icon.png" alt="" />
             </a>
             <a
               href="https://instagram.com"
@@ -22,7 +22,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className={styles.icon}
             >
-              <img className={styles.icons} src="./Instagram.png" alt="" />
+              <img className={styles.icons} src="/SolarNest/assets/Instagram.png" alt="" />
             </a>
           </div>
         </div>

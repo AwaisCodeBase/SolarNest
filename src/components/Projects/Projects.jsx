@@ -4,31 +4,31 @@ import styles from "./Projects.module.css";
 const projectsData = [
   {
     id: 1,
-    image: "/project1.png",
+    image: "/SolarNest/assets/project1.png",
     title: "Solar Panel Installation",
     description: "A residential solar panel setup in California."
   },
   {
     id: 2,
-    image: "/project2.png",
+    image: "/SolarNest/assets/project2.png",
     title: "Wind Turbine System",
     description: "Commercial wind energy project for a farm."
   },
   {
     id: 3,
-    image: "/project3.png",
+    image: "/SolarNest/assets/project3.png",
     title: "Battery Storage Unit",
     description: "Backup storage for energy surplus in a smart grid."
   },
   {
     id: 4,
-    image: "/project1.png",
+    image: "/SolarNest/assets/project1.png",
     title: "EV Charging Station",
     description: "Installation for electric vehicle fleet charging."
   },
   {
     id: 5,
-    image: "/project2.png",
+    image: "/SolarNest/assets/project2.png",
     title: "Green Building Retrofit",
     description: "Energy optimization for corporate building."
   },

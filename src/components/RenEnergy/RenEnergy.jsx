@@ -9,7 +9,7 @@ const RenEnergy = () => {
         <div className={styles.image_container}>
           <img
             className={styles.energy_image}
-            src="./enginer.png"
+            src="/SolarNest/assets/enginer.png"
             alt="Renewable Energy"
           />
         </div>

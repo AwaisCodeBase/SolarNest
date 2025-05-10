@@ -4,21 +4,21 @@ import styles from "./ChooseUs.module.css";
 const ChooseUs = () => {
   const reasons = [
     {
-      icon: "/Customer_Insight.png",
+      icon: "/SolarNest/assets/Customer_Insight.png",
       title: "Expertise & Experience",
       description:
         "Our team brings decades of combined experience in renewable energy solutions, ensuring your project is handled with the highest level of expertise and professionalism.",
         color: "#212122"
     },
     {
-      icon: "/Handshake.png",
+      icon: "/SolarNest/assets/Handshake.png",
       title: "Quality & Innovation",
       description:
         "We combine premium materials with cutting-edge technology to deliver sustainable energy solutions that are built to last and perform at optimal efficiency.",
         color: "#153318"
     },
     {
-      icon: "Verified_Account.png",
+      icon: "/SolarNest/assets/Verified_Account.png",
       title: "Customer Satisfaction",
       description:
         "We prioritize your needs and goals, providing personalized service and support throughout the entire project lifecycle and beyond installation.",
