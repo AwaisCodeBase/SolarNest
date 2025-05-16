@@ -1,9 +1,9 @@
-.page {
+ .page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  align-items: center; 
+  justify-content: center; 
   position: relative;
   background-color: #f5f5f5;
   background-image: url("/SolarNest/assets/Rectangle8.png");
@@ -14,7 +14,7 @@
   flex: 1;
   width: calc(100% - 4rem);
   max-width: 1400px;
-  margin: 7rem 2rem; /* Center the section */
+  margin: 7rem 2rem; 
   padding: 3rem;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
@@ -36,7 +36,7 @@
 
 .services_grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 boxes per row */
+  grid-template-columns: repeat(5, 1fr); 
   gap: 2rem;
   padding: 1rem;
   width: 100%;
@@ -73,16 +73,16 @@
   color: #0D0D0D;
 }
 
-/* Responsive breakpoints */
+
 @media (max-width: 1400px) {
   .services_grid {
-    grid-template-columns: repeat(5, 1fr); /* Still 5 per row */
+    grid-template-columns: repeat(5, 1fr); 
   }
 }
 
 @media (max-width: 1200px) {
   .services_grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+    grid-template-columns: repeat(3, 1fr); 
   }
   .main_section {
     padding: 2rem;
@@ -91,7 +91,7 @@
 
 @media (max-width: 992px) {
   .services_grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    grid-template-columns: repeat(2, 1fr); 
   }
   .main_section {
     padding: 1.5rem;
@@ -104,7 +104,7 @@
 
 @media (max-width: 768px) {
   .services_grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 1.5rem;
   }
   .main_section {
@@ -124,7 +124,7 @@
 
 @media (max-width: 480px) {
   .services_grid {
-    grid-template-columns: 1fr; /* 1 per row */
+    grid-template-columns: 1fr; 
     gap: 1rem;
   }
   .main_section {
@@ -143,4 +143,7 @@
   .service_box p {
     font-size: 0.95rem;
   }
-}
+} 
+
+
+

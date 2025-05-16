@@ -1,17 +1,79 @@
-.page {
+.contactUs_container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.main {
-  flex: 1;
+/* .map_section {
   width: 100%;
-  padding: 2rem;
-  margin-top: 80px; /* Height of navbar */
-  background-color: #fff;
-  position: relative;
-  z-index: 1;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.map_section img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+} */
+
+
+.map_section {
+  width: 100%;
+  margin: 3rem auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.map {
+  width: 84%;
+  height: 450px;
+  border: none;
+  margin-left: 7rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+  .map_section {
+    max-width: 960px;
+    margin: 3rem auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .map_section {
+    max-width: 720px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map_section {
+    max-width: 540px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .map_section img {
+    max-height: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .map_section {
+    margin: 1.5rem auto;
+    padding: 0 0.75rem;
+  }
+  
+  .map_section img {
+    max-height: 300px;
+  }
 }
 

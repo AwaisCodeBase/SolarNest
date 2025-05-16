@@ -5,6 +5,7 @@ import RenEnergy from "../../components/RenEnergy/RenEnergy.jsx";
 import Service from "../../components/Service/Service.jsx";
 import ChooseUs from "../../components/ChooseUs/ChooseUs.jsx";
 import Projects from "../../components/Projects/Projects.jsx";
+import Construction from "../../components/Construction/Construction.jsx";
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
           loop
           playsInline
         >
-          <source src="/SolarNest/assets/video.mp4" type="video/mp4" />
+          <source src="/SolarNest/assets/video1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -36,6 +37,7 @@ const Home = () => {
         </div>
       </div>
       <AnimatiedStats />
+      <Construction />
       <RenEnergy />
       <Service />
       <ChooseUs />

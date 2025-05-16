@@ -1,0 +1,653 @@
+/* .energy_section {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2B2B2B;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.content_wrapper {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.image_container {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  position: relative;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.div1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 17%;
+}
+.div2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 40%;
+}
+.energy_image1 {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  position: relative;
+  margin-bottom: 2rem;
+  z-index: 1;
+  
+}
+
+.energy_image2 {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  position: relative;
+  margin-top: 2rem;
+  z-index: 2;
+}
+
+.description_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.description_container h2 {
+  color: #20562E;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #282828;
+  text-align: left;
+}
+
+
+@media (max-width: 1399.98px) {
+  .content_wrapper {
+    max-width: 1140px;
+    gap: 3rem;
+  }
+  
+  .description_container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .image_container {
+    min-height: 450px;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 75%;
+    max-width: 350px;
+  }
+}
+
+
+@media (max-width: 1199.98px) {
+  .content_wrapper {
+    max-width: 960px;
+    gap: 2.5rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .image_container {
+    min-height: 400px;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 70%;
+    max-width: 300px;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  .energy_section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .content_wrapper {
+    max-width: 720px;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .description_container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+  
+  .image_container {
+    min-height: 350px;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 65%;
+    max-width: 250px;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .energy_section {
+    padding: 2.5rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .content_wrapper {
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .image_container {
+    order: 1;
+    width: 100%;
+    min-height: 300px;
+    flex: none;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .description_container {
+    order: 2;
+    width: 100%;
+    flex: none;
+    padding: 0;
+  }
+  
+  .description_container h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 60%;
+    max-width: 220px;
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  .energy_section {
+    padding: 2rem 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content_wrapper {
+    gap: 2rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .image_container {
+    min-height: 250px;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .description_container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 55%;
+    max-width: 180px;
+  }
+}
+
+
+@media (max-width: 399.98px) {
+  .energy_section {
+    padding: 1.5rem 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .image_container {
+    min-height: 200px;
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+  
+  .description_container h2 {
+    font-size: 1.3rem;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 50%;
+    max-width: 150px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Existing CSS styles */
+.energy_section {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2B2B2B;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.content_wrapper {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.image_container {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  position: relative;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.div1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 17%;
+}
+
+.div2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 40%;
+}
+
+.energy_image1 {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  position: relative;
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+.energy_image2 {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  position: relative;
+  margin-top: 2rem;
+  z-index: 2;
+}
+
+.description_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.description_container h2 {
+  color: #20562E;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #282828;
+  text-align: left;
+}
+
+
+@keyframes floatAnimation1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floatAnimation2 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.float_animation_1 {
+  animation: floatAnimation1 4s ease-in-out infinite;
+}
+
+.float_animation_2 {
+  animation: floatAnimation2 4s ease-in-out infinite;
+  animation-delay: 0.5s; 
+}
+
+
+
+@media (max-width: 1399.98px) {
+  .content_wrapper {
+    max-width: 1140px;
+    gap: 3rem;
+  }
+  
+  .description_container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .image_container {
+    min-height: 450px;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 75%;
+    max-width: 350px;
+  }
+}
+
+/* Medium devices (tablets, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .content_wrapper {
+    max-width: 960px;
+    gap: 2.5rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .image_container {
+    min-height: 400px;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 70%;
+    max-width: 300px;
+  }
+}
+
+/* Small devices (landscape phones, less than 992px) */
+@media (max-width: 991.98px) {
+  .energy_section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .content_wrapper {
+    max-width: 720px;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .description_container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+  
+  .image_container {
+    min-height: 350px;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 65%;
+    max-width: 250px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .energy_section {
+    padding: 2.5rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .content_wrapper {
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .image_container {
+    order: 1;
+    width: 100%;
+    min-height: 300px;
+    flex: none;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .description_container {
+    order: 2;
+    width: 100%;
+    flex: none;
+    padding: 0;
+  }
+  
+  .description_container h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 60%;
+    max-width: 220px;
+  }
+}
+
+/* Extra extra small devices (small phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .energy_section {
+    padding: 2rem 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content_wrapper {
+    gap: 2rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .image_container {
+    min-height: 250px;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .description_container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 55%;
+    max-width: 180px;
+  }
+}
+
+/* Very small devices (small phones, less than 400px) */
+@media (max-width: 399.98px) {
+  .energy_section {
+    padding: 1.5rem 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .image_container {
+    min-height: 200px;
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+  
+  .description_container h2 {
+    font-size: 1.3rem;
+  }
+  
+  .energy_image1, .energy_image2 {
+    width: 50%;
+    max-width: 150px;
+  }
+}

@@ -1,137 +1,108 @@
-.page {
-  min-height: 100vh;
+.service_container {
+  min-height: 240vh;
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: #f5f5f5;
+  background-image: url("/SolarNest/assets/services.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 80px;
 }
 
-.main_section {
-  flex: 1;
+.content_wrapper {
   width: 100%;
+  height: auto;
   max-width: 1400px;
-  margin: 2rem auto;
-  padding: 3rem;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #333;
-  text-align: center;
+.service_heading {
+  color: #153318;
+  font-size: 6rem;
+  font-weight: 700;
   margin-bottom: 3rem;
+  margin-left: 40rem;
+  padding-top: 6rem;
 }
 
-.services_grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 1rem;
+.links_container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 600px;
+  margin-left: 40rem;
 }
 
 .service_box {
-  background: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #153318;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.service_box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
+  z-index: -1;
 }
 
 .service_box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateX(10px);
+  color: #fff;
 }
 
-.service_box h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #20562E;
-  margin-bottom: 1rem;
+.service_box:hover::before {
+  width: 100%;
+  background-color: #4CAF50;
 }
 
-.service_box p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #666;
-}
-
-@media (max-width: 1200px) {
-  .main_section {
-    margin: 1.5rem;
-    padding: 2rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .main_section {
-    margin: 1rem;
-    padding: 1.5rem;
-  }
-
-  .title {
-    font-size: 2.2rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .services_grid {
-    gap: 1.5rem;
-  }
-}
-
+/* Responsive styles */
 @media (max-width: 768px) {
-  .main_section {
-    margin: 1rem;
-    padding: 1.5rem;
-  }
-
-  .title {
+  .service_heading {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
-
-  .services_grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-
+  
   .service_box {
-    padding: 1.5rem;
+    font-size: 1.1rem;
+    padding: 1.2rem 1.5rem;
   }
-
-  .service_box h3 {
-    font-size: 1.3rem;
+  
+  .links_container {
+    gap: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .main_section {
-    margin: 0.5rem;
-    padding: 1rem;
+  .content_wrapper {
+    padding: 0 1rem;
   }
-
-  .title {
+  
+  .service_heading {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
   }
-
-  .services_grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
+  
   .service_box {
-    padding: 1.2rem;
-  }
-
-  .service_box h3 {
-    font-size: 1.2rem;
-  }
-
-  .service_box p {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
   }
 }

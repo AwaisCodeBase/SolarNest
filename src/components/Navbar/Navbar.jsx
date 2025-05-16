@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
-// import logo from "./logo.png";
-// import toggleIcon from "./toggle.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,6 +41,14 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  // Toggle button
+
+  const [isArabic, setIsArabic] = useState(false);
+
+  const toggleLanguage = () => {
+    setIsArabic(!isArabic);
+  };
+
   const navLinks = [
     { path: "/", label: "HOME" },
     { path: "/about", label: "ABOUT" },
@@ -53,7 +59,11 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
       <Link to="/" className={styles.logoContainer}>
-        <img src="/SolarNest/assets/logo.png" alt="Logo" className={styles.logo} />
+        <img
+          src="/SolarNest/assets/logo.png"
+          alt="Logo"
+          className={styles.logo}
+        />
       </Link>
 
       <div className={styles.navLinks}>
@@ -70,10 +80,20 @@ const Navbar = () => {
         ))}
       </div>
 
-      <div className={styles.toggle_button}>
+      {/* <div className={styles.toggle_button}>
         <p>ARABIC</p>
-        <img src="toggle.png" alt="Toggle" />
+        <img src="/SolarNest/assets/toggle.png" alt="Toggle" />
+      </div> */}
+
+      <div className={styles.language_selector}>
+      <p className={styles.language_text}>{isArabic ? 'العربية' : 'ENGLISH'}</p>
+      <div 
+        className={`${styles.toggle_container} ${isArabic ? styles.active : ''}`}
+        onClick={toggleLanguage}
+      >
+        <div className={styles.toggle_circle} />
       </div>
+    </div>
 
       <button
         className={`${styles.mobileMenuButton} ${

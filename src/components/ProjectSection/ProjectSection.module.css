@@ -1,0 +1,131 @@
+.projects_section {
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: #2B2B2B;
+}
+
+.slider_wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 60px; 
+}
+
+.grid_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-height: calc(3 * 360px + 3rem);
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  scrollbar-width: thin;
+}
+
+.grid_wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.grid_wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+
+.project_card {
+  min-width: calc(33.333% - 1rem);
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.project_card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project_title {
+  font-size: 1.2rem;
+  color: #20562E;
+  margin: 1rem 0 0.5rem;
+}
+
+.project_description {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 1rem 1rem;
+}
+
+
+
+.nav_button:hover {
+  background-color: #133b1d;
+}
+
+.nav_button:first-of-type {
+  left: 10px;
+}
+
+.nav_button:last-of-type {
+  right: 10px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 992px) {
+  .project_card {
+    min-width: calc(50% - 1rem);
+  }
+
+  .slider_wrapper {
+    padding: 0 40px;
+  }
+
+  .nav_button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .grid_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    max-height: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .grid_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project_card {
+    min-width: 100%;
+  }
+
+  .slider_wrapper {
+    padding: 0;
+  }
+
+  .nav_button {
+    display: none;
+  }
+}

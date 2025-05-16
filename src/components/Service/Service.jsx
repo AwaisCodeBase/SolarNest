@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef, useEffect } from "react";
 import styles from "./Service.module.css";
 
 const Service = () => {
@@ -56,6 +57,8 @@ const Service = () => {
     },
   ];
 
+
+
   return (
     <>
       <div className={styles.page}>
@@ -63,7 +66,10 @@ const Service = () => {
           <h1 className={styles.title1}>SERVICES</h1>
           <div className={styles.services_grid}>
             {serviceBoxes.map((service, index) => (
-              <div key={index} className={styles.service_box}>
+              <div
+               key={index}
+               className={styles.service_box}
+               >
                 <div className={styles.icon_container}>
                   <img
                     src={service.icon}
@@ -83,3 +89,14 @@ const Service = () => {
 };
 
 export default Service;
+
+
+
+
+
+
+
+
+
+
+
