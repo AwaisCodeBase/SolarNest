@@ -2,13 +2,15 @@ import React from "react";
 import styles from "./Contact.module.css";
 import Hero from "../../components/Hero/Hero";
 import ContactSection from "../../components/ContactSection/ContactSection";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
   return (
     <div className={styles.contactUs_container}>
       <Hero
         backgroundImage="/SolarNest/assets/contact.png"
-        title="Contact Us"
+        title="pages.contactUs"
       />
       <ContactSection />
       <div className={styles.map_section}>

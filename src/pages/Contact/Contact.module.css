@@ -3,77 +3,88 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow-x: hidden;
 }
-
-/* .map_section {
-  width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8rem;
-}
-
-.map_section img {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover;
-} */
 
 
 .map_section {
-  width: 100%;
+  width: 87%;
+  max-width: 1400px;
   margin: 3rem auto;
-  border-radius: 20px;
-  overflow: hidden;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .map {
-  width: 84%;
+  width: 100%;
   height: 450px;
   border: none;
-  margin-left: 7rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive styles */
+@media screen and (max-width: 1400px) {
+  .map_section {
+    max-width: 1140px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .map_section {
     max-width: 960px;
-    margin: 3rem auto;
+    margin: 2.5rem auto;
+  }
+  
+  .map {
+    height: 400px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .map_section {
     max-width: 720px;
-    margin: 2.5rem auto;
+    margin: 2rem auto;
     padding: 0 1.5rem;
+  }
+  
+  .map {
+    height: 380px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .map_section {
     max-width: 540px;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     padding: 0 1rem;
   }
   
-  .map_section img {
-    max-height: 400px;
+  .map {
+    height: 350px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .map_section {
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     padding: 0 0.75rem;
   }
   
-  .map_section img {
-    max-height: 300px;
+  .map {
+    height: 300px;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .map_section {
+    padding: 0 0.5rem;
+  }
+  
+  .map {
+    height: 250px;
+    border-radius: 10px;
   }
 }
 

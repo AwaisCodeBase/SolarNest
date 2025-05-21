@@ -17,7 +17,7 @@
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-  padding: 0 60px; 
+  padding: 0 60px;
 }
 
 .grid_wrapper {
@@ -39,7 +39,6 @@
   border-radius: 3px;
 }
 
-
 .project_card {
   min-width: calc(33.333% - 1rem);
   background-color: #fff;
@@ -48,10 +47,12 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project_card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
 .image {
@@ -64,15 +65,23 @@
   font-size: 1.2rem;
   color: #20562E;
   margin: 1rem 0 0.5rem;
+  padding: 0 1rem;
 }
 
 .project_description {
   font-size: 1rem;
   color: #555;
   padding: 0 1rem 1rem;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 1.6;
+  margin-left: 1.5rem;
+  cursor: pointer;
 }
 
-
+.project_description p {
+  margin: 0.5rem 0;
+}
 
 .nav_button:hover {
   background-color: #133b1d;
@@ -96,6 +105,11 @@
     padding: 0 40px;
   }
 
+  .grid_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    max-height: none;
+  }
+
   .nav_button {
     width: 40px;
     height: 40px;
@@ -103,20 +117,11 @@
   }
 }
 
-@media screen and (max-width: 992px) {
-  .grid_wrapper {
-    grid-template-columns: repeat(2, 1fr);
-    max-height: none;
-  }
-}
-
 @media screen and (max-width: 576px) {
   .grid_wrapper {
     grid-template-columns: 1fr;
   }
-}
 
-@media screen and (max-width: 576px) {
   .project_card {
     min-width: 100%;
   }

@@ -1,16 +1,24 @@
-import React from 'react'
-import styles from './Electricity.module.css'
-import Hero from '../../components/Hero/Hero'
+import React from "react";
+import styles from "./Electricity.module.css";
+import Hero from "../../components/Hero/Hero";
+import AllServices from "../../components/AllServices/AllServices";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Electricity = () => {
+  const { t } = useLanguage();
+  const servicesData = t("electricity.services", { returnObjects: true });
+
   return (
     <>
-     <Hero
-     backgroundImage="/SolarNest/assets/elec.jpg"
-     title="Electricity Infrastructure"
-    />
+      <Hero
+        backgroundImage="/SolarNest/assets/elec.jpg"
+        title={t("electricity.title")}
+      />
+      <div>
+        <AllServices services={servicesData} title={t("electricity.title")} />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Electricity
+export default Electricity;

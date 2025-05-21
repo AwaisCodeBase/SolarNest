@@ -6,8 +6,13 @@ import Service from "../../components/Service/Service.jsx";
 import ChooseUs from "../../components/ChooseUs/ChooseUs.jsx";
 import Projects from "../../components/Projects/Projects.jsx";
 import Construction from "../../components/Construction/Construction.jsx";
+import { useLanguage } from "../../context/LanguageContext";
+import { en, ar } from "../../translations";
 
 const Home = () => {
+  const { isArabic } = useLanguage();
+  const t = isArabic ? ar : en;
+
   return (
     <div className={styles.home_container}>
       <div className={styles.hero_section}>
@@ -28,11 +33,11 @@ const Home = () => {
 
         {/* Content */}
         <div className={styles.hero_section_content}>
-          <p className={styles.p1}>ENGINEERING THE FUTURE OF</p>
-          <p className={styles.p2}>SAUDI ARABIA</p>
+          <p className={styles.p1}>{t.hero.p1}</p>
+          <p className={styles.p2}>{t.hero.p2}</p>
           <div className={styles.button_container}>
-            <button>GET IN TOUCH</button>
-            <button>GET IN TOUCH</button>
+            <button>{t.hero.button}</button>
+            <button>{t.hero.button}</button>
           </div>
         </div>
       </div>

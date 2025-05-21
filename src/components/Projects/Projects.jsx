@@ -1,41 +1,49 @@
 import React, { useRef } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 import styles from "./Projects.module.css";
 
-const projectsData = [
-  {
-    id: 1,
-    image: "/SolarNest/assets/project1.png",
-    title: "Solar Panel Installation",
-    description: "A residential solar panel setup in California."
-  },
-  {
-    id: 2,
-    image: "/SolarNest/assets/project2.png",
-    title: "Wind Turbine System",
-    description: "Commercial wind energy project for a farm."
-  },
-  {
-    id: 3,
-    image: "/SolarNest/assets/project3.png",
-    title: "Battery Storage Unit",
-    description: "Backup storage for energy surplus in a smart grid."
-  },
-  {
-    id: 4,
-    image: "/SolarNest/assets/project1.png",
-    title: "EV Charging Station",
-    description: "Installation for electric vehicle fleet charging."
-  },
-  {
-    id: 5,
-    image: "/SolarNest/assets/project2.png",
-    title: "Green Building Retrofit",
-    description: "Energy optimization for corporate building."
-  },
-];
-
 const Projects = () => {
+  const { t } = useLanguage();
+  const projectsData = t("projectSection.items", { returnObjects: true });
+
+  const formatDescription = (description) => {
+    const lines = description.split("\n");
+    return lines.map((line, index) => <p key={index}>{line}</p>);
+  };
   const sliderRef = useRef(null);
+
+  // const projectsData = [
+  //   {
+  //     id: 1,
+  //     image: "/SolarNest/assets/project1.png",
+  //     title: t("projects.items.0.title"),
+  //     description: t("projects.items.0.description"),
+  //   },
+  //   {
+  //     id: 2,
+  //     image: "/SolarNest/assets/project2.png",
+  //     title: t("projects.items.1.title"),
+  //     description: t("projects.items.1.description"),
+  //   },
+  //   {
+  //     id: 3,
+  //     image: "/SolarNest/assets/project3.png",
+  //     title: t("projects.items.2.title"),
+  //     description: t("projects.items.2.description"),
+  //   },
+  //   {
+  //     id: 4,
+  //     image: "/SolarNest/assets/project1.png",
+  //     title: t("projects.items.3.title"),
+  //     description: t("projects.items.3.description"),
+  //   },
+  //   {
+  //     id: 5,
+  //     image: "/SolarNest/assets/project2.png",
+  //     title: t("projects.items.4.title"),
+  //     description: t("projects.items.4.description"),
+  //   },
+  // ];
 
   const scroll = (direction) => {
     if (sliderRef.current) {
@@ -49,18 +57,24 @@ const Projects = () => {
 
   return (
     <section className={styles.projects_section}>
-      <h2 className={styles.title}>PROJECTS</h2>
+      <h2 className={styles.title}>{t("projectSection.title")}</h2>
       <div className={styles.slider_wrapper}>
         <button className={styles.nav_button} onClick={() => scroll("left")}>
           &#8249;
         </button>
 
         <div className={styles.slider} ref={sliderRef}>
-          {projectsData.map((project) => (
-            <div key={project.id} className={styles.project_card}>
-              <img src={project.image} alt={project.title} className={styles.image} />
+          {projectsData.map((project, index) => (
+            <div key={index} className={styles.project_card}>
+              <img
+                src={`/SolarNest/assets/project${(index % 11) + 1}.jpg`}
+                alt={project.title}
+                className={styles.image}
+              />
               <h3 className={styles.project_title}>{project.title}</h3>
-              <p className={styles.project_description}>{project.description}</p>
+              <p className={styles.project_description}>
+                {formatDescription(project.description)}
+              </p>
             </div>
           ))}
         </div>

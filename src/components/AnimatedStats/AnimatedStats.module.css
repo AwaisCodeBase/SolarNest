@@ -10,6 +10,7 @@
   align-items: center;
   opacity: 0;
   transition: opacity 0.5s ease;
+  position: relative;
 }
 
 .visible {
@@ -22,6 +23,8 @@
   width: 100%;
   max-width: 1000px;
   padding: 0 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .stat_item {
@@ -44,17 +47,51 @@
 
 @media (max-width: 768px) {
   .stats_section {
-    height: 80vh;
+    height: auto;
+    min-height: 300px;
+    padding: 3rem 0;
   }
   
   .stats_container {
     flex-direction: column;
-    gap: 30px;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .stat_item {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .stat_label {
+    font-size: 1.8rem;
+  }
+
+  .stat_value {
+    font-size: 4rem;
   }
 }
 
 @media (max-width: 480px) {
   .stats_section {
-    height: 60vh;
+    min-height: 250px;
+    padding: 2rem 0;
+  }
+
+  .stats_container {
+    gap: 1.5rem;
+  }
+
+  .stat_item {
+    max-width: 250px;
+  }
+
+  .stat_label {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .stat_value {
+    font-size: 3.5rem;
   }
 }

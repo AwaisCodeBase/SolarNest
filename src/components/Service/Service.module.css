@@ -1,20 +1,23 @@
- .page {
+.page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   position: relative;
   background-color: #f5f5f5;
   background-image: url("/SolarNest/assets/Rectangle8.png");
-  padding: 1rem 1rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .main_section {
   flex: 1;
-  width: calc(100% - 4rem);
+  width: 100%;
   max-width: 1400px;
-  margin: 7rem 2rem; 
+  margin: 7rem auto;
   padding: 3rem;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
@@ -24,6 +27,7 @@
   flex-direction: column;
   align-items: center;
   border: 2px solid white;
+  box-sizing: border-box;
 }
 
 .title1 {
@@ -36,10 +40,13 @@
 
 .services_grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); 
+  grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
   padding: 1rem;
   width: 100%;
+  box-sizing: border-box;
+  opacity: 1;
+  position: relative;
 }
 
 .service_box {
@@ -47,17 +54,34 @@
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
   display: flex;
   cursor: pointer;
   flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  will-change: transform, opacity, box-shadow;
+  z-index: 1;
+}
+
+/* Initial animation */
+.services_grid.visible .service_box {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Hover effect - completely separate from initial animation */
+.service_box {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .service_box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  background-color: #D3FFD3;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  background-color: #d3ffd3;
+  z-index: 2;
 }
 
 .service_box h3 {
@@ -65,54 +89,51 @@
   font-weight: 600;
   color: #153318;
   margin-bottom: 1rem;
+  transition: color 0.3s ease;
 }
 
 .service_box p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #0D0D0D;
+  color: #0d0d0d;
+  transition: color 0.3s ease;
 }
-
 
 @media (max-width: 1400px) {
   .services_grid {
-    grid-template-columns: repeat(5, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 1200px) {
   .services_grid {
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
   }
   .main_section {
     padding: 2rem;
+    margin: 5rem auto;
   }
 }
 
 @media (max-width: 992px) {
   .services_grid {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
   .main_section {
     padding: 1.5rem;
-  }
-  .title {
-    font-size: 2.2rem;
-    margin-bottom: 2.5rem;
+    margin: 4rem auto;
   }
 }
 
 @media (max-width: 768px) {
   .services_grid {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
   .main_section {
     padding: 1.5rem;
-  }
-  .title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    margin: 3rem auto;
+    width: calc(100% - 2rem);
   }
   .service_box {
     padding: 1.5rem;
@@ -122,17 +143,15 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .services_grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
   .main_section {
     padding: 1rem;
-  }
-  .title {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    margin: 2rem auto;
+    width: calc(100% - 1rem);
   }
   .service_box {
     padding: 1.2rem;
@@ -143,7 +162,31 @@
   .service_box p {
     font-size: 0.95rem;
   }
-} 
+}
 
+/* Icon container styles */
+.icon_container {
+  transition: transform 0.2s ease;
+}
 
+.service_box:hover .icon_container {
+  transform: scale(1.05);
+}
 
+.icon_container img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Staggered animation delays */
+.services_grid.visible .service_box:nth-child(1) { transition-delay: 0.1s; }
+.services_grid.visible .service_box:nth-child(2) { transition-delay: 0.2s; }
+.services_grid.visible .service_box:nth-child(3) { transition-delay: 0.3s; }
+.services_grid.visible .service_box:nth-child(4) { transition-delay: 0.4s; }
+.services_grid.visible .service_box:nth-child(5) { transition-delay: 0.5s; }
+.services_grid.visible .service_box:nth-child(6) { transition-delay: 0.6s; }
+.services_grid.visible .service_box:nth-child(7) { transition-delay: 0.7s; }
+.services_grid.visible .service_box:nth-child(8) { transition-delay: 0.8s; }
+.services_grid.visible .service_box:nth-child(9) { transition-delay: 0.9s; }
+.services_grid.visible .service_box:nth-child(10) { transition-delay: 1s; }

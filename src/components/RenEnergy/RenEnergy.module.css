@@ -35,7 +35,7 @@
   justify-content: center;
   width: auto;
   height: auto;
-  min-height: 350px;
+  min-height: 300px;
   position: relative;
   align-items: center;
   border-radius: 10px;
@@ -50,7 +50,7 @@
   right: 0;
   bottom: 0;
   background-image: url("/SolarNest/assets/solar_panel.png");
-  background-size: cover;
+  background-size: 80% auto;
   background-position: center;
   background-repeat: no-repeat;
   animation: tiltBackground 5s ease-in-out infinite alternate;
@@ -60,10 +60,10 @@
 /* Tilt animation */
 @keyframes tiltBackground {
   0% {
-    transform:  translateX(-3%);
+    transform: translateX(-3%);
   }
   50% {
-    transform:  translateX(3%);
+    transform: translateX(3%);
   }
   100% {
     transform: translateX(-3%);
@@ -71,9 +71,9 @@
 }
 
 .energy_image {
-  width: 90%;
-  max-width: 500px;
-  height: 70%;
+  width: 70%;
+  max-width: 400px;
+  height: auto;
   object-fit: contain;
   margin-top: -1rem;
   position: relative;
@@ -112,6 +112,15 @@
   .description_container h2 {
     font-size: 1.8rem;
   }
+  
+  .image_container {
+    min-height: 280px;
+  }
+  
+  .energy_image {
+    width: 65%;
+    max-width: 350px;
+  }
 }
 
 /* Medium devices (tablets, less than 1200px) */
@@ -126,7 +135,12 @@
   }
   
   .image_container {
-    min-height: 300px;
+    min-height: 260px;
+  }
+  
+  .energy_image {
+    width: 60%;
+    max-width: 300px;
   }
 }
 
@@ -158,7 +172,12 @@
   }
   
   .image_container {
-    min-height: 280px;
+    min-height: 240px;
+  }
+  
+  .energy_image {
+    width: 55%;
+    max-width: 250px;
   }
 }
 
@@ -184,7 +203,7 @@
   .image_container {
     order: 1;
     width: 100%;
-    min-height: 250px;
+    min-height: 220px;
     flex: none;
   }
   
@@ -208,7 +227,8 @@
   }
   
   .energy_image {
-    margin-top: -2rem;
+    width: 50%;
+    max-width: 200px;
   }
 }
 
@@ -245,7 +265,8 @@
   }
   
   .energy_image {
-    margin-top: -1.5rem;
+    width: 45%;
+    max-width: 180px;
   }
 }
 
@@ -270,6 +291,7 @@
   }
   
   .energy_image {
-    margin-top: -1rem;
+    width: 40%;
+    max-width: 150px;
   }
 }

@@ -313,7 +313,7 @@
 
 
 
-/* Existing CSS styles */
+
 .energy_section {
   width: 100%;
   padding: 4rem 2rem;
@@ -473,7 +473,7 @@
   }
 }
 
-/* Medium devices (tablets, less than 1200px) */
+
 @media (max-width: 1199.98px) {
   .content_wrapper {
     max-width: 960px;
@@ -494,7 +494,7 @@
   }
 }
 
-/* Small devices (landscape phones, less than 992px) */
+
 @media (max-width: 991.98px) {
   .energy_section {
     padding: 3rem 1.5rem;
@@ -531,7 +531,7 @@
   }
 }
 
-/* Extra small devices (portrait phones, less than 768px) */
+
 @media (max-width: 767.98px) {
   .energy_section {
     padding: 2.5rem 1rem;
@@ -584,7 +584,7 @@
   }
 }
 
-/* Extra extra small devices (small phones, less than 576px) */
+
 @media (max-width: 575.98px) {
   .energy_section {
     padding: 2rem 1rem;
@@ -624,7 +624,7 @@
   }
 }
 
-/* Very small devices (small phones, less than 400px) */
+
 @media (max-width: 399.98px) {
   .energy_section {
     padding: 1.5rem 0.75rem;

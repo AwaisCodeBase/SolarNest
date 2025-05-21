@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import { useLanguage } from "../../context/LanguageContext";
+import { en, ar } from "../../translations";
 
 const Footer = () => {
+  const { isArabic } = useLanguage();
+  const t = isArabic ? ar : en;
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footer_content}>
@@ -14,7 +19,11 @@ const Footer = () => {
               rel="noopener noreferrer"
               className={styles.icon}
             >
-              <img className={styles.icons} src="/SolarNest/assets/facebook_icon.png" alt="" />
+              <img
+                className={styles.icons}
+                src="/SolarNest/assets/facebook_icon.png"
+                alt=""
+              />
             </a>
             <a
               href="https://instagram.com"
@@ -22,53 +31,57 @@ const Footer = () => {
               rel="noopener noreferrer"
               className={styles.icon}
             >
-              <img className={styles.icons} src="/SolarNest/assets/Instagram.png" alt="" />
+              <img
+                className={styles.icons}
+                src="/SolarNest/assets/Instagram.png"
+                alt=""
+              />
             </a>
           </div>
         </div>
 
         <div className={styles.links_container}>
           <div className={styles.link_group}>
-            <h3>COMPANY</h3>
+            <h3>{t.footer.company}</h3>
             <ul>
               <li>
-                <a href="/about">About Us</a>
+                <a href="/about">{t.footer.aboutUs}</a>
               </li>
               <li>
-                <a href="/services">Services</a>
+                <a href="/services">{t.footer.services}</a>
               </li>
               <li>
-                <a href="/contact">Contact</a>
+                <a href="/contact">{t.footer.contact}</a>
               </li>
             </ul>
           </div>
 
           <div className={styles.link_group}>
-            <h3>SERVICES</h3>
+            <h3>{t.footer.services}</h3>
             <ul>
               <li>
-                <a href="/services">Solar Solutions</a>
+                <a href="/services">{t.footer.solarSolutions}</a>
               </li>
               <li>
-                <a href="/services">Energy Management</a>
+                <a href="/services">{t.footer.energyManagement}</a>
               </li>
               <li>
-                <a href="/services">Consulting</a>
+                <a href="/services">{t.footer.consulting}</a>
               </li>
             </ul>
           </div>
 
           <div className={styles.link_group}>
-            <h3>RESOURCES</h3>
+            <h3>{t.footer.resources}</h3>
             <ul>
               <li>
-                <a href="/about">Our Projects</a>
+                <a href="/about">{t.footer.ourProjects}</a>
               </li>
               <li>
-                <a href="/contact">Support</a>
+                <a href="/contact">{t.footer.support}</a>
               </li>
               <li>
-                <a href="/contact">FAQ</a>
+                <a href="/contact">{t.footer.faq}</a>
               </li>
             </ul>
           </div>
@@ -76,7 +89,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.footer_bottom}>
-        <p>Copyright &copy; 2025 BlackEmerald</p>
+        <p>{t.footer.copyright}</p>
       </div>
     </footer>
   );

@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import { useLanguage } from "../../context/LanguageContext";
+import { en, ar } from "../../translations";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { isArabic, toggleLanguage } = useLanguage();
+  const t = isArabic ? ar : en;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,17 +47,11 @@ const Navbar = () => {
 
   // Toggle button
 
-  const [isArabic, setIsArabic] = useState(false);
-
-  const toggleLanguage = () => {
-    setIsArabic(!isArabic);
-  };
-
   const navLinks = [
-    { path: "/", label: "HOME" },
-    { path: "/about", label: "ABOUT" },
-    { path: "/services", label: "SERVICES" },
-    { path: "/contact", label: "CONTACT" },
+    { path: "/", label: t.nav.home },
+    { path: "/about", label: t.nav.about },
+    { path: "/services", label: t.nav.services },
+    { path: "/contact", label: t.nav.contact },
   ];
 
   return (
@@ -80,20 +78,19 @@ const Navbar = () => {
         ))}
       </div>
 
-      {/* <div className={styles.toggle_button}>
-        <p>ARABIC</p>
-        <img src="/SolarNest/assets/toggle.png" alt="Toggle" />
-      </div> */}
-
       <div className={styles.language_selector}>
-      <p className={styles.language_text}>{isArabic ? 'العربية' : 'ENGLISH'}</p>
-      <div 
-        className={`${styles.toggle_container} ${isArabic ? styles.active : ''}`}
-        onClick={toggleLanguage}
-      >
-        <div className={styles.toggle_circle} />
+        <p className={styles.language_text}>
+          {isArabic ? "العربية" : "ENGLISH"}
+        </p>
+        <div
+          className={`${styles.toggle_container} ${
+            isArabic ? styles.active : ""
+          }`}
+          onClick={toggleLanguage}
+        >
+          <div className={styles.toggle_circle} />
+        </div>
       </div>
-    </div>
 
       <button
         className={`${styles.mobileMenuButton} ${
@@ -112,7 +109,11 @@ const Navbar = () => {
       >
         <div className={styles.mobileMenuHeader}>
           <Link to="/" onClick={closeMenu}>
-            <img src="logo.png" alt="Logo" className={styles.logo} />
+            <img
+              src="/SolarNest/assets/logo.png"
+              alt="Logo"
+              className={styles.logo}
+            />
           </Link>
           <button className={styles.closeButton} onClick={closeMenu}>
             <span></span>
@@ -131,12 +132,12 @@ const Navbar = () => {
             {link.label}
           </Link>
         ))}
-        {location.pathname === "/services" && (
+        {/* {location.pathname === "/services" && (
           <div className={styles.mobileToggleButton}>
             <p>ARABIC</p>
-            <img src="toggle.png" alt="Toggle" />
+            <img src="/SolarNest/assets/toggle.png" alt="Toggle" />
           </div>
-        )}
+        )} */}
       </div>
     </nav>
   );
