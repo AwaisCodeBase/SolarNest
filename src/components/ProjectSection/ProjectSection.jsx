@@ -8,7 +8,10 @@ const ProjectSection = () => {
 
   const formatDescription = (description) => {
     const lines = description.split("\n");
-    return lines.map((line, index) => <p key={index}>{line}</p>);
+    return lines.map((line, index) => {
+      const [label, value] = line.split(":").map((part) => part.trim());
+      return <p key={index} data-label={label} data-value={value} />;
+    });
   };
 
   return (

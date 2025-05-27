@@ -48,7 +48,7 @@
   border-radius: 10px;
   text-decoration: none;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  transition: all 1s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,8 +66,8 @@
   left: 0;
   width: 4px;
   height: 100%;
-  background-color: #4CAF50;
-  transition: width 0.3s ease;
+  background-color: #20562E;
+  transition: width 0.3s ease-in-out;
   z-index: -1;
 }
 
@@ -78,7 +78,7 @@
 
 .service_box:hover::before {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #20562E;
 }
 
 /* Responsive styles */

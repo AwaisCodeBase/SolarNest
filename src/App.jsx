@@ -1,11 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Services from "./components/Services/Services";
+import Projects from "./components/Projects/Projects";
+import TeamSection from "./components/TeamSection/TeamSection";
+import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Services from "./pages/Services/Services";
-import Contact from "./pages/Contact/Contact";
 import "./App.css";
 
 function App() {
@@ -13,12 +14,12 @@ function App() {
     <div className="app">
       <Navbar />
       <main className="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Hero />
+        <About />
+        <Services />
+        <Projects />
+        <TeamSection />
+        <Contact />
       </main>
       <Footer />
     </div>

@@ -4,6 +4,7 @@ import Hero from "../../components/Hero/Hero.jsx";
 import AnimatedStats from "../../components/AnimatedStats/AnimatedStats.jsx";
 import ProjectSection from "../../components/ProjectSection/ProjectSection.jsx";
 import { useLanguage } from "../../context/LanguageContext";
+import TeamSection from "../../components/TeamSection/TeamSection.jsx";
 
 const About = () => {
   const { t } = useLanguage();
@@ -19,6 +20,7 @@ const About = () => {
       </div>
       <AnimatedStats />
       <ProjectSection />
+      <TeamSection />
     </div>
   );
 };

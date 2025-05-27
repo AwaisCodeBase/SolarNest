@@ -28,6 +28,11 @@
   overflow-y: auto;
   padding-right: 0.5rem;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  will-change: scroll-position;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .grid_wrapper::-webkit-scrollbar {
@@ -37,6 +42,11 @@
 .grid_wrapper::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.grid_wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .project_card {
@@ -74,46 +84,100 @@
   padding: 0 1rem 1rem;
   text-align: left;
   white-space: pre-line;
-  line-height: 1.6;
+  line-height: 1.2;
   margin-left: 1.5rem;
   cursor: pointer;
 }
 
 .project_description p {
-  margin: 0.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 2rem;
+  padding-right: 1rem;
 }
 
-.nav_button:hover {
-  background-color: #133b1d;
+.project_description p::before {
+  content: attr(data-label);
+  font-weight: 600;
+  color: #20562e;
+  flex-shrink: 0;
+  min-width: 120px;
 }
 
-.nav_button:first-of-type {
-  left: 10px;
-}
-
-.nav_button:last-of-type {
-  right: 10px;
+.project_description p::after {
+  content: attr(data-value);
+  color: #4a5568;
+  text-align: left;
+  flex-grow: 1;
+  padding-left: 1rem;
+  word-break: break-word;
 }
 
 /* Responsive Layout */
+@media screen and (max-width: 1200px) {
+  .grid_wrapper {
+    gap: 1.25rem;
+  }
+
+  .project_card {
+    min-width: calc(33.333% - 1rem);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .project_description {
+    margin-left: 1.25rem;
+    padding: 0 0.875rem 0.875rem;
+  }
+
+  .project_description p {
+    gap: 1.5rem;
+    padding-right: 0.75rem;
+  }
+
+  .project_description p::before {
+    min-width: 110px;
+  }
+
+  .project_description p::after {
+    padding-left: 0.75rem;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .project_card {
     min-width: calc(50% - 1rem);
-  }
-
-  .slider_wrapper {
-    padding: 0 40px;
   }
 
   .grid_wrapper {
     grid-template-columns: repeat(2, 1fr);
     max-height: none;
   }
+}
 
-  .nav_button {
-    width: 40px;
-    height: 40px;
-    font-size: 1.8rem;
+@media screen and (max-width: 750px) {
+  .project_description {
+    margin-left: 1rem;
+    padding: 0 0.75rem 0.75rem;
+  }
+
+  .project_description p {
+    gap: 1rem;
+    padding-right: 0.5rem;
+  }
+
+  .project_description p::before {
+    min-width: 100px;
+    font-size: 0.95rem;
+  }
+
+  .project_description p::after {
+    padding-left: 0.5rem;
+    font-size: 0.95rem;
   }
 }
 
@@ -129,8 +193,5 @@
   .slider_wrapper {
     padding: 0;
   }
-
-  .nav_button {
-    display: none;
-  }
 }
+

@@ -28,20 +28,20 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
-      <Route path="/SolarNest/home" element={<Home />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/services/renew" element={<Renewable_Energy_Solution />} />
-      <Route path="/services/water" element={<Water_Gas_Infrastructure />} />
-      <Route path="/services/pre" element={<Pre_Construction />} />
-      <Route path="/services/infrastructure" element={<Infrastructure />} />
-      <Route path="/services/bid" element={<Bid />} />
-      <Route path="/services/electricity" element={<Electricity />} />
-      <Route path="/services/mep" element={<MEP />} />
-      <Route path="/services/construction" element={<Constructions />} />
-      <Route path="/services/earth" element={<Earthwork />} />
-      <Route path="/services/integerated" element={<Integrated />} />
+      <Route path="home" element={<Home />} />
+      <Route path="services" element={<Services />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="about" element={<About />} />
+      <Route path="services/renew" element={<Renewable_Energy_Solution />} />
+      <Route path="services/water" element={<Water_Gas_Infrastructure />} />
+      <Route path="services/pre" element={<Pre_Construction />} />
+      <Route path="services/infrastructure" element={<Infrastructure />} />
+      <Route path="services/bid" element={<Bid />} />
+      <Route path="services/electricity" element={<Electricity />} />
+      <Route path="services/mep" element={<MEP />} />
+      <Route path="services/construction" element={<Constructions />} />
+      <Route path="services/earth" element={<Earthwork />} />
+      <Route path="services/integerated" element={<Integrated />} />
     </Route>
   ),
   {

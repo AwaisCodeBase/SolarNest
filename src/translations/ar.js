@@ -589,5 +589,32 @@ export const ar = {
         path: "integerated"
       }
     ]
+  },
+  team: {
+    title: "فريقنا",
+    member1: {
+      name: "جون دو",
+      designation: "الرئيس التنفيذي والمؤسس"
+    },
+    member2: {
+      name: "جين سميث",
+      designation: "مدير التكنولوجيا"
+    },
+    member3: {
+      name: "مايك جونسون",
+      designation: "مطور رئيسي"
+    },
+    member4: {
+      name: "سارة ويليامز",
+      designation: "مصمم واجهات المستخدم"
+    },
+    member5: {
+      name: "ديفيد براون",
+      designation: "مدير المشروع"
+    },
+    member6: {
+      name: "إيميلي ديفيس",
+      designation: "مدير التسويق"
+    }
   }
 }; 

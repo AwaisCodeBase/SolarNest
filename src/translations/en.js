@@ -654,4 +654,31 @@ export const en = {
       },
     ],
   },
+  team: {
+    title: "Our Team",
+    member1: {
+      name: "John Doe",
+      designation: "CEO & Founder"
+    },
+    member2: {
+      name: "Jane Smith",
+      designation: "CTO"
+    },
+    member3: {
+      name: "Mike Johnson",
+      designation: "Lead Developer"
+    },
+    member4: {
+      name: "Sarah Williams",
+      designation: "UI/UX Designer"
+    },
+    member5: {
+      name: "David Brown",
+      designation: "Project Manager"
+    },
+    member6: {
+      name: "Emily Davis",
+      designation: "Marketing Director"
+    }
+  },
 };

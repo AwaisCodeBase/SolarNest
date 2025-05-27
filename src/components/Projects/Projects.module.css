@@ -2,32 +2,54 @@
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 3rem;
-  color: #2B2B2B;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+  color: #20562e;
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #20562e;
+  border-radius: 2px;
 }
 
 .slider_wrapper {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  overflow: hidden;
-  padding: 0 60px;
+  overflow: visible;
+  padding: 0 70px;
 }
 
 .slider {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  padding-bottom: 1rem;
+  padding: 1.5rem 0;
   scrollbar-width: none;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  will-change: scroll-position;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .slider::-webkit-scrollbar {
@@ -35,56 +57,227 @@
 }
 
 .project_card {
-  flex: 0 0 calc(33.333% - 1rem);
+  flex: 0 0 calc(33.333% - 1.33rem);
+  min-width: 320px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.project_card:hover {
-  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .image {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
+  transition: transform 0.5s ease;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Desktop hover effects only */
+@media screen and (min-width: 992px) {
+  .project_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+
+  .project_card:hover .image {
+    transform: scale(1.03);
+  }
+}
+
+/* Tablet and smaller desktop */
+@media screen and (max-width: 1200px) {
+  .projects_section {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .slider_wrapper {
+    padding: 0 60px;
+  }
+
+  .project_card {
+    flex: 0 0 calc(50% - 1rem);
+    min-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+  .projects_section {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .slider_wrapper {
+    padding: 0 50px;
+  }
+
+  .project_card {
+    flex: 0 0 calc(50% - 1rem);
+    margin: 0 auto;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .projects_section {
+    padding: 2.5rem 0.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .title::after {
+    width: 60px;
+    height: 2px;
+  }
+
+  .slider_wrapper {
+    padding: 0 40px;
+  }
+
+  .slider {
+    gap: 1.5rem;
+  }
+
+  .project_card {
+    flex: 0 0 calc(100% - 1rem);
+    min-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  .projects_section {
+    padding: 2rem 0.25rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .title::after {
+    width: 50px;
+  }
+
+  .slider_wrapper {
+    padding: 0 35px;
+  }
+
+  .slider {
+    gap: 1rem;
+  }
+
+  .project_card {
+    min-width: 240px;
+    margin: 0 auto;
+  }
 }
 
 .project_title {
-  font-size: 1.2rem;
-  width: 100%;
-  color: #20562E;
-  margin: 1rem 0 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #20562e;
+  margin: 1.2rem 0 0.8rem;
+  padding: 0 1.5rem;
+  line-height: 1.4;
 }
 
 .project_description {
   font-size: 1rem;
-  color: #555;
-  padding: 0 1rem 1rem;
+  color: #4a5568;
+  padding: 0 1.5rem 1.5rem;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 1;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.project_description p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+.project_description p::before {
+  content: attr(data-label);
+  font-weight: 600;
+  color: #20562e;
+  flex-shrink: 0;
+  min-width: 120px;
+}
+
+.project_description p::after {
+  content: attr(data-value);
+  color: #4a5568;
+  text-align: left;
+  flex-grow: 1;
+  padding-left: 1rem;
+  word-break: break-word;
 }
 
 .nav_button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #20562E;
-  color: white;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
   border: none;
-  font-size: 2rem;
-  width: 45px;
-  height: 45px;
   border-radius: 50%;
+  font-size: 2rem;
+  color: #20562E;
   cursor: pointer;
-  z-index: 10;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 2;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .nav_button:hover {
-  background-color: #133b1d;
+  background-color: #20562E;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.nav_button:active {
+  transform: scale(0.95);
+}
+
+.nav_button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .nav_button:first-of-type {
@@ -93,35 +286,4 @@
 
 .nav_button:last-of-type {
   right: 10px;
-}
-
-/* Responsive Layout */
-@media screen and (max-width: 992px) {
-  .project_card {
-    flex: 0 0 calc(50% - 1rem);
-  }
-
-  .slider_wrapper {
-    padding: 0 40px;
-  }
-
-  .nav_button {
-    width: 40px;
-    height: 40px;
-    font-size: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .project_card {
-    flex: 0 0 100%;
-  }
-
-  .slider_wrapper {
-    padding: 0;
-  }
-
-  .nav_button {
-    display: none;
-  }
 }

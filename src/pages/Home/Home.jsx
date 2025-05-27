@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 import AnimatiedStats from "../../components/AnimatedStats/AnimatedStats.jsx";
 import RenEnergy from "../../components/RenEnergy/RenEnergy.jsx";
@@ -6,6 +7,7 @@ import Service from "../../components/Service/Service.jsx";
 import ChooseUs from "../../components/ChooseUs/ChooseUs.jsx";
 import Projects from "../../components/Projects/Projects.jsx";
 import Construction from "../../components/Construction/Construction.jsx";
+import TeamSection from "../../components/TeamSection/TeamSection.jsx";
 import { useLanguage } from "../../context/LanguageContext";
 import { en, ar } from "../../translations";
 
@@ -36,8 +38,12 @@ const Home = () => {
           <p className={styles.p1}>{t.hero.p1}</p>
           <p className={styles.p2}>{t.hero.p2}</p>
           <div className={styles.button_container}>
-            <button>{t.hero.button}</button>
-            <button>{t.hero.button}</button>
+            <Link to="/contact">
+              <button>{t.hero.button}</button>
+            </Link>
+            <Link to="/contact">
+              <button>{t.hero.button}</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -47,6 +53,7 @@ const Home = () => {
       <Service />
       <ChooseUs />
       <Projects />
+      <TeamSection />
     </div>
   );
 };

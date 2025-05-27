@@ -90,8 +90,7 @@
   border-radius: 8px;
   font-weight: 700;
   cursor: pointer;
-  /* transition: all 0.3s ease; */
-   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
 
 .button_container button:hover {
@@ -100,12 +99,12 @@
   opacity: 0.85;
 }
 
-.button_container button:nth-child(1) {
+.button_container a:first-child button {
   background-color: #20562E;
   color: #fff;
 }
 
-.button_container button:nth-child(2) {
+.button_container a:last-child button {
   background-color: black;
   color: #fff;
 }
