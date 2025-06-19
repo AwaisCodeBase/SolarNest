@@ -11,52 +11,52 @@ const Service = () => {
     {
       title: t("services.items.0.title"),
       description: t("services.items.0.description"),
-      icon: "/SolarNest/assets/Worker.png",
+      icon: "/assets/Worker.png",
     },
     {
       title: t("services.items.1.title"),
       description: t("services.items.1.description"),
-      icon: "/SolarNest/assets/solar.png",
+      icon: "/assets/solar.png",
     },
     {
       title: t("services.items.2.title"),
       description: t("services.items.2.description"),
-      icon: "/SolarNest/assets/Engineer.png",
+      icon: "/assets/Engineer.png",
     },
     {
       title: t("services.items.3.title"),
       description: t("services.items.3.description"),
-      icon: "/SolarNest/assets/Earth_Element.png",
+      icon: "/assets/Earth_Element.png",
     },
     {
       title: t("services.items.4.title"),
       description: t("services.items.4.description"),
-      icon: "/SolarNest/assets/infra.png",
+      icon: "/assets/infra.png",
     },
     {
       title: t("services.items.5.title"),
       description: t("services.items.5.description"),
-      icon: "/SolarNest/assets/Auction.png",
+      icon: "/assets/Auction.png",
     },
     {
       title: t("services.items.6.title"),
       description: t("services.items.6.description"),
-      icon: "/SolarNest/assets/int_fac.png",
+      icon: "/assets/int_fac.png",
     },
     {
       title: t("services.items.7.title"),
       description: t("services.items.7.description"),
-      icon: "/SolarNest/assets/Circuit.png",
+      icon: "/assets/Circuit.png",
     },
     {
       title: t("services.items.8.title"),
       description: t("services.items.8.description"),
-      icon: "/SolarNest/assets/Electricity.png",
+      icon: "/assets/Electricity.png",
     },
     {
       title: t("services.items.9.title"),
       description: t("services.items.9.description"),
-      icon: "/SolarNest/assets/Energy_Care.png",
+      icon: "/assets/Energy_Care.png",
     },
   ];
 

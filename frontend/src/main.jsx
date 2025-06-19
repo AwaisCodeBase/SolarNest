@@ -45,7 +45,7 @@ const router = createBrowserRouter(
     </Route>
   ),
   {
-    basename: "/SolarNest", // This is crucial for GitHub Pages and local testing
+    basename: "/", 
   }
 );
 

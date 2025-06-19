@@ -14,7 +14,7 @@ const MEP = () => {
     return (
       <>
         <Hero
-          backgroundImage="/SolarNest/assets/MEP1.jpg"
+          backgroundImage="/assets/MEP1.jpg"
           title={t("mep.title")}
         />
         <div>
@@ -27,7 +27,7 @@ const MEP = () => {
   return (
     <>
       <Hero
-        backgroundImage="/SolarNest/assets/MEP1.jpg"
+        backgroundImage="/assets/MEP1.jpg"
         title={t("mep.title")}
       />
       <div>

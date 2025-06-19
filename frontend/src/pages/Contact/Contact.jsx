@@ -9,12 +9,12 @@ const Contact = () => {
   return (
     <div className={styles.contactUs_container}>
       <Hero
-        backgroundImage="/SolarNest/assets/contact.png"
+        backgroundImage="/assets/contact.png"
         title="pages.contactUs"
       />
       <ContactSection />
       <div className={styles.map_section}>
-        {/* <img src="/SolarNest/assets/map.png" alt="" /> */}
+        {/* <img src="/assets/map.png" alt="" /> */}
         <iframe
           title="map"
           className={styles.map}

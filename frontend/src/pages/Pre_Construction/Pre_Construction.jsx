@@ -15,7 +15,7 @@ const Pre_Construction = () => {
     return (
       <>
         <Hero
-          backgroundImage="/SolarNest/assets/pre.jpg"
+          backgroundImage="/assets/pre.jpg"
           title="pages.preConstruction"
         />
         <div>
@@ -28,7 +28,7 @@ const Pre_Construction = () => {
   return (
     <>
       <Hero
-        backgroundImage="/SolarNest/assets/pre.jpg"
+        backgroundImage="/assets/pre.jpg"
         title="pages.preConstruction"
       />
       <div>

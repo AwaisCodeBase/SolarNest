@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className={styles.about_container}>
       <Hero
-        backgroundImage="/SolarNest/assets/about.png"
+        backgroundImage="/assets/about.png"
         title="pages.aboutUs"
       />
       <div className={styles.text}>

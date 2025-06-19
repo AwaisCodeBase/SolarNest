@@ -58,7 +58,7 @@ const Navbar = () => {
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
       <Link to="/" className={styles.logoContainer}>
         <img
-          src="/SolarNest/assets/logo.png"
+          src="/assets/logo.png"
           alt="Logo"
           className={styles.logo}
         />
@@ -110,7 +110,7 @@ const Navbar = () => {
         <div className={styles.mobileMenuHeader}>
           <Link to="/" onClick={closeMenu}>
             <img
-              src="/SolarNest/assets/logo.png"
+              src="/assets/logo.png"
               alt="Logo"
               className={styles.logo}
             />
@@ -135,7 +135,7 @@ const Navbar = () => {
         {/* {location.pathname === "/services" && (
           <div className={styles.mobileToggleButton}>
             <p>ARABIC</p>
-            <img src="/SolarNest/assets/toggle.png" alt="Toggle" />
+            <img src="/assets/toggle.png" alt="Toggle" />
           </div>
         )} */}
       </div>

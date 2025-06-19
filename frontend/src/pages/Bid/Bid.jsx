@@ -11,7 +11,7 @@ const Bid = () => {
   return (
     <>
       <Hero
-        backgroundImage="/SolarNest/assets/bid.jpg"
+        backgroundImage="/assets/bid.jpg"
         title={t("bid.title")}
       />
       <div>

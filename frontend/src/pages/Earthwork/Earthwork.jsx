@@ -11,7 +11,7 @@ const Earthwork = () => {
   return (
     <>
       <Hero
-        backgroundImage="/SolarNest/assets/earth.jpg"
+        backgroundImage="/assets/earth.jpg"
         title={t("earthwork.title")}
       />
       <div>

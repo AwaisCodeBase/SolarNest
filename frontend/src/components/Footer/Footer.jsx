@@ -21,7 +21,7 @@ const Footer = () => {
             >
               <img
                 className={styles.icons}
-                src="/SolarNest/assets/facebook_icon.png"
+                src="/assets/facebook_icon.png"
                 alt=""
               />
             </a>
@@ -33,7 +33,7 @@ const Footer = () => {
             >
               <img
                 className={styles.icons}
-                src="/SolarNest/assets/Instagram.png"
+                src="/assets/Instagram.png"
                 alt=""
               />
             </a>
