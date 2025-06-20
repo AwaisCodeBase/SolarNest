@@ -18,9 +18,9 @@ const RenEnergy = () => {
           />
         </div>
         <div className={styles.description_container}>
-          <h2>{t("renewableEnergy.services.0.title")}</h2>
+          <h2>{t("renewableEnergy.subtitle")}</h2>
           <p className={styles.description}>
-            {t("renewableEnergy.services.0.description")}
+            {t("renewableEnergy.description")}
           </p>
         </div>
       </div>

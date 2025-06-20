@@ -4,7 +4,9 @@ import Hero from "../../components/Hero/Hero.jsx";
 import AnimatedStats from "../../components/AnimatedStats/AnimatedStats.jsx";
 import ProjectSection from "../../components/ProjectSection/ProjectSection.jsx";
 import { useLanguage } from "../../context/LanguageContext";
-import TeamSection from "../../components/TeamSection/TeamSection.jsx";
+import TeamSection1 from "../../components/TeamSection1/TeamSection1.jsx";
+import Values from "../../components/Values/Values.jsx";
+import Vision from "../../components/Vision/Vision.jsx";
 
 const About = () => {
   const { t } = useLanguage();
@@ -15,12 +17,37 @@ const About = () => {
         backgroundImage="/SolarNest/assets/about.png"
         title="pages.aboutUs"
       />
+      <AnimatedStats />
+      <div className={styles.headingContainer}>
+        <div className={styles.heading}>
+          <p>{t("about.mission")}</p>
+        </div>
+      </div>
       <div className={styles.text}>
         <p>{t("about.description")}</p>
       </div>
-      <AnimatedStats />
+      <Values />
+      <div className={styles.headingContainer}>
+        <div className={styles.heading}>
+          <p>{t("about.whoWeAre.heading")}</p>
+        </div>
+      </div>
+      <div className={`${styles.text} ${styles.whoWeAreScroll}`}>
+        <p>{t("about.whoWeAre.description")}</p>
+      </div>
+      <Vision />
+      <div className={styles.headingContainer}>
+        <div className={styles.heading}>
+          <p>{t("team.title")}</p>
+        </div>
+      </div>
+      <div className={styles.teamDescription}>
+        <p>{t("team.description.paragraph1")}</p>
+        <p>{t("team.description.paragraph2")}</p>
+        <p>{t("team.description.paragraph3")}</p>
+      </div>
+      <TeamSection1 />
       <ProjectSection />
-      <TeamSection />
     </div>
   );
 };

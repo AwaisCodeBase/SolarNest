@@ -3,14 +3,14 @@ import styles from "./AllServices.module.css";
 
 const ServiceCard = ({ title, description, index }) => {
   const [expanded, setExpanded] = useState(false);
-  
+
   // Controls how much of the description to show initially
   const maxDescriptionLength = 80;
   const isLongDescription = description.length > maxDescriptionLength;
-  
+
   // Truncated version of description for initial display
-  const shortDescription = isLongDescription 
-    ? `${description.substring(0, maxDescriptionLength)}...` 
+  const shortDescription = isLongDescription
+    ? `${description.substring(0, maxDescriptionLength)}...`
     : description;
 
   // Toggle expanded state
@@ -24,14 +24,11 @@ const ServiceCard = ({ title, description, index }) => {
       style={{ transitionDelay: `${index * 0.08}s` }}
     >
       <h3>{title}</h3>
-      <p>
+      <p style={{ whiteSpace: "pre-line" }}>
         {expanded || !isLongDescription ? description : shortDescription}
       </p>
       {isLongDescription && (
-        <button 
-          onClick={toggleExpand} 
-          className={styles.read_more}
-        >
+        <button onClick={toggleExpand} className={styles.read_more}>
           {expanded ? "Read Less" : "Read More"}
         </button>
       )}

@@ -51,7 +51,7 @@ const Service = () => {
     {
       title: t("services.items.8.title"),
       description: t("services.items.8.description"),
-      icon: "/SolarNest/assets/Electricity.png",
+      icon: "/SolarNest/assets/Circuit.png",
     },
     {
       title: t("services.items.9.title"),

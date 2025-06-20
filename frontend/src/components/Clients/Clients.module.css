@@ -1,0 +1,185 @@
+.clientSection {
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+  padding: 60px 0;
+  color: black;
+  margin-bottom: 4rem;
+}
+
+.headingContainer {
+  text-align: center;
+  height: auto;
+  padding: 0 20px;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2B2B2B;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.highlight {
+  color: #0096ff;
+  text-align: left;
+  width: auto;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  color: #8f8f8f;
+  margin: 25px auto;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.carouselContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.logoContainer {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logoImage {
+  max-height: 100%;
+  max-width: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logoImage:hover {
+  transform: scale(1.05);
+}
+
+/* Large screens (desktops) */
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .logoContainer {
+    margin: 0 25px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .clientSection {
+    margin-top: 3rem;
+    padding: 40px 0;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .headingContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  .logoContainer {
+    height: 100px;
+    margin: 0 20px;
+  }
+
+  .logoImage {
+    max-width: 180px;
+  }
+}
+
+/* Small screens (landscape phones) */
+@media (max-width: 768px) {
+  .clientSection {
+    margin-top: 2rem;
+    padding: 30px 0;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .headingContainer {
+    margin-bottom: 1rem;
+  }
+
+  .logoContainer {
+    height: 80px;
+    margin: 0 15px;
+  }
+
+  .logoImage {
+    max-width: 150px;
+  }
+}
+
+/* Extra small screens (portrait phones) */
+@media (max-width: 576px) {
+  .clientSection {
+    margin-top: 1.5rem;
+    padding: 20px 0;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .headingContainer {
+    margin-bottom: 0.8rem;
+  }
+
+  .logoContainer {
+    height: 60px;
+    margin: 0 10px;
+  }
+
+  .logoImage {
+    max-width: 120px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 375px) {
+  .clientSection {
+    margin-top: 1rem;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .headingContainer {
+    margin-bottom: 0.5rem;
+  }
+
+  .logoContainer {
+    height: 50px;
+    margin: 0 8px;
+  }
+
+  .logoImage {
+    max-width: 100px;
+  }
+}
