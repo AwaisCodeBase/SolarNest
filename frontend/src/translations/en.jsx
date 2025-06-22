@@ -26,7 +26,7 @@ export const en = {
     whoWeAre: {
       heading: "Who We Are",
       description:
-        "Black Emerald is a Saudi-based multidisciplinary engineering and construction company, delivering specialized solutions in MEP systems, civil infrastructure, architectural works, renewable energy, and high-voltage electrical systems. We are built on the principle of integrated project delivery, offering end-to-end execution for complex developments across residential, commercial, industrial, and public sectors. Our expertise in MEP services includes the design, installation, and commissioning of HVAC, firefighting, plumbing, drainage, and electrical distribution systems, engineered for performance, energy efficiency, and compliance with Saudi codes and international standards. In the domain of electrical infrastructure, we design and build high-voltage (HV) transmission lines, substations (up to 380kV), and industrial power systems, ensuring seamless integration with national grid requirements and Saudi Electricity Company (SEC) standards.",
+        "Black Emerald is a Saudi-based multidisciplinary engineering and construction company, delivering specialized solutions in MEP systems, civil infrastructure, architectural works, renewable energy, and high-voltage electrical systems. We are built on the principle of integrated project delivery, offering end-to-end execution for complex developments across residential, commercial, industrial, and public sectors. Our expertise in MEP services includes the design, installation, and commissioning of HVAC, firefighting, plumbing, drainage, and electrical distribution systems, engineered for performance, energy efficiency, and compliance with Saudi codes and international standards. In the domain of electrical infrastructure, we design and build high-voltage (HV) transmission lines, substations (up to 380kV), and industrial power systems, ensuring seamless integration with national grid requirements and Saudi Electricity Company (SEC) standards. Our civil and construction division delivers complete infrastructure and building solutions, from earthworks, foundations, and structural systems to full turnkey execution of villas, compounds, high-rises, hotels, and institutional developments. We manage every phase with precision and quality control. The architecture team at Black Emerald leads concept-to-completion delivery, offering planning, design development, engineering coordination, and site supervision to create environments that are functional, aesthetic, and sustainable. As a forward-thinking company, Black Emerald also offers advanced renewable energy solutions, including solar PV systems, hybrid power integration, energy storage systems (BESS), and EV charging infrastructure—empowering clients to meet energy goals while supporting Saudi Arabia's Vision 2030. At Black Emerald, we deliver more than infrastructure—we build integrated, sustainable, and high-performance environments shaped by engineering precision and visionary thinking.",
     },
   },
   hero: {
@@ -126,225 +126,281 @@ export const en = {
     items: [
       {
         title: "Shura Island Villa Project",
-        description: "Client: BGL Group\nLocation: Shura Island\nSize: H3 & H4\nScope of Work: HVAC, Ventilation, Electrical, Plumbing, Fire Fighting, and Fire Alarm Systems"
+        description:
+          "Client: BGL Group\nLocation: Shura Island\nSize: H3 & H4\nScope of Work: HVAC, Ventilation, Electrical, Plumbing, Fire Fighting, and Fire Alarm Systems",
       },
       {
         title: "NEOM Sound Stages",
-        description: "Client: NEOM\nLocation: NEOM\nSize: 2,000 m²\nScope of Work: HVAC, Ventilation, Electrical, and Fire Alarm Systems"
+        description:
+          "Client: NEOM\nLocation: NEOM\nSize: 2,000 m²\nScope of Work: HVAC, Ventilation, Electrical, and Fire Alarm Systems",
       },
       {
         title: "Sultana Mall",
-        description: "Client: Not Specified\nLocation: Madinah\nSize: 10,000 m²\nScope of Work: HVAC, Ventilation, Plumbing, Electrical, and Low Current Systems"
+        description:
+          "Client: Not Specified\nLocation: Madinah\nSize: 10,000 m²\nScope of Work: HVAC, Ventilation, Plumbing, Electrical, and Low Current Systems",
       },
       {
         title: "Sultana Residential Tower",
-        description: "Client: Not Specified\nLocation: Madinah\nSize: 12,000 m²\nScope of Work: HVAC, Ventilation, Plumbing, Electrical, and Low Current Systems"
+        description:
+          "Client: Not Specified\nLocation: Madinah\nSize: 12,000 m²\nScope of Work: HVAC, Ventilation, Plumbing, Electrical, and Low Current Systems",
       },
       {
         title: "Seven Coffee Shop",
-        description: "Client: Seven\nLocation: Jeddah\nSize: 1,800 m²\nScope of Work: HVAC, Ventilation, Electrical, Fire Fighting, Fire Alarm Systems, and Low Current"
+        description:
+          "Client: Seven\nLocation: Jeddah\nSize: 1,800 m²\nScope of Work: HVAC, Ventilation, Electrical, Fire Fighting, Fire Alarm Systems, and Low Current",
       },
       {
         title: "IATCO Warehouse",
-        description: "Client: Not Specified\nLocation: MODON, Madinah\nSize: 6,000 m²\nScope of Work: HVAC, Ventilation, Electrical, Plumbing, Fire Fighting, and Fire Alarm Systems"
+        description:
+          "Client: Not Specified\nLocation: MODON, Madinah\nSize: 6,000 m²\nScope of Work: HVAC, Ventilation, Electrical, Plumbing, Fire Fighting, and Fire Alarm Systems",
       },
       {
         title: "BARMAG Extrusion & Texturizing Facility",
-        description: "Client: Not Specified\nLocation: Jeddah – Industrial City\nSize: 3,000 m²\nScope of Work: Power, Lighting, HVAC, Compressed Air & Chilled Water Networks, and Production Line Installation"
+        description:
+          "Client: Not Specified\nLocation: Jeddah – Industrial City\nSize: 3,000 m²\nScope of Work: Power, Lighting, HVAC, Compressed Air & Chilled Water Networks, and Production Line Installation",
       },
       {
         title: "Global United Mines Company",
-        description: "Client: Global United Mines Company\nLocation: Tayma, Tabuk\nSize: 2,000 m\nScope of Work: HDPE Water Supply Network, Process Equipment, and Electrical System Design"
+        description:
+          "Client: Global United Mines Company\nLocation: Tayma, Tabuk\nSize: 2,000 m\nScope of Work: HDPE Water Supply Network, Process Equipment, and Electrical System Design",
       },
       {
         title: "Corniche Jeddah Phases 4 & 5",
-        description: "Client: Not Specified\nLocation: Jeddah\nSize: 44 Small Buildings\nScope of Work: Supply and Installation of Electromechanical Systems"
+        description:
+          "Client: Not Specified\nLocation: Jeddah\nSize: 44 Small Buildings\nScope of Work: Supply and Installation of Electromechanical Systems",
       },
       {
         title: "King Abdulaziz Airport Parking & Railway",
-        description: "Client: Not Specified\nLocation: Jeddah\nSize: >50,000 m²\nScope of Work: Low Current Systems & Car Park Monitoring System"
+        description:
+          "Client: Not Specified\nLocation: Jeddah\nSize: >50,000 m²\nScope of Work: Low Current Systems & Car Park Monitoring System",
       },
       {
         title: "Sports Hub – NEOM",
-        description: "Client: Not Specified\nLocation: NEOM – Algayal / Tabuk\nSize: 20,000 m²\nScope of Work: Power, Low Current, Plumbing, Water Supply, Generators, and Black Water System"
+        description:
+          "Client: Not Specified\nLocation: NEOM – Algayal / Tabuk\nSize: 20,000 m²\nScope of Work: Power, Low Current, Plumbing, Water Supply, Generators, and Black Water System",
       },
       {
         title: "The Park Mall – Taif",
-        description: "Client: Unknown (Private Sector)\nLocation: Taif, Saudi Arabia\nSize: Not specified\nScope of Work: Civil works (steel structure, concrete, excavation), mechanical (HVAC, firefighting, water supply), and electrical systems (MV, LV, BMS)"
+        description:
+          "Client: Unknown (Private Sector)\nLocation: Taif, Saudi Arabia\nSize: Not specified\nScope of Work: Civil works (steel structure, concrete, excavation), mechanical (HVAC, firefighting, water supply), and electrical systems (MV, LV, BMS)",
       },
       {
         title: "Aircraft Maintenance Hanger – KAIA Phase 1",
-        description: "Client: KAIA (likely government/airport authority)\nLocation: Jeddah, Saudi Arabia\nSize: Not specified\nScope of Work: Civil works (foundations, tanks), mechanical systems (firefighting, drainage), and electrical systems (MV, LV, BMS)"
+        description:
+          "Client: KAIA (likely government/airport authority)\nLocation: Jeddah, Saudi Arabia\nSize: Not specified\nScope of Work: Civil works (foundations, tanks), mechanical systems (firefighting, drainage), and electrical systems (MV, LV, BMS)",
       },
       {
         title: "Meridian Hotel",
-        description: "Client: Meridian Group\nLocation: Unknown\nSize: Not specified\nScope of Work: MEP works including firefighting, water supply, MV/LV systems, BMS"
+        description:
+          "Client: Meridian Group\nLocation: Unknown\nSize: Not specified\nScope of Work: MEP works including firefighting, water supply, MV/LV systems, BMS",
       },
       {
         title: "Administration Building – King Khalid University",
-        description: "Client: King Khalid University\nLocation: Abha, Saudi Arabia\nSize: Not specified\nScope of Work: Mechanical (firefighting, drainage, water), Electrical (MV, LV, BMS)"
+        description:
+          "Client: King Khalid University\nLocation: Abha, Saudi Arabia\nSize: Not specified\nScope of Work: Mechanical (firefighting, drainage, water), Electrical (MV, LV, BMS)",
       },
       {
         title: "Parking – King Abdulaziz University",
-        description: "Client: King Abdulaziz University\nLocation: Jeddah, Saudi Arabia\nSize: 2 buildings\nScope of Work: MEP works including firefighting, water supply, MV/LV systems, BMS"
+        description:
+          "Client: King Abdulaziz University\nLocation: Jeddah, Saudi Arabia\nSize: 2 buildings\nScope of Work: MEP works including firefighting, water supply, MV/LV systems, BMS",
       },
       {
         title: "Farsi Tower",
-        description: "Client: Private\nLocation: Jeddah, Saudi Arabia\nSize: 1 tower\nScope of Work: Complete MEP works: firefighting, drainage, water, MV, LV, BMS"
+        description:
+          "Client: Private\nLocation: Jeddah, Saudi Arabia\nSize: 1 tower\nScope of Work: Complete MEP works: firefighting, drainage, water, MV, LV, BMS",
       },
       {
         title: "Tacht Tower",
-        description: "Client: Private\nLocation: Jeddah, Saudi Arabia\nSize: 2 towers\nScope of Work: MEP services including water, drainage, firefighting, and electrical works (MV, LV, BMS)"
+        description:
+          "Client: Private\nLocation: Jeddah, Saudi Arabia\nSize: 2 towers\nScope of Work: MEP services including water, drainage, firefighting, and electrical works (MV, LV, BMS)",
       },
       {
         title: "Qatri Mosque",
-        description: "Client: Religious Authority or Private Donor\nLocation: Saudi Arabia\nSize: 1 mosque\nScope of Work: MEP works: firefighting, water supply, drainage, and electrical (MV, LV, BMS)"
+        description:
+          "Client: Religious Authority or Private Donor\nLocation: Saudi Arabia\nSize: 1 mosque\nScope of Work: MEP works: firefighting, water supply, drainage, and electrical (MV, LV, BMS)",
       },
       {
         title: "International Convention Center – Madinah",
-        description: "Client: Government / Event Authority\nLocation: Madinah, Saudi Arabia\nSize: 2 halls/buildings\nScope of Work: Complete MEP including firefighting, drainage, water, MV, LV, BMS"
+        description:
+          "Client: Government / Event Authority\nLocation: Madinah, Saudi Arabia\nSize: 2 halls/buildings\nScope of Work: Complete MEP including firefighting, drainage, water, MV, LV, BMS",
       },
       {
         title: "ZOI OSP Borders Project",
-        description: "Client: Zain (via China Saudi Communications Co. - CCS)\nLocation: Likely KSA-wide\nSize: Multi-phase fiber backbone\nScope of Work: Full EPC for outside plant (OSP) fiber network: civil survey, design, trenching, duct laying, MH/HH installation, fiber optic cable pulling, joint closures, ODFs, testing, splicing, and consultant handover"
+        description:
+          "Client: Zain (via China Saudi Communications Co. - CCS)\nLocation: Likely KSA-wide\nSize: Multi-phase fiber backbone\nScope of Work: Full EPC for outside plant (OSP) fiber network: civil survey, design, trenching, duct laying, MH/HH installation, fiber optic cable pulling, joint closures, ODFs, testing, splicing, and consultant handover",
       },
       {
         title: "PP14",
-        description: "Client: SEPCO III\nLocation: Not specified\nSize: Not specified\nScope of Work: Tank erection, piping, and mechanical works"
+        description:
+          "Client: SEPCO III\nLocation: Not specified\nSize: Not specified\nScope of Work: Tank erection, piping, and mechanical works",
       },
       {
         title: "Clariant Masterbatches",
-        description: "Client: Clariant\nLocation: Yanbu\nSize: Multi-year (2017–2023)\nScope of Work: Piping and mechanical works"
+        description:
+          "Client: Clariant\nLocation: Yanbu\nSize: Multi-year (2017–2023)\nScope of Work: Piping and mechanical works",
       },
       {
         title: "Obeikan Lamination Plant",
-        description: "Client: Obeikan Glass Company\nLocation: Not specified\nSize: Multi-year (2019–2023)\nScope of Work: Piping, electrical, and mechanical works"
+        description:
+          "Client: Obeikan Glass Company\nLocation: Not specified\nSize: Multi-year (2019–2023)\nScope of Work: Piping, electrical, and mechanical works",
       },
       {
         title: "Main Administration Building with SEC",
-        description: "Client: SEC\nLocation: Yanbu\nSize: Not specified\nScope of Work: Construction of Main Administration Building"
+        description:
+          "Client: SEC\nLocation: Yanbu\nSize: Not specified\nScope of Work: Construction of Main Administration Building",
       },
       {
         title: "Commercial Tower with Al-Khoraief",
-        description: "Client: Al-Khoraief\nLocation: Jeddah\nSize: Not specified\nScope of Work: Construction of commercial tower"
+        description:
+          "Client: Al-Khoraief\nLocation: Jeddah\nSize: Not specified\nScope of Work: Construction of commercial tower",
       },
       {
         title: "Security Buildings",
-        description: "Client: Port Authorities\nLocation: Ras Al Khair Port\nSize: Not specified\nScope of Work: Construction of security buildings"
+        description:
+          "Client: Port Authorities\nLocation: Ras Al Khair Port\nSize: Not specified\nScope of Work: Construction of security buildings",
       },
       {
         title: "Security Fences",
-        description: "Client: Port Authorities\nLocation: Ras Jizan Port\nSize: Not specified\nScope of Work: Construction of security fences"
+        description:
+          "Client: Port Authorities\nLocation: Ras Jizan Port\nSize: Not specified\nScope of Work: Construction of security fences",
       },
       {
         title: "Electrical Work for 100 Villas",
-        description: "Client: Ewaan AL-Fareeda\nLocation: Jeddah\nSize: 100 Villas\nScope of Work: Complete electrical work incl. panels, lighting, wiring, BMS, cable lay, etc."
+        description:
+          "Client: Ewaan AL-Fareeda\nLocation: Jeddah\nSize: 100 Villas\nScope of Work: Complete electrical work incl. panels, lighting, wiring, BMS, cable lay, etc.",
       },
       {
         title: "Electrical Work for Sewage Treatment Building",
-        description: "Client: King Saud University\nLocation: Bahra\nSize: Not specified\nScope of Work: Installation of generator, transformers, RMUs, ATS, and distribution panels"
+        description:
+          "Client: King Saud University\nLocation: Bahra\nSize: Not specified\nScope of Work: Installation of generator, transformers, RMUs, ATS, and distribution panels",
       },
       {
         title: "Pipe Welding & Fabrication for Duba Gas Pipeline",
-        description: "Client: Not specified\nLocation: Duba\nSize: 4\" & 16\" Pipelines\nScope of Work: Welding, testing, and installation of gas pipelines"
+        description:
+          'Client: Not specified\nLocation: Duba\nSize: 4" & 16" Pipelines\nScope of Work: Welding, testing, and installation of gas pipelines',
       },
       {
         title: "Tree Planting and Landscaping (Project No. 5352)",
-        description: "Client: RCY\nLocation: Yanbu\nSize: Not specified\nScope of Work: Tree planting, irrigation systems, and landscaping"
+        description:
+          "Client: RCY\nLocation: Yanbu\nSize: Not specified\nScope of Work: Tree planting, irrigation systems, and landscaping",
       },
       {
         title: "Tree Planting and Landscaping (Project No. 5335)",
-        description: "Client: RCY\nLocation: Yanbu\nSize: Not specified\nScope of Work: Tree planting, irrigation systems, and landscaping"
+        description:
+          "Client: RCY\nLocation: Yanbu\nSize: Not specified\nScope of Work: Tree planting, irrigation systems, and landscaping",
       },
       {
         title: "Maintenance & Operation for Nursing College",
-        description: "Client: KAU\nLocation: Jeddah\nSize: Not specified\nScope of Work: Building and system operations and maintenance"
+        description:
+          "Client: KAU\nLocation: Jeddah\nSize: Not specified\nScope of Work: Building and system operations and maintenance",
       },
       {
-        title: "Construction of 115 OHTL for Power Supply, Underground Cable 33kV",
-        description: "Client: SEC\nLocation: Khurais Area\nSize: Medium\nScope of Work: Steel tower, foundation assembly and erection, cabling"
+        title:
+          "Construction of 115 OHTL for Power Supply, Underground Cable 33kV",
+        description:
+          "Client: SEC\nLocation: Khurais Area\nSize: Medium\nScope of Work: Steel tower, foundation assembly and erection, cabling",
       },
       {
         title: "Construction of 115 KV OHTL Dhahiyah BSP To Saihat S/S",
-        description: "Client: SEC\nLocation: Dhahiyah to Saihat\nSize: Medium\nScope of Work: Auger drilling, steel caging, and concreting"
+        description:
+          "Client: SEC\nLocation: Dhahiyah to Saihat\nSize: Medium\nScope of Work: Auger drilling, steel caging, and concreting",
       },
       {
         title: "Construction of 400 KV Transmission Line Lot B from Hail-3 BSP",
-        description: "Client: SEC\nLocation: KSA\nSize: Large\nScope of Work: Tower assembling, erection, and bolt tightening"
+        description:
+          "Client: SEC\nLocation: KSA\nSize: Large\nScope of Work: Tower assembling, erection, and bolt tightening",
       },
       {
         title: "Construction of 380KV OHTL Shoaiba-Nemrah",
-        description: "Client: SEC\nLocation: Shoaiba to Nemrah\nSize: Large\nScope of Work: Steel caging, auger drilling, civil work (1st and 2nd pad)"
+        description:
+          "Client: SEC\nLocation: Shoaiba to Nemrah\nSize: Large\nScope of Work: Steel caging, auger drilling, civil work (1st and 2nd pad)",
       },
       {
         title: "Construction of 380KV Transmission Line Nemrah to Mohail",
-        description: "Client: SEC\nLocation: Nemrah to Mohail\nSize: Large\nScope of Work: Civil work (pad and chimney), electrical work"
+        description:
+          "Client: SEC\nLocation: Nemrah to Mohail\nSize: Large\nScope of Work: Civil work (pad and chimney), electrical work",
       },
       {
         title: "Water Clarifier Project – IBAC",
-        description: "Client: Najran University\nLocation: Najran\nSize: Medium industrial utility\nScope of Work: Fabrication and installation of steel clarifier tank structures"
+        description:
+          "Client: Najran University\nLocation: Najran\nSize: Medium industrial utility\nScope of Work: Fabrication and installation of steel clarifier tank structures",
       },
       {
         title: "Brine Clarifier Structure",
-        description: "Client: DMS\nLocation: Riyadh\nSize: Steel structure project\nScope of Work: Structural steel fabrication for brine treatment clarifier system"
+        description:
+          "Client: DMS\nLocation: Riyadh\nSize: Steel structure project\nScope of Work: Structural steel fabrication for brine treatment clarifier system",
       },
       {
         title: "Fence",
-        description: "Client: Multiworks Co. Ltd\nLocation: Neom\nSize: Civil and fabrication scope\nScope of Work: Fence fabrication and installation for infrastructure perimeter"
+        description:
+          "Client: Multiworks Co. Ltd\nLocation: Neom\nSize: Civil and fabrication scope\nScope of Work: Fence fabrication and installation for infrastructure perimeter",
       },
       {
         title: "Steel Boundary Wall & Valve Chambers Platforms",
-        description: "Client: Royal Commission (HSH)\nLocation: Jubail\nSize: Medium size municipal scope\nScope of Work: Steel boundary wall, platforms for utility valve chambers"
+        description:
+          "Client: Royal Commission (HSH)\nLocation: Jubail\nSize: Medium size municipal scope\nScope of Work: Steel boundary wall, platforms for utility valve chambers",
       },
       {
         title: "Valve Supports and Platform",
-        description: "Client: Multiworks (RC)\nLocation: Jubail\nSize: Medium industrial infrastructure\nScope of Work: Fabrication and erection of valve supports and access platforms"
+        description:
+          "Client: Multiworks (RC)\nLocation: Jubail\nSize: Medium industrial infrastructure\nScope of Work: Fabrication and erection of valve supports and access platforms",
       },
       {
         title: "Steel Structure – Fabrication & Erection",
-        description: "Client: Al Bassam Group (Saudi Cyprian Const. Co)\nLocation: Khobar\nSize: Commercial scale steel structure\nScope of Work: Complete fabrication and erection of steel structural framework"
+        description:
+          "Client: Al Bassam Group (Saudi Cyprian Const. Co)\nLocation: Khobar\nSize: Commercial scale steel structure\nScope of Work: Complete fabrication and erection of steel structural framework",
       },
       {
         title: "Steel Structure – Erection",
-        description: "Client: Saraya Bilquis Construction Co.\nLocation: Khafji\nSize: Erection-only scope\nScope of Work: Erection of pre-fabricated steel structures"
+        description:
+          "Client: Saraya Bilquis Construction Co.\nLocation: Khafji\nSize: Erection-only scope\nScope of Work: Erection of pre-fabricated steel structures",
       },
       {
         title: "Access Platform",
-        description: "Client: SBG (SIPCHEM)\nLocation: Jubail\nSize: Industrial platform for process plant\nScope of Work: Steel fabrication and erection of elevated platforms"
+        description:
+          "Client: SBG (SIPCHEM)\nLocation: Jubail\nSize: Industrial platform for process plant\nScope of Work: Steel fabrication and erection of elevated platforms",
       },
       {
         title: "Royal Commission Labour Camp",
-        description: "Client: ATHWAQ Operation and Maintenance\nLocation: Jubail\nSize: Full camp fabrication\nScope of Work: Fabrication of steel elements for temporary and permanent camp structures"
+        description:
+          "Client: ATHWAQ Operation and Maintenance\nLocation: Jubail\nSize: Full camp fabrication\nScope of Work: Fabrication of steel elements for temporary and permanent camp structures",
       },
       {
         title: "Handrails",
-        description: "Client: Dolphin Steels\nLocation: Jubail\nSize: Minor steel elements\nScope of Work: Fabrication and delivery of stainless steel handrails"
+        description:
+          "Client: Dolphin Steels\nLocation: Jubail\nSize: Minor steel elements\nScope of Work: Fabrication and delivery of stainless steel handrails",
       },
       {
         title: "SS Handrails and Railings",
-        description: "Client: Multiple Clients\nLocation: Jubail & Dammam\nSize: Ongoing miscellaneous works\nScope of Work: Fabrication and installation of stainless steel railings for public and commercial buildings"
+        description:
+          "Client: Multiple Clients\nLocation: Jubail & Dammam\nSize: Ongoing miscellaneous works\nScope of Work: Fabrication and installation of stainless steel railings for public and commercial buildings",
       },
       {
         title: "Supply, Fabrication and Installation of Gratings",
-        description: "Client: Haider Saleh Al-Haider & Partners Co.\nLocation: Jubail\nSize: Medium utility/infrastructure support\nScope of Work: Design and fabrication of steel gratings and related supports"
+        description:
+          "Client: Haider Saleh Al-Haider & Partners Co.\nLocation: Jubail\nSize: Medium utility/infrastructure support\nScope of Work: Design and fabrication of steel gratings and related supports",
       },
       {
         title: "Construction of Public and Governmental Buildings",
-        description: "Client: Various Government Entities\nLocation: Riyadh, Saudi Arabia\nSize: Not specified\nScope of Work: Turnkey construction services for schools, hospitals, hotels, and related infrastructure"
+        description:
+          "Client: Various Government Entities\nLocation: Riyadh, Saudi Arabia\nSize: Not specified\nScope of Work: Turnkey construction services for schools, hospitals, hotels, and related infrastructure",
       },
       {
         title: "Construction of Residential Buildings",
-        description: "Client: Private and Public Sector\nLocation: Riyadh, Saudi Arabia\nSize: Not specified\nScope of Work: Design and build services for housing projects and residential compounds"
+        description:
+          "Client: Private and Public Sector\nLocation: Riyadh, Saudi Arabia\nSize: Not specified\nScope of Work: Design and build services for housing projects and residential compounds",
       },
       {
         title: "Construction of Non-Residential Buildings",
-        description: "Client: Government and Commercial Clients\nLocation: Riyadh, Saudi Arabia\nSize: Not specified\nScope of Work: Construction of office buildings, commercial facilities, and custom non-residential structures"
+        description:
+          "Client: Government and Commercial Clients\nLocation: Riyadh, Saudi Arabia\nSize: Not specified\nScope of Work: Construction of office buildings, commercial facilities, and custom non-residential structures",
       },
       {
         title: "Prefab Building Construction",
-        description: "Client: Various\nLocation: On-site Across Saudi Arabia\nSize: Not specified\nScope of Work: Installation and assembly of prefabricated buildings at project sites"
-      }
-    ]
+        description:
+          "Client: Various\nLocation: On-site Across Saudi Arabia\nSize: Not specified\nScope of Work: Installation and assembly of prefabricated buildings at project sites",
+      },
+    ],
   },
   renewableEnergy: {
     title: "Renewable Energy Solutions",
@@ -422,6 +478,17 @@ export const en = {
           "Suspended ceilings (gypsum, metal, acoustic) and ceiling design.\nDemountable and fixed partition systems with soundproofing.\nFlooring solutions: tile, carpet, parquet, vinyl, epoxy, and raised floors.\nCustom joinery: doors, cabinets, wardrobes, and wood paneling.\nDecorative wall finishes: paint, wallpaper, cladding, and feature walls.\nFinal MEP second fix: lighting fixtures, air diffusers, switches, sanitary fixtures.\nHandover-ready interiors with snagging, punch-list resolution, and commissioning.",
       },
     ],
+  },
+  constructionComponent: {
+    title: "Construction & MEP",
+    description:
+      "We deliver Solar and Hybrid Energy Solutions for commercial and government clients. Our Battery Energy Storage Systems (BESS) improve grid reliability, while our EV Charging and Smart Energy Consulting support sustainable transitions.",
+  },
+  renEnergyComponent: {
+    title: "RENEWABLE ENERGY",
+    subtitle: "Solar, batteries & EV Charging",
+    description:
+      "We deliver Solar and Hybrid Energy Solutions for commercial and government clients. Our Battery Energy Storage Systems (BESS) improve grid reliability, while our EV Charging and Smart Energy Consulting support sustainable transitions.",
   },
   contactSection: {
     title: {

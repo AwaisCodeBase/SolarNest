@@ -7,28 +7,28 @@ const Construction = () => {
 
   return (
     <div className={styles.energy_section}>
-      <h1 className={styles.title}>{t("construction.title")}</h1>
+      <h1 className={styles.title}>{t("constructionComponent.title")}</h1>
       <div className={styles.content_wrapper}>
         <div className={styles.image_container}>
           <div className={`${styles.div1} ${styles.float_animation_1}`}>
             <img
               className={styles.energy_image1}
               src="/SolarNest/assets/construction.png"
-              alt={t("construction.title")}
+              alt={t("constructionComponent.title")}
             />
           </div>
           <div className={`${styles.div2} ${styles.float_animation_2}`}>
             <img
               className={styles.energy_image2}
               src="/SolarNest/assets/MEP.png"
-              alt={t("construction.title")}
+              alt={t("constructionComponent.title")}
             />
           </div>
         </div>
         <div className={styles.description_container}>
-          <h2>{t("construction.component.title")}</h2>
+          <h2>{t("constructionComponent.title")}</h2>
           <p className={styles.description}>
-            {t("construction.component.description")}
+            {t("constructionComponent.description")}
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Tajawal', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,8 +28,18 @@ body {
 }
 
 *{
-  font-family: Roboto;
+  font-family: 'Roboto', 'Tajawal', sans-serif;
 }
+
+/* Arabic text styling */
+[dir="rtl"], 
+[lang="ar"], 
+.arabic-text {
+  font-family: 'Cairo', 'Almarai', 'Roboto', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
 .active{
   background-color: #ffebf5;
   border-color: #C586A5;
