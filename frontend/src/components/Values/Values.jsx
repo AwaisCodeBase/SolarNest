@@ -13,10 +13,10 @@ const icons = [
 
 const Values = () => {
   const { t } = useLanguage();
-  const values = t("values.items");
+  const values = t("values.items", { returnObjects: true });
   return (
     <section className={styles.values_section}>
-      <h2 className={styles.heading}>{t("values.heading")}</h2>
+      <h2 className={styles.heading}>{t("values.title")}</h2>
       <div className={styles.values_grid}>
         {values.map((value, idx) => (
           <div className={styles.value_box} key={idx}>

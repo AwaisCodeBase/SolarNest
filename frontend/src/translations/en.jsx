@@ -892,7 +892,7 @@ export const en = {
     heading: "Approved Vendors",
   },
   values: {
-    heading: "Our Core Values",
+    title: "Our Core Values",
     items: [
       {
         title: "Innovation",
