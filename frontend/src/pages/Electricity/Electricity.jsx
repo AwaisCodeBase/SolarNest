@@ -11,7 +11,7 @@ const Electricity = () => {
   return (
     <>
       <Hero
-        backgroundImage="/SolarNest/assets/elec.jpg"
+        backgroundImage="/assets/elec.jpg"
         title={t("electricity.title")}
       />
       <div>

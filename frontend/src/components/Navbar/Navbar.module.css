@@ -9,10 +9,13 @@
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease;
+    background: rgba(224, 224, 224, 0.7);
+  backdrop-filter: blur(10px); /* optional for glass effect */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* optional soft shadow */
 }
 
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(253, 253, 253, 0.7);
   backdrop-filter: blur(10px);
 }
 
@@ -32,7 +35,7 @@
 }
 
 .navLink {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -67,13 +70,14 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  color: black;
 }
 
 .language_text {
   margin: 0;
   font-size: 14px;
   font-weight: 500;
-  color: #fff;
+  color: #020202;
 }
 
 .toggle_container {

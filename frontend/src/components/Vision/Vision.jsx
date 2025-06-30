@@ -13,14 +13,14 @@ const Vision = () => {
           <div className={`${styles.div1} ${styles.float_animation_1}`}>
             <img
               className={styles.energy_image1}
-              src="/SolarNest/assets/construction.png"
+              src="/assets/construction.png"
               alt={t("vision.title")}
             />
           </div>
           <div className={`${styles.div2} ${styles.float_animation_2}`}>
             <img
               className={styles.energy_image2}
-              src="/SolarNest/assets/MEP.png"
+              src="/assets/MEP.png"
               alt={t("vision.title")}
             />
           </div>

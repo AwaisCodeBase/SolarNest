@@ -35,6 +35,42 @@ const Projects = () => {
       slider.removeEventListener("scroll", handleScroll);
       clearTimeout(slider.scrollTimeout);
     };
+
+ // Touch start/move/end logic
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  const onTouchStart = (e) => {
+    touchStartX = e.touches[0].clientX;
+  };
+
+  const onTouchMove = (e) => {
+    touchEndX = e.touches[0].clientX;
+  };
+
+  const onTouchEnd = () => {
+    const swipeDistance = touchStartX - touchEndX;
+    if (Math.abs(swipeDistance) > 50) {
+      // Minimum swipe distance threshold
+      scroll(swipeDistance > 0 ? "right" : "left");
+    }
+  };
+
+  slider.addEventListener("scroll", handleScroll);
+  slider.addEventListener("touchstart", onTouchStart);
+  slider.addEventListener("touchmove", onTouchMove);
+  slider.addEventListener("touchend", onTouchEnd);
+
+  return () => {
+    slider.removeEventListener("scroll", handleScroll);
+    slider.removeEventListener("touchstart", onTouchStart);
+    slider.removeEventListener("touchmove", onTouchMove);
+    slider.removeEventListener("touchend", onTouchEnd);
+    clearTimeout(slider.scrollTimeout);
+  };
+
+
+
   }, []);
 
   const scroll = (direction) => {
@@ -69,7 +105,7 @@ const Projects = () => {
           {projectsData.map((project, index) => (
             <div key={index} className={styles.project_card}>
               <img
-                src={`/SolarNest/assets/Picture${(index % 55) + 1}.jpg`}
+                src={`/assets/Picture${(index % 55) + 1}.jpg`}
                 alt={project.title}
                 className={styles.image}
               />

@@ -6,7 +6,11 @@
   position: relative;
   overflow-x: hidden;
 }
-
+/* .whoWeAreScroll {
+    max-height: 20px;
+    width: 80%;
+    background-color: red;
+  } */
 .text {
   width: 100%;
   max-width: 800px;
@@ -52,7 +56,7 @@
   height: auto;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #2B2B2B;
+  color: #2b2b2b;
   margin: 0 auto;
   margin-top: 4rem;
   margin-bottom: 2rem;
@@ -139,6 +143,12 @@
   .whoWeAreScroll {
     max-height: 120px;
   }
+
+  .mission {
+    /* background-color: red; */
+    padding: 1rem;
+    min-height: 20vh;
+  }
 }
 
 @media (max-width: 400px) {
@@ -165,6 +175,11 @@
   .whoWeAreScroll {
     max-height: 80px;
   }
+   .mission {
+    /* background-color: red; */
+    padding: 1rem;
+    min-height: 20vh;
+  }
 }
 
 /* For very small screens */
@@ -176,6 +191,11 @@
 
   .text {
     font-size: 0.85rem;
+  }
+   .mission {
+    /* background-color: red; */
+    padding: 1rem;
+    min-height: 20vh;
   }
 }
 
@@ -250,6 +270,11 @@
   text-align: center;
   max-width: 900px;
 }
+ .mission {
+    /* background-color: red; */
+    padding: 1rem;
+    min-height: 20vh;
+  }
 
 @media screen and (max-width: 1200px) {
   .teamDescription {
@@ -303,5 +328,11 @@
     font-size: 0.9rem;
     line-height: 1.5;
     padding: 0 8px;
+  }
+   .mission {
+    /* background-color: red; */
+    padding: 1rem;
+    margin-top: -2rem;
+    min-height: 20vh;
   }
 }

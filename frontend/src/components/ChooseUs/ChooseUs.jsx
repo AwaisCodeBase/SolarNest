@@ -7,19 +7,19 @@ const ChooseUs = () => {
 
   const reasons = [
     {
-      icon: "/SolarNest/assets/Customer_Insight.png",
+      icon: "/assets/Customer_Insight.png",
       title: t("chooseUs.items.0.title"),
       description: t("chooseUs.items.0.description"),
       color: "#212122",
     },
     {
-      icon: "/SolarNest/assets/Handshake.png",
+      icon: "/assets/Handshake.png",
       title: t("chooseUs.items.1.title"),
       description: t("chooseUs.items.1.description"),
       color: "#153318",
     },
     {
-      icon: "/SolarNest/assets/Verified_Account.png",
+      icon: "/assets/Verified_Account.png",
       title: t("chooseUs.items.2.title"),
       description: t("chooseUs.items.2.description"),
       color: "#236835",

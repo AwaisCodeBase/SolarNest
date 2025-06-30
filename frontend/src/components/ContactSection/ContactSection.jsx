@@ -43,7 +43,7 @@ const ContactSection = () => {
     setStatus({ loading: true, error: null, success: false });
 
     try {
-      const response = await fetch("http://localhost:8000/api/contact/submit", {
+      const response = await fetch("https://blackemerald-email-module.vercel.app/api/contact/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -87,15 +87,15 @@ const ContactSection = () => {
 
         <div className={styles.contactInfo}>
           <div className={styles.contactItem}>
-            <img src="/SolarNest/assets/email.png" alt="Email" />
+            <img src="/assets/email.png" alt="Email" />
             <span>admin@blackemerald.net</span>
           </div>
           <div className={styles.contactItem}>
-            <img src="/SolarNest/assets/phone.png" alt="Phone" />
+            <img src="/assets/phone.png" alt="Phone" />
             <span>+1 (201) 123 4468</span>
           </div>
           <div className={styles.contactItem}>
-            <img src="/SolarNest/assets/location.png" alt="Location" />
+            <img src="/assets/location.png" alt="Location" />
             <span>Makkah, Saudi Arabia123 Street 487 House</span>
           </div>
         </div>

@@ -16,7 +16,7 @@ const Integrated = () => {
   return (
     <>
       <Hero
-        backgroundImage="/SolarNest/assets/manag.jpg"
+        backgroundImage="/assets/manag.jpg"
         title={t("integrated.title")}
       />
       <div>

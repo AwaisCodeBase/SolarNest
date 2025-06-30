@@ -15,7 +15,7 @@ const Renewable_Energy_Solution = () => {
     return (
       <>
         <Hero
-          backgroundImage="/SolarNest/assets/renew.jpg"
+          backgroundImage="/assets/renew.jpg"
           title={t("renewableEnergy.title")}
         />
         <div>
@@ -28,7 +28,7 @@ const Renewable_Energy_Solution = () => {
   return (
     <>
       <Hero
-        backgroundImage="/SolarNest/assets/renew.jpg"
+        backgroundImage="/assets/renew.jpg"
         title={t("renewableEnergy.title")}
       />
       <div>

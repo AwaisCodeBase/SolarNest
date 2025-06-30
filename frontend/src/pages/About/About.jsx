@@ -14,16 +14,16 @@ const About = () => {
   return (
     <div className={styles.about_container}>
       <Hero
-        backgroundImage="/SolarNest/assets/about.png"
+        backgroundImage="/assets/about.png"
         title="pages.aboutUs"
       />
       <AnimatedStats />
-      <div className={styles.headingContainer}>
+      <div className={styles.headingContainer} >
         <div className={styles.heading}>
           <p>{t("about.mission")}</p>
         </div>
       </div>
-      <div className={styles.text}>
+      <div className={`${styles.text} ${styles.mission}`}>
         <p>{t("about.description")}</p>
       </div>
       <Values />

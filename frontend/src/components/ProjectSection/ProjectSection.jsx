@@ -22,7 +22,7 @@ const ProjectSection = () => {
           {projectsData.map((project, index) => (
             <div key={index} className={styles.project_card}>
               <img
-                src={`/SolarNest/assets/Picture${(index % 55) + 1}.jpg`}
+                src={`/assets/Picture${(index % 55) + 1}.jpg`}
                 alt={project.title}
                 className={styles.image}
               />

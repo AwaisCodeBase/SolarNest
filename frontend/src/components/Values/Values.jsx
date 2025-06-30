@@ -3,12 +3,12 @@ import styles from "./Values.module.css";
 import { useLanguage } from "../../context/LanguageContext";
 
 const icons = [
-  "/SolarNest/assets/Worker.png",
-  "/SolarNest/assets/solar.png",
-  "/SolarNest/assets/Engineer.png",
-  "/SolarNest/assets/Auction.png",
-  "/SolarNest/assets/int_fac.png",
-  "/SolarNest/assets/Circuit.png",
+  "/assets/Worker.png",
+  "/assets/solar.png",
+  "/assets/Engineer.png",
+  "/assets/Auction.png",
+  "/assets/int_fac.png",
+  "/assets/Circuit.png",
 ];
 
 const Values = () => {

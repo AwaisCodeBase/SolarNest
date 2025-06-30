@@ -124,6 +124,10 @@
   .project_card {
     min-width: calc(33.333% - 1rem);
   }
+  .grid_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    max-height: none;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -146,15 +150,16 @@
     min-width: 0;
     max-width: 100%;
   }
+   
 }
 
 @media screen and (max-width: 992px) {
   .project_card {
-    min-width: calc(50% - 1rem);
+    min-width: 30rem;
   }
 
   .grid_wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     max-height: none;
   }
 }

@@ -14,7 +14,7 @@ const Water_Gas_Infrastructure = () => {
     return (
       <>
         <Hero
-          backgroundImage="/SolarNest/assets/water.jpg"
+          backgroundImage="/assets/water.jpg"
           title="pages.waterGas"
         />
         <div>
@@ -27,7 +27,7 @@ const Water_Gas_Infrastructure = () => {
   return (
     <>
       <Hero
-        backgroundImage="/SolarNest/assets/water.jpg"
+        backgroundImage="/assets/water.jpg"
         title="pages.waterGas"
       />
       <div>
