@@ -4,7 +4,7 @@ import Hero from "../../components/Hero/Hero.jsx";
 import AnimatedStats from "../../components/AnimatedStats/AnimatedStats.jsx";
 import ProjectSection from "../../components/ProjectSection/ProjectSection.jsx";
 import { useLanguage } from "../../context/LanguageContext";
-//import TeamSection1 from "../../components/TeamSection1/TeamSection1.jsx";
+import Service from "../../components/Service/Service.jsx";
 import Values from "../../components/Values/Values.jsx";
 import Vision from "../../components/Vision/Vision.jsx";
 
@@ -46,7 +46,7 @@ const About = () => {
         <p>{t("team.description.paragraph2")}</p>
         <p>{t("team.description.paragraph3")}</p>
       </div>
-      {/* <TeamSection1 /> */}
+      <Service />
       <ProjectSection />
     </div>
   );

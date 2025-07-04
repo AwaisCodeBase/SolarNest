@@ -13,6 +13,7 @@ html, body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
+  font-size: 14px; /* Reduced base font size */
 }
 
 body {
@@ -21,6 +22,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 14px; /* Reduced base font size */
+  line-height: 1.5;
 }
 
 #root {
@@ -46,4 +49,17 @@ body {
 .active{
   background-color: #ffebf5;
   border-color: #C586A5;
+}
+
+/* Responsive font sizing */
+@media (max-width: 768px) {
+  html, body {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    font-size: 12px;
+  }
 }

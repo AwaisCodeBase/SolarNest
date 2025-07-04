@@ -37,6 +37,7 @@ const router = createBrowserRouter(
       <Route path="services/electricity" element={<Electricity />} />
       <Route path="services/renew" element={<Renewable_Energy_Solution />} />
       <Route path="services/infrastructure" element={<Infrastructure />} />
+      <Route path="services/bid" element={<Bid />} />
     </Route>
   ),
   {
