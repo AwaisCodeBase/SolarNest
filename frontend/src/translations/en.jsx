@@ -32,6 +32,7 @@ export const en = {
   hero: {
     p1: "ENGINEERING THE FUTURE OF",
     p2: "SAUDI ARABIA",
+    p3: "Pioneering Sustainable Infrastructure & Engineering Excellence",
     button: "GET IN TOUCH",
   },
   footer: {
@@ -56,7 +57,7 @@ export const en = {
     together: "together",
   },
   services: {
-    title: "SERVICES",
+    title: "Our Expertise",
     items: [
       {
         title: "Construction",
@@ -533,27 +534,24 @@ export const en = {
     title: "Bid & Tendering Services",
     services: [
       {
-        title: "Preparing & Submitting Government Tenders (Etimad Platform)",
+        title: "Comprehensive Etimad & Private Sector Bidding",
         description:
-          "Expertise in navigating government procurement processes.",
+          "Full service for Etimad platform bids and private sector tenders.",
       },
       {
-        title: "Private Sector Bidding & Proposal Development",
-        description: "Crafting competitive bids for commercial projects.",
-      },
-      {
-        title: "Procurement & Contract Management",
-        description: "Ensuring cost-effective and compliant project execution.",
-      },
-      {
-        title: "Cost Estimation & Feasibility Studies",
+        title: "Proposal & BOQ Preparation",
         description:
-          "Conducting detailed financial assessments to support bidding strategies.",
+          "Preparation of technical and financial proposals, BOQs, and execution methodologies.",
       },
       {
-        title: "Compliance & Regulatory Documentation",
+        title: "Cost Estimation & Feasibility",
         description:
-          "Managing legal and regulatory requirements for public and private sector tenders.",
+          "Detailed cost estimation, feasibility studies, and risk assessments.",
+      },
+      {
+        title: "Contract Support & Compliance",
+        description:
+          "Support in contract negotiation, documentation, and compliance with Saudi procurement laws.",
       },
     ],
   },
@@ -851,6 +849,10 @@ export const en = {
         name: "Infrastructure & Utilities",
         path: "infrastructure",
       },
+      {
+        name: "Bid & Tendering Services",
+        path: "bid",
+      },
     ],
   },
   team: {
@@ -932,6 +934,6 @@ export const en = {
   vision: {
     title: "Our Vision",
     description:
-      "We deliver Solar and Hybrid Energy Solutions for commercial and government clients. Our Battery Energy Storage Systems (BESS) improve grid reliability, while our EV Charging and Smart Energy Consulting support sustainable transitions.",
+      "To be the go-to partner for engineering, energy, and bid management solutions, driving sustainable urban development, infrastructure expansion, and technological advancement in Saudi Arabia and beyond.",
   },
 };

@@ -37,12 +37,13 @@ const Home = () => {
         <div className={styles.hero_section_content}>
           <p className={styles.p1}>{t("hero.p1")}</p>
           <p className={styles.p2}>{t("hero.p2")}</p>
+          <p className={styles.p3}>{t("hero.p3")}</p>
           <div className={styles.button_container}>
             <Link to="/contact">
               <button>{t("hero.button")}</button>
             </Link>
-            <Link to="/contact">
-              <button>{t("hero.button")}</button>
+            <Link to="/services">
+              <button>Our Services</button>
             </Link>
           </div>
         </div>

@@ -57,31 +57,34 @@
   height: 100vh;
 }
 
-.hero_section_content .p1 {
-  font-size: 4.5rem;
+.hero_section_content .p1, .p2 {
+  font-size: 3.5rem;
   font-family: Roboto;
   font-weight: 800;
-  margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 0.9;
 }
 
-.hero_section_content .p2 {
-  font-size: 6rem;
-  font-weight: 900;
-  line-height: 1.2;
+
+.hero_section_content .p3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
   margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+  text-transform: none;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
 }
 
 .button_container {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .button_container button {
@@ -91,6 +94,11 @@
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  min-width: 160px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button_container button:hover {
@@ -105,8 +113,9 @@
 }
 
 .button_container a:last-child button {
-  background-color: black;
+  background-color: transparent;
   color: #fff;
+  border: 1px solid #fff;
 }
 
 .headingContainer {
@@ -131,11 +140,15 @@
 /* Large screens (desktops) */
 @media (max-width: 1200px) {
   .hero_section_content .p1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   
   .hero_section_content .p2 {
-    font-size: 5.5rem;
+    font-size: 3rem;
+  }
+
+  .hero_section_content .p3 {
+    font-size: 1.1rem;
   }
 
   .heading {
@@ -147,11 +160,15 @@
 /* Medium screens (tablets) */
 @media (max-width: 992px) {
   .hero_section_content .p1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   .hero_section_content .p2 {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
+  }
+
+  .hero_section_content .p3 {
+    font-size: 1rem;
   }
 
   .heading {
@@ -186,11 +203,15 @@
   }
   
   .hero_section_content .p1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .hero_section_content .p2 {
-    font-size: 3.8rem;
+    font-size: 2rem;
+  }
+
+  .hero_section_content .p3 {
+    font-size: 0.9rem;
   }
 
   .heading {
@@ -209,14 +230,18 @@
   }
 }
 
-/* Extra small screens (portrait phones) */
+/* Extra small screens (phones) */
 @media (max-width: 576px) {
   .hero_section_content .p1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   .hero_section_content .p2 {
-    font-size: 3.2rem;
+    font-size: 1.8rem;
+  }
+
+  .hero_section_content .p3 {
+    font-size: 0.8rem;
   }
 
   .heading {
@@ -226,18 +251,22 @@
 
   .button_container button {
     padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
+    min-width: 140px;
+    height: 45px;
   }
 }
 
-/* For very small screens */
 @media (max-width: 400px) {
   .hero_section_content .p1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .hero_section_content .p2 {
-    font-size: 2.8rem;
+    font-size: 1.5rem;
+  }
+
+  .hero_section_content .p3 {
+    font-size: 0.7rem;
   }
 
   .heading {
@@ -247,7 +276,8 @@
 
   .button_container button {
     padding: 0.7rem 1.2rem;
-    font-size: 0.8rem;
+    min-width: 120px;
+    height: 40px;
   }
 }
 
