@@ -40,7 +40,7 @@ const router = createBrowserRouter(
     </Route>
   ),
   {
-    basename: "/", // This is crucial for GitHub Pages and local testing
+    basename: "/", 
   }
 );
 
