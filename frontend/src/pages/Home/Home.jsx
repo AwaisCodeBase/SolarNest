@@ -39,11 +39,11 @@ const Home = () => {
           <p className={styles.p2}>{t("hero.p2")}</p>
           <p className={styles.p3}>{t("hero.p3")}</p>
           <div className={styles.button_container}>
-            <Link to="/contact">
+            <Link to="/contact" className={styles.btntext}>
               <button>{t("hero.button")}</button>
             </Link>
-            <Link to="/services">
-              <button>Our Services</button>
+            <Link to="/services" className={styles.btntext}>
+              <button>SERVICES</button>
             </Link>
           </div>
         </div>
