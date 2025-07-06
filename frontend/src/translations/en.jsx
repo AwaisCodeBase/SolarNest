@@ -102,26 +102,6 @@ export const en = {
       },
     ],
   },
-  chooseUs: {
-    title: "WHY CHOOSE US",
-    items: [
-      {
-        title: "Expertise & Experience",
-        description:
-          "Our team brings decades of combined experience in renewable energy solutions, ensuring your project is handled with the highest level of expertise and professionalism.",
-      },
-      {
-        title: "Quality & Innovation",
-        description:
-          "We combine premium materials with cutting-edge technology to deliver sustainable energy solutions that are built to last and perform at optimal efficiency.",
-      },
-      {
-        title: "Customer Satisfaction",
-        description:
-          "We prioritize your needs and goals, providing personalized service and support throughout the entire project lifecycle and beyond installation.",
-      },
-    ],
-  },
   projectSection: {
     title: "Our Projects",
     items: [
