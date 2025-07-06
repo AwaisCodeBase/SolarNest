@@ -11,6 +11,7 @@ import { useLanguage } from "../../context/LanguageContext";
 import { en, ar } from "../../translations";
 import Clients from "../../components/Clients/Clients.jsx";
 import ContactSection from "../../components/ContactSection/ContactSection.jsx";
+import Bolt from "../../components/boltscene/Bolt.jsx";
 
 const Home = () => {
   const { isArabic, t } = useLanguage();
@@ -48,8 +49,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Construction />
-      <RenEnergy />
+      <Bolt/>
+      {/* <Construction />
+      <RenEnergy /> */}
       <Service />
       <Projects />
       <Clients />

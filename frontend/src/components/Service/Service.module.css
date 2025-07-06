@@ -209,3 +209,85 @@
 .services_grid.visible .service_box:nth-child(8) { transition-delay: 0.8s; }
 .services_grid.visible .service_box:nth-child(9) { transition-delay: 0.9s; }
 .services_grid.visible .service_box:nth-child(10) { transition-delay: 1s; }
+
+
+.service_box {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: scale(0.9) translateY(30px);
+  position: relative;
+  will-change: transform, opacity, box-shadow;
+  border: 2px solid transparent;
+}
+
+.services_grid.visible .service_box {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.service_box:hover {
+  transform: scale(1.05) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  border-color: #8aff8a;
+}
+
+.service_box:hover h3,
+.service_box:hover p {
+  color: #0c4f0c;
+}
+
+.icon_container img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.service_box:hover .icon_container img {
+  transform: translateY(-10px) scale(1.1);
+}
+
+.service_box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, rgba(100,255,100,0.1), rgba(0,255,150,0.1));
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.service_box:hover::before {
+  opacity: 1;
+}
+
+.service_box h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #153318;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.service_box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #0d0d0d;
+  transition: color 0.3s ease;
+}
+
+/* Subtle glow effect */
+.service_box:focus-within,
+.service_box:focus-visible {
+  outline: none;
+  border-color: #00ffa2;
+  box-shadow: 0 0 0 3px rgba(0, 255, 162, 0.4);
+}
+
+/* Keep your responsive grid untouched */
+

@@ -56,7 +56,7 @@ export const ar = {
     together: "معاً",
   },
   services: {
-    title: "خبراتنا",
+    title: "خدماتنا",
     items: [
       {
         title: "البناء",
@@ -437,9 +437,10 @@ export const ar = {
     ],
   },
   stats: {
-    experience: "الخبرة",
-    projects: "المشاريع",
-    clients: "العملاء",
+    experience: "إجمالي المشاريع",
+    projects: "المكتملة",
+    clients: "قيد التنفيذ",
+    tendering:"في المناقصة"
   },
   construction: {
     title: "الأعمال المدنية والهيكلية والمعمارية",
@@ -862,7 +863,7 @@ export const ar = {
     },
   },
   clients: {
-    heading: "الموردين المعتمدين",
+    heading: "عملاؤنا",
   },
   values: {
     title: "قيمنا الأساسية",

@@ -7,46 +7,55 @@ const AnimatedStats = () => {
   const [experienceCount, setExperienceCount] = useState(0);
   const [projectsCount, setProjectsCount] = useState(0);
   const [clientsCount, setClientsCount] = useState(0);
+  const [tenderingCount, setTenderingCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Start the animation when component mounts
-    setIsVisible(true);
+  setIsVisible(true);
 
-    // Experience counter (0 to 20)
-    const experienceInterval = setInterval(() => {
-      setExperienceCount((prev) => {
-        if (prev < 20) return prev + 1;
-        clearInterval(experienceInterval);
-        return 20;
-      });
-    }, 100);
+  // Total Projects counter (0 to 300)
+  const totalProjectsInterval = setInterval(() => {
+    setExperienceCount((prev) => {
+      if (prev < 300) return prev + 5;
+      clearInterval(totalProjectsInterval);
+      return 300;
+    });
+  }, 40);
 
-    // Projects counter (0 to 8000)
-    const projectsInterval = setInterval(() => {
-      setProjectsCount((prev) => {
-        if (prev < 8000) return prev + 200;
-        clearInterval(projectsInterval);
-        return 8000;
-      });
-    }, 40);
+  // Completed Projects counter (0 to 180)
+  const completedProjectsInterval = setInterval(() => {
+    setProjectsCount((prev) => {
+      if (prev < 180) return prev + 5;
+      clearInterval(completedProjectsInterval);
+      return 180;
+    });
+  }, 50);
 
-    // Clients counter (0 to 8000)
-    const clientsInterval = setInterval(() => {
-      setClientsCount((prev) => {
-        if (prev < 8000) return prev + 200;
-        clearInterval(clientsInterval);
-        return 8000;
-      });
-    }, 40);
+  // Ongoing Projects counter (0 to 30)
+  const ongoingProjectsInterval = setInterval(() => {
+    setClientsCount((prev) => {
+      if (prev < 30) return prev + 1;
+      clearInterval(ongoingProjectsInterval);
+      return 30;
+    });
+  }, 100);
 
-    // Cleanup function
-    return () => {
-      clearInterval(experienceInterval);
-      clearInterval(projectsInterval);
-      clearInterval(clientsInterval);
-    };
-  }, []);
+  // In Tendering Projects counter (0 to 50)
+  const tenderingInterval = setInterval(() => {
+    setTenderingCount((prev) => {
+      if (prev < 50) return prev + 2;
+      clearInterval(tenderingInterval);
+      return 50;
+    });
+  }, 70);
+
+  return () => {
+    clearInterval(totalProjectsInterval);
+    clearInterval(completedProjectsInterval);
+    clearInterval(ongoingProjectsInterval);
+    clearInterval(tenderingInterval);
+  };
+}, []);
 
   const formatNumber = (num) => {
     if (num >= 1000) {
@@ -71,6 +80,10 @@ const AnimatedStats = () => {
         <div className={styles.stat_item}>
           <p className={styles.stat_label}>{t("stats.clients")}</p>
           <p className={styles.stat_value}>{formatNumber(clientsCount)}</p>
+        </div>
+        <div className={styles.stat_item}>
+          <p className={styles.stat_label}>{t("stats.tendering")}</p>
+          <p className={styles.stat_value}>{formatNumber(tenderingCount)}</p>
         </div>
       </div>
     </div>

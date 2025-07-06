@@ -24,7 +24,7 @@ export const en = {
       "At Black Emerald, we deliver cutting-edge construction, renewable energy, and bid management solutions tailored for Saudi Arabia's dynamic development landscape. With over 20 years of expertise, we specialize in engineering, infrastructure, and energy projects that drive the nation forward, aligning with Saudi Vision 2030.",
     mission: "Our Mission",
     whoWeAre: {
-      heading: "Who We Are",
+      heading: "Who Are We",
       description:
         "Black Emerald is a Saudi-based multidisciplinary engineering and construction company, delivering specialized solutions in MEP systems, civil infrastructure, architectural works, renewable energy, and high-voltage electrical systems. We are built on the principle of integrated project delivery, offering end-to-end execution for complex developments across residential, commercial, industrial, and public sectors. Our expertise in MEP services includes the design, installation, and commissioning of HVAC, firefighting, plumbing, drainage, and electrical distribution systems, engineered for performance, energy efficiency, and compliance with Saudi codes and international standards. In the domain of electrical infrastructure, we design and build high-voltage (HV) transmission lines, substations (up to 380kV), and industrial power systems, ensuring seamless integration with national grid requirements and Saudi Electricity Company (SEC) standards. Our civil and construction division delivers complete infrastructure and building solutions, from earthworks, foundations, and structural systems to full turnkey execution of villas, compounds, high-rises, hotels, and institutional developments. We manage every phase with precision and quality control. The architecture team at Black Emerald leads concept-to-completion delivery, offering planning, design development, engineering coordination, and site supervision to create environments that are functional, aesthetic, and sustainable. As a forward-thinking company, Black Emerald also offers advanced renewable energy solutions, including solar PV systems, hybrid power integration, energy storage systems (BESS), and EV charging infrastructure—empowering clients to meet energy goals while supporting Saudi Arabia's Vision 2030. At Black Emerald, we deliver more than infrastructure—we build integrated, sustainable, and high-performance environments shaped by engineering precision and visionary thinking.",
     },
@@ -57,7 +57,7 @@ export const en = {
     together: "together",
   },
   services: {
-    title: "Our Expertise",
+    title: "Our Services",
     items: [
       {
         title: "Construction",
@@ -135,51 +135,47 @@ export const en = {
         description:
           "Client: NEOM\nLocation: NEOM\nSize: 2,000 m²\nScope of Work: HVAC, Ventilation, Electrical, and Fire Alarm Systems",
       },
-      {
-        title: "Sultana Mall",
-        description:
-          "Client: Not Specified\nLocation: Madinah\nSize: 10,000 m²\nScope of Work: HVAC, Ventilation, Plumbing, Electrical, and Low Current Systems",
-      },
-      {
-        title: "Sultana Residential Tower",
-        description:
-          "Client: Not Specified\nLocation: Madinah\nSize: 12,000 m²\nScope of Work: HVAC, Ventilation, Plumbing, Electrical, and Low Current Systems",
-      },
+      
+      // {
+      //   title: "Sultana Residential Tower",
+      //   description:
+      //     "Client: Not Specified\nLocation: Madinah\nSize: 12,000 m²\nScope of Work: HVAC, Ventilation, Plumbing, Electrical, and Low Current Systems",
+      // },
       {
         title: "Seven Coffee Shop",
         description:
           "Client: Seven\nLocation: Jeddah\nSize: 1,800 m²\nScope of Work: HVAC, Ventilation, Electrical, Fire Fighting, Fire Alarm Systems, and Low Current",
       },
-      {
-        title: "IATCO Warehouse",
-        description:
-          "Client: Not Specified\nLocation: MODON, Madinah\nSize: 6,000 m²\nScope of Work: HVAC, Ventilation, Electrical, Plumbing, Fire Fighting, and Fire Alarm Systems",
-      },
-      {
-        title: "BARMAG Extrusion & Texturizing Facility",
-        description:
-          "Client: Not Specified\nLocation: Jeddah – Industrial City\nSize: 3,000 m²\nScope of Work: Power, Lighting, HVAC, Compressed Air & Chilled Water Networks, and Production Line Installation",
-      },
+      // {
+      //   title: "IATCO Warehouse",
+      //   description:
+      //     "Client: Not Specified\nLocation: MODON, Madinah\nSize: 6,000 m²\nScope of Work: HVAC, Ventilation, Electrical, Plumbing, Fire Fighting, and Fire Alarm Systems",
+      // },
+      // {
+      //   title: "BARMAG Extrusion & Texturizing Facility",
+      //   description:
+      //     "Client: Not Specified\nLocation: Jeddah – Industrial City\nSize: 3,000 m²\nScope of Work: Power, Lighting, HVAC, Compressed Air & Chilled Water Networks, and Production Line Installation",
+      // },
       {
         title: "Global United Mines Company",
         description:
           "Client: Global United Mines Company\nLocation: Tayma, Tabuk\nSize: 2,000 m\nScope of Work: HDPE Water Supply Network, Process Equipment, and Electrical System Design",
       },
-      {
-        title: "Corniche Jeddah Phases 4 & 5",
-        description:
-          "Client: Not Specified\nLocation: Jeddah\nSize: 44 Small Buildings\nScope of Work: Supply and Installation of Electromechanical Systems",
-      },
-      {
-        title: "King Abdulaziz Airport Parking & Railway",
-        description:
-          "Client: Not Specified\nLocation: Jeddah\nSize: >50,000 m²\nScope of Work: Low Current Systems & Car Park Monitoring System",
-      },
-      {
-        title: "Sports Hub – NEOM",
-        description:
-          "Client: Not Specified\nLocation: NEOM – Algayal / Tabuk\nSize: 20,000 m²\nScope of Work: Power, Low Current, Plumbing, Water Supply, Generators, and Black Water System",
-      },
+      // {
+      //   title: "Corniche Jeddah Phases 4 & 5",
+      //   description:
+      //     "Client: Not Specified\nLocation: Jeddah\nSize: 44 Small Buildings\nScope of Work: Supply and Installation of Electromechanical Systems",
+      // },
+      // {
+      //   title: "King Abdulaziz Airport Parking & Railway",
+      //   description:
+      //     "Client: Not Specified\nLocation: Jeddah\nSize: >50,000 m²\nScope of Work: Low Current Systems & Car Park Monitoring System",
+      // },
+      // {
+      //   title: "Sports Hub – NEOM",
+      //   description:
+      //     "Client: Not Specified\nLocation: NEOM – Algayal / Tabuk\nSize: 20,000 m²\nScope of Work: Power, Low Current, Plumbing, Water Supply, Generators, and Black Water System",
+      // },
       {
         title: "The Park Mall – Taif",
         description:
@@ -440,9 +436,10 @@ export const en = {
     ],
   },
   stats: {
-    experience: "Experience",
-    projects: "Projects",
-    clients: "Clients",
+    experience: "Projects",
+    projects: "Completed",
+    clients: "Ongoing",
+    tendering: "Tendering",
   },
   construction: {
     title: "Civil, Structural & Architectural Works",
@@ -891,7 +888,7 @@ export const en = {
     },
   },
   clients: {
-    heading: "Approved Vendors",
+    heading: "Our Clients",
   },
   values: {
     title: "Our Core Values",
