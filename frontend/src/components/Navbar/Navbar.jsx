@@ -57,11 +57,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
       <Link to="/" className={styles.logoContainer}>
-        <img
-          src="/assets/logo.png"
-          alt="Logo"
-          className={styles.logo}
-        />
+        <img src="/assets/logo.png" alt="Logo" className={styles.logo} />
       </Link>
 
       <div className={styles.navLinks}>
@@ -109,11 +105,7 @@ const Navbar = () => {
       >
         <div className={styles.mobileMenuHeader}>
           <Link to="/" onClick={closeMenu}>
-            <img
-              src="/assets/logo.png"
-              alt="Logo"
-              className={styles.logo}
-            />
+            <img src="/assets/logo.png" alt="Logo" className={styles.logo} />
           </Link>
           <button className={styles.closeButton} onClick={closeMenu}>
             <span></span>

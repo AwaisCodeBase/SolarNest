@@ -440,7 +440,7 @@ export const ar = {
     experience: "إجمالي المشاريع",
     projects: "المكتملة",
     clients: "قيد التنفيذ",
-    tendering:"في المناقصة"
+    tendering: "في المناقصة",
   },
   construction: {
     title: "الأعمال المدنية والهيكلية والمعمارية",
@@ -483,6 +483,12 @@ export const ar = {
       line2: "عن شيء",
       line3: "معاً",
       highlight: "رائع",
+    },
+    contactInfo: {
+      email: "admin@blackemerald.net",
+      phone: "+966 59 308 0420",
+      address:
+        "4108 شارع زياد بن لبيد بن ثعلبة الفرعي رقم 7005 حي الشوقية مكة 24351 المملكة العربية السعودية",
     },
     form: {
       interests: "أنا مهتم بـ:",

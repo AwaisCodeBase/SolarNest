@@ -20,7 +20,7 @@ const Vision = () => {
           <div className={`${styles.div2} ${styles.float_animation_2}`}>
             <img
               className={styles.energy_image2}
-              src="/assets/MEP.png"
+              src="/assets/MEP3.png"
               alt={t("vision.title")}
             />
           </div>

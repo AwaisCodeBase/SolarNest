@@ -13,40 +13,49 @@ const About = () => {
 
   return (
     <div className={styles.about_container}>
-      <Hero
-        backgroundImage="/assets/about.png"
-        title="pages.aboutUs"
-      />
+      <Hero backgroundImage="/assets/about1.png" title="pages.aboutUs" />
       <AnimatedStats />
-      <div className={styles.headingContainer} >
-        <div className={styles.heading}>
-          <p>{t("about.mission")}</p>
+      <div className={styles.missionSection}>
+        <div className={styles.missionImage}>
+          <img src="/assets/ourMission.png" alt="Our Mission" />
+        </div>
+        <div className={styles.missionContent}>
+          <div className={styles.heading}>
+            <p>{t("about.mission")}</p>
+          </div>
+          <div className={styles.text}>
+            <p>{t("about.description")}</p>
+          </div>
         </div>
       </div>
-      <div className={`${styles.text} ${styles.mission}`}>
-        <p>{t("about.description")}</p>
-      </div>
-      <Values />
-      <div className={styles.headingContainer}>
-        <div className={styles.heading}>
-          <p>{t("about.whoWeAre.heading")}</p>
+       <div className={styles.whoWeAreSection}>
+        <div className={styles.whoWeAreBackground}>
+          <div className={styles.whoWeAreContent}>
+            <div className={styles.heading}>
+              <p>{t("about.whoWeAre.heading")}</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className={`${styles.text} ${styles.whoWeAreScroll}`}>
-        <p>{t("about.whoWeAre.description")}</p>
+        <div className={styles.whoWeAreDescription}>
+          <p>{t("about.whoWeAre.description")}</p>
+        </div>
       </div>
       <Vision />
-      <div className={styles.headingContainer}>
-        <div className={styles.heading}>
-          <p>{t("team.title")}</p>
+      <Values />
+      <div className={styles.teamSection}>
+        <div className={styles.teamBackground}>
+          <div className={styles.teamContent}>
+            <div className={styles.heading}>
+              <p>{t("team.title")}</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.teamDescription}>
+          <p>{t("team.description.paragraph1")}</p>
+          <p>{t("team.description.paragraph2")}</p>
+          <p>{t("team.description.paragraph3")}</p>
         </div>
       </div>
-      <div className={styles.teamDescription}>
-        <p>{t("team.description.paragraph1")}</p>
-        <p>{t("team.description.paragraph2")}</p>
-        <p>{t("team.description.paragraph3")}</p>
-      </div>
-      <Service />
       <ProjectSection />
     </div>
   );

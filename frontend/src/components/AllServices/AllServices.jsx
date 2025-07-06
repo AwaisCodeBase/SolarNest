@@ -3,10 +3,7 @@ import { useRef, useEffect } from "react";
 import styles from "./AllServices.module.css";
 import ServiceCard from "./ServiceCard";
 
-const AllServices = ({ 
-  services = [], 
-  title = "Our Services"
-}) => {
+const AllServices = ({ services = [], title = "Our Services" }) => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -43,7 +40,7 @@ const AllServices = ({
     return (
       <section className={styles.page}>
         <h2 className={styles.section_title}>{title}</h2>
-        <p style={{ textAlign: 'center' }}>No services available.</p>
+        <p style={{ textAlign: "center" }}>No services available.</p>
       </section>
     );
   }
@@ -86,6 +83,7 @@ const AllServices = ({
             key={index}
             title={service.title}
             description={service.description}
+            image={service.image}
             index={index}
           />
         ))}

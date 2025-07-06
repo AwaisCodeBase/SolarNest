@@ -6,11 +6,6 @@
   position: relative;
   overflow-x: hidden;
 }
-/* .whoWeAreScroll {
-    max-height: 20px;
-    width: 80%;
-    background-color: red;
-  } */
 .text {
   width: 100%;
   max-width: 800px;
@@ -91,6 +86,36 @@
     font-size: 2.2rem;
     margin-top: 3.5rem;
   }
+  
+  .missionSection {
+    gap: 2.5rem;
+    padding: 0 15px;
+    max-width: 1100px;
+  }
+  
+  .missionContent .heading {
+    font-size: 2.3rem;
+  }
+  
+  .missionContent .text p {
+    font-size: 1.05rem;
+  }
+  
+  .whoWeAreContent .heading p {
+    font-size: 2.5rem;
+  }
+  
+  .whoWeAreDescription p {
+    font-size: 1.1rem;
+  }
+  
+  .teamContent .heading p {
+    font-size: 2.5rem;
+  }
+  
+  .teamDescription p {
+    font-size: 1.1rem;
+  }
 }
 
 /* Medium screens (tablets) */
@@ -103,6 +128,77 @@
   .text {
     font-size: 1rem;
   }
+  
+  .missionSection {
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 3rem auto;
+    min-height: auto;
+    text-align: center;
+  }
+  
+  .missionImage {
+    max-width: 70%;
+    order: 1;
+  }
+  
+  .missionContent {
+    max-width: 100%;
+    order: 2;
+  }
+  
+  .missionContent .heading {
+    text-align: center;
+    justify-content: center;
+    font-size: 2.2rem;
+  }
+  
+  .missionContent .text {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .missionContent .text p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .whoWeAreBackground {
+    min-height: 350px;
+  }
+  
+  .whoWeAreContent .heading p {
+    font-size: 2.2rem;
+  }
+  
+  .whoWeAreDescription {
+    padding: 2.5rem 1.5rem;
+    max-height: 200px;
+    max-width: 900px;
+    margin: 1.5rem auto 0 auto;
+  }
+  
+  .whoWeAreDescription p {
+    font-size: 1.05rem;
+  }
+  
+  .teamBackground {
+    min-height: 350px;
+  }
+  
+  .teamContent .heading p {
+    font-size: 2.2rem;
+  }
+  
+  .teamDescription {
+    padding: 2.5rem 1.5rem;
+    max-width: 900px;
+    margin: 1.5rem auto 0 auto;
+  }
+  
+  .teamDescription p {
+    font-size: 1.05rem;
+  }
 }
 
 /* Small screens (landscape phones) */
@@ -114,6 +210,69 @@
 
   .text {
     font-size: 0.95rem;
+  }
+  
+  .missionSection {
+    margin: 2.5rem auto;
+    padding: 0 15px;
+    gap: 2rem;
+  }
+  
+  .missionImage {
+    max-width: 80%;
+  }
+  
+  .missionContent .heading {
+    font-size: 2rem;
+  }
+  
+  .missionContent .text p {
+    font-size: 1rem;
+  }
+  
+  .whoWeAreBackground {
+    min-height: 300px;
+  }
+  
+  .whoWeAreContent {
+    padding: 1.5rem;
+  }
+  
+  .whoWeAreContent .heading p {
+    font-size: 1.8rem;
+  }
+  
+  .whoWeAreDescription {
+    padding: 2rem 1rem;
+    max-height: 180px;
+    max-width: 850px;
+    margin: 1.2rem auto 0 auto;
+  }
+  
+  .whoWeAreDescription p {
+    font-size: 1rem;
+  }
+  
+  .teamBackground {
+    min-height: 300px;
+  }
+  
+  .teamContent {
+    padding: 1.5rem;
+  }
+  
+  .teamContent .heading p {
+    font-size: 1.8rem;
+  }
+  
+  .teamDescription {
+    padding: 2rem 1rem;
+    max-width: 850px;
+    margin: 1.2rem auto 0 auto;
+  }
+  
+  .teamDescription p {
+    font-size: 1rem;
   }
 }
 
@@ -145,9 +304,83 @@
   }
 
   .mission {
-    /* background-color: red; */
     padding: 1rem;
     min-height: 20vh;
+  }
+  
+  .missionSection {
+    margin: 2rem auto;
+    padding: 0 10px;
+    gap: 1.5rem;
+  }
+  
+  .missionImage {
+    max-width: 90%;
+  }
+  
+  .missionContent .heading {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  
+  .missionContent .text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .whoWeAreSection {
+    margin: 2rem 0;
+  }
+  
+  .whoWeAreBackground {
+    min-height: 250px;
+  }
+  
+  .whoWeAreContent {
+    padding: 1rem;
+  }
+  
+  .whoWeAreContent .heading p {
+    font-size: 1.5rem;
+  }
+  
+  .whoWeAreDescription {
+    padding: 1.5rem 0.8rem;
+    max-height: 150px;
+    max-width: 800px;
+    margin: 1rem auto 0 auto;
+  }
+  
+  .whoWeAreDescription p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .teamSection {
+    margin: 2rem 0;
+  }
+  
+  .teamBackground {
+    min-height: 250px;
+  }
+  
+  .teamContent {
+    padding: 1rem;
+  }
+  
+  .teamContent .heading p {
+    font-size: 1.5rem;
+  }
+  
+  .teamDescription {
+    padding: 1.5rem 0.8rem;
+    max-width: 800px;
+    margin: 1rem auto 0 auto;
+  }
+  
+  .teamDescription p {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }
 
@@ -176,9 +409,63 @@
     max-height: 80px;
   }
    .mission {
-    /* background-color: red; */
     padding: 1rem;
     min-height: 20vh;
+  }
+  
+  .missionSection {
+    margin: 1.5rem auto;
+    padding: 0 8px;
+    gap: 1.2rem;
+  }
+  
+  .missionImage {
+    max-width: 95%;
+  }
+  
+  .missionContent .heading {
+    font-size: 1.6rem;
+  }
+  
+  .missionContent .text p {
+    font-size: 0.9rem;
+  }
+  
+  .whoWeAreBackground {
+    min-height: 200px;
+  }
+  
+  .whoWeAreContent .heading p {
+    font-size: 1.3rem;
+  }
+  
+  .whoWeAreDescription {
+    padding: 1.2rem 0.5rem;
+    max-height: 120px;
+    max-width: 750px;
+    margin: 0.8rem auto 0 auto;
+  }
+  
+  .whoWeAreDescription p {
+    font-size: 0.9rem;
+  }
+  
+  .teamBackground {
+    min-height: 200px;
+  }
+  
+  .teamContent .heading p {
+    font-size: 1.3rem;
+  }
+  
+  .teamDescription {
+    padding: 1.2rem 0.5rem;
+    max-width: 750px;
+    margin: 0.8rem auto 0 auto;
+  }
+  
+  .teamDescription p {
+    font-size: 0.9rem;
   }
 }
 
@@ -193,9 +480,57 @@
     font-size: 0.85rem;
   }
    .mission {
-    /* background-color: red; */
     padding: 1rem;
     min-height: 20vh;
+  }
+  
+  .missionSection {
+    margin: 1.2rem auto;
+    padding: 0 5px;
+    gap: 1rem;
+  }
+  
+  .missionContent .heading {
+    font-size: 1.4rem;
+  }
+  
+  .missionContent .text p {
+    font-size: 0.85rem;
+  }
+  
+  .whoWeAreBackground {
+    min-height: 180px;
+  }
+  
+  .whoWeAreContent .heading p {
+    font-size: 1.2rem;
+  }
+  
+  .whoWeAreDescription {
+    max-height: 100px;
+    max-width: 700px;
+    margin: 0.5rem auto 0 auto;
+  }
+  
+  .whoWeAreDescription p {
+    font-size: 0.85rem;
+  }
+  
+  .teamBackground {
+    min-height: 180px;
+  }
+  
+  .teamContent .heading p {
+    font-size: 1.2rem;
+  }
+  
+  .teamDescription {
+    max-width: 700px;
+    margin: 0.5rem auto 0 auto;
+  }
+  
+  .teamDescription p {
+    font-size: 0.85rem;
   }
 }
 
@@ -336,3 +671,226 @@
     min-height: 20vh;
   }
 }
+
+.missionSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 20px;
+  gap: 3rem;
+  min-height: 400px;
+}
+
+.missionImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.missionImage img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.missionContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 50%;
+}
+
+.missionContent .heading {
+  margin: 0;
+  text-align: left;
+  justify-content: flex-start;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.missionContent .text {
+  margin: 0;
+  text-align: left;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.missionContent .text p {
+  text-align: left;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.whoWeAreSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+.whoWeAreBackground {
+  width: 100%;
+  min-height: 400px;
+  background-image: url('/assets/who.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.whoWeAreBackground::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.whoWeAreContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.whoWeAreContent .heading {
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.whoWeAreContent .heading p {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.whoWeAreDescription {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: white;
+  max-height: 220px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #b6e7b6 #f5f5f5;
+  border-radius: 8px;
+}
+
+.whoWeAreDescription p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #515151;
+  margin: 0;
+  text-align: center;
+}
+
+.whoWeAreDescription::-webkit-scrollbar {
+  width: 8px;
+}
+
+.whoWeAreDescription::-webkit-scrollbar-thumb {
+  background: #b6e7b6;
+  border-radius: 8px;
+}
+
+.whoWeAreDescription::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.teamSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+.teamBackground {
+  width: 100%;
+  min-height: 400px;
+  background-image: url('/assets/team.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.teamBackground::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.teamContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.teamContent .heading {
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.teamContent .heading p {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.teamDescription {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+}
+
+.teamDescription p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #515151;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.teamDescription p:last-child {
+  margin-bottom: 0;
+}
+
+

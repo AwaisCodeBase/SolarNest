@@ -14,9 +14,8 @@ const MEP = () => {
     return (
       <>
         <Hero
-          backgroundImage="/assets/MEP1.jpg"
-          title={t("mep.title")}
-        />
+        backgroundImage="/assets/mep.png"
+        title={t("mep.title")} />
         <div>
           <p>Error loading services. Please try again later.</p>
         </div>
@@ -26,10 +25,7 @@ const MEP = () => {
 
   return (
     <>
-      <Hero
-        backgroundImage="/assets/MEP1.jpg"
-        title={t("mep.title")}
-      />
+      <Hero backgroundImage="/assets/mep.png" title={t("mep.title")} />
       <div>
         <AllServices services={servicesData} title={t("mep.title")} />
       </div>

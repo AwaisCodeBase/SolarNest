@@ -135,47 +135,16 @@ export const en = {
         description:
           "Client: NEOM\nLocation: NEOM\nSize: 2,000 m²\nScope of Work: HVAC, Ventilation, Electrical, and Fire Alarm Systems",
       },
-      
-      // {
-      //   title: "Sultana Residential Tower",
-      //   description:
-      //     "Client: Not Specified\nLocation: Madinah\nSize: 12,000 m²\nScope of Work: HVAC, Ventilation, Plumbing, Electrical, and Low Current Systems",
-      // },
       {
         title: "Seven Coffee Shop",
         description:
           "Client: Seven\nLocation: Jeddah\nSize: 1,800 m²\nScope of Work: HVAC, Ventilation, Electrical, Fire Fighting, Fire Alarm Systems, and Low Current",
       },
-      // {
-      //   title: "IATCO Warehouse",
-      //   description:
-      //     "Client: Not Specified\nLocation: MODON, Madinah\nSize: 6,000 m²\nScope of Work: HVAC, Ventilation, Electrical, Plumbing, Fire Fighting, and Fire Alarm Systems",
-      // },
-      // {
-      //   title: "BARMAG Extrusion & Texturizing Facility",
-      //   description:
-      //     "Client: Not Specified\nLocation: Jeddah – Industrial City\nSize: 3,000 m²\nScope of Work: Power, Lighting, HVAC, Compressed Air & Chilled Water Networks, and Production Line Installation",
-      // },
       {
         title: "Global United Mines Company",
         description:
           "Client: Global United Mines Company\nLocation: Tayma, Tabuk\nSize: 2,000 m\nScope of Work: HDPE Water Supply Network, Process Equipment, and Electrical System Design",
       },
-      // {
-      //   title: "Corniche Jeddah Phases 4 & 5",
-      //   description:
-      //     "Client: Not Specified\nLocation: Jeddah\nSize: 44 Small Buildings\nScope of Work: Supply and Installation of Electromechanical Systems",
-      // },
-      // {
-      //   title: "King Abdulaziz Airport Parking & Railway",
-      //   description:
-      //     "Client: Not Specified\nLocation: Jeddah\nSize: >50,000 m²\nScope of Work: Low Current Systems & Car Park Monitoring System",
-      // },
-      // {
-      //   title: "Sports Hub – NEOM",
-      //   description:
-      //     "Client: Not Specified\nLocation: NEOM – Algayal / Tabuk\nSize: 20,000 m²\nScope of Work: Power, Low Current, Plumbing, Water Supply, Generators, and Black Water System",
-      // },
       {
         title: "The Park Mall – Taif",
         description:
@@ -406,32 +375,38 @@ export const en = {
         title: "Turnkey Solar PV Systems",
         description:
           "Full lifecycle services including feasibility study, engineering design, procurement, installation, and O&M.\nRooftop, ground-mounted, and carport PV systems for residential, commercial, and industrial clients.\nString inverter or central inverter configurations with MPPT optimization.\nUse of Tier-1 PV modules and SEC/NOM-certified components.\nGrid-tied or net metering compliant systems as per Saudi regulatory framework.",
+          image: "/assets/solar.jpg",
       },
       {
         title:
           "Hybrid Solar-Diesel or Solar-Wind Systems with Battery Energy Storage (BESS)",
         description:
           "Integration of renewable generation with diesel gensets for continuous power supply.\nSmart hybrid controllers for load management, fuel saving, and system optimization.\nDeployment of lithium-ion or LFP-based BESS for peak shaving and load shifting.\nModular system design for scalability and redundancy.\nIdeal for off-grid locations such as remote sites, farms, or temporary construction facilities.",
+          image: "/assets/battery.jpg",
       },
       {
         title: "Solar-Powered EV Charging Stations (On-Grid / Off-Grid)",
         description:
           "DC fast-charging and AC Level 2 stations integrated with solar arrays.\nSmart metering and payment platforms for public or private EV infrastructure.\nIntegration with existing power infrastructure or dedicated off-grid BESS support.\nCarport-based solar structures with dual-purpose shading and generation.\nCompatibility with Saudi EV road map and Vision 2030 transportation goals.",
+          image: "/assets/charging.jpg",
       },
       {
         title: "Solar Desalination Using Reverse Osmosis (RO)",
         description:
           "Standalone or grid-connected solar-powered desalination systems.\nUse of photovoltaic energy to run high-pressure RO units for freshwater production.\nSkid-mounted, containerized, or stationary systems for coastal or remote areas.\nBrine discharge management and filtration as per MEWA and PME standards.\nEfficient for community water supply, irrigation, and humanitarian applications.",
+          image: "/assets/osmosis.jpg",
       },
       {
         title: "Remote Monitoring, Thermal Imaging & Performance Optimization",
         description:
           "SCADA-based monitoring platforms for live performance metrics and diagnostics.\nDrone-based thermal imaging for hotspot detection and preventive maintenance.\nFault detection, IV curve tracing, and degradation tracking.\nIntegration with mobile apps for remote visibility and alerting.\nDetailed performance reports, fault history logs, and energy yield assessments.",
+          image: "/assets/thermal.jpg",
       },
       {
         title: "Energy Audits, LEED Compliance & Carbon Reduction Strategies",
         description:
           "Comprehensive energy audits for buildings and industrial facilities.\nLEED, ESTIDAMA, and local sustainability certification consulting.\nCarbon footprint calculations and offset planning aligned with Saudi Green Initiative.\nThermal envelope analysis, lighting retrofits, and HVAC optimization.\nStrategic advisory on ESG reporting, utility rebate programs, and net-zero planning.",
+          image: "/assets/audit.jpg",
       },
     ],
   },
@@ -442,38 +417,44 @@ export const en = {
     tendering: "Tendering",
   },
   construction: {
-    title: "Civil, Structural & Architectural Works",
+    title: "Architectural & Civil Works",
     services: [
       {
         title: "Earthworks",
         description:
           "Bulk excavation using GPS-enabled machinery.\nSite grading and contouring based on topographic analysis.\nEngineered backfilling with compaction testing.\nSoil stabilization using lime, cement, or geogrid reinforcement.\nStormwater channeling and erosion control systems.",
+        image: "/assets/earthwork.jpg",
       },
       {
         title: "Construction of Reinforced Concrete and Steel Structures",
         description:
           "Structural design and detailing as per ACI, SBC, and BS codes.\nRCC foundations, columns, beams, slabs, and retaining walls.\nStructural steel erection for warehouses, bridges, and hangars.\nAnchor bolt setting, welding inspections, and erection sequences.\nQuality control including cube tests, slump tests, and NDT for steel.",
+        image: "/assets/construction.jpg",
       },
       {
         title:
           "Turnkey Execution of Residential, Commercial, and Hospitality Buildings",
         description:
           "Complete design-build for villas, compounds, hotels, and offices.\nProcurement and construction management (EPC model).\nMechanical, Electrical, and Plumbing (MEP) coordination and execution.\nLandscape works, boundary walls, gates, and external lighting.\nBuilding completion certificates and handover documentation.",
+        image: "/assets/buildings.jpg",
       },
       {
         title: "Advanced BIM-Based Architectural Modeling & Coordination",
         description:
           "3D architectural modeling using Revit and Navisworks.\nClash detection between MEP, structural, and architectural elements.\nQuantity take-offs and 4D/5D simulation for planning and budgeting.\nReal-time collaboration between disciplines via CDE platforms.\nAs-built model generation and facility management integration.",
+        image: "/assets/bim.jpg",
       },
       {
         title: "Façade Systems & Building Envelopes",
         description:
           "Design and installation of unitized and stick curtain wall systems.\nHigh-performance glass, ACP cladding, and sandwich panels.\nThermal and acoustic insulation to meet SBC energy codes.\nStructural glazing and spider systems for atriums and towers.\nWaterproofing, sealants, and weather-resistance detailing.",
+        image: "/assets/facade.jpg",
       },
       {
         title: "Interior Fit-Out Works",
         description:
           "Suspended ceilings (gypsum, metal, acoustic) and ceiling design.\nDemountable and fixed partition systems with soundproofing.\nFlooring solutions: tile, carpet, parquet, vinyl, epoxy, and raised floors.\nCustom joinery: doors, cabinets, wardrobes, and wood paneling.\nDecorative wall finishes: paint, wallpaper, cladding, and feature walls.\nFinal MEP second fix: lighting fixtures, air diffusers, switches, sanitary fixtures.\nHandover-ready interiors with snagging, punch-list resolution, and commissioning.",
+        image: "/assets/interior.jpg",
       },
     ],
   },
@@ -494,6 +475,12 @@ export const en = {
       line2: "on something",
       line3: "together",
       highlight: "great",
+    },
+    contactInfo: {
+      email: "admin@blackemerald.net",
+      phone: "+966 59 308 0420",
+      address:
+        "4108 Ziyad Ibn Lubaid Ibn Thaalabah Street Secondary No. 7005 Ash Shawqiyah District Makkah 24351 Kingdom of Saudi Arabia",
     },
     form: {
       interests: "I'm interested in:",
@@ -534,21 +521,25 @@ export const en = {
         title: "Comprehensive Etimad & Private Sector Bidding",
         description:
           "Full service for Etimad platform bids and private sector tenders.",
+        image: "/assets/etimad.jpg",
       },
       {
         title: "Proposal & BOQ Preparation",
         description:
           "Preparation of technical and financial proposals, BOQs, and execution methodologies.",
+        image: "/assets/proposal.jpg",
       },
       {
         title: "Cost Estimation & Feasibility",
         description:
           "Detailed cost estimation, feasibility studies, and risk assessments.",
+        image: "/assets/cost.jpg",
       },
       {
         title: "Contract Support & Compliance",
         description:
           "Support in contract negotiation, documentation, and compliance with Saudi procurement laws.",
+        image: "/assets/contract.jpg",
       },
     ],
   },
@@ -587,27 +578,32 @@ export const en = {
           "Engineering, Procurement, and Construction (EPC) of HV Substations up to 380kV",
         description:
           "Substation design using Gas Insulated Switchgear (GIS) or Air Insulated Switchgear (AIS) technology.\nLayout engineering for bays, busbars, and control rooms in compliance with SEC standards.\nProcurement of main equipment: power transformers, circuit breakers, isolators, CTs/VTs.\nCivil foundation and structural works for switchyards and control buildings.\nControl, protection, and metering system integration including relay coordination studies.",
+        image: "/assets/substation.jpg",
       },
       {
         title: "Transmission Line Execution",
         description:
           "Route surveying, geotechnical investigation, and ROW clearance.\nCasting of tower foundations (pad, pile, or grillage types) as per soil classification.\nAssembly and erection of lattice or monopole towers using hydraulic cranes.\nConductor stringing with tensioners and sag calculation in line with IEC/SEC standards.\nOptical Ground Wire (OPGW) and fiber optic installation for communication.",
+        image: "/assets/transmission.jpg",
       },
       {
         title: "Underground HV Cable Networks (1kV to 380kV)",
         description:
           "Detailed route planning and trench design with thermal resistivity analysis.\nSupply and installation of XLPE insulated power cables from approved vendors.\nJointing, splicing, and termination with resin or heat-shrinkable accessories.\nInstallation of HDPE ducts, cable trays, and warning tapes with route markers.\nFiber optic cable integration for remote monitoring and SCADA.",
+        image: "/assets/cables.jpg",
       },
       {
         title:
           "Deployment of Protection Relays, SCADA Systems & Grid Integration",
         description:
           "Configuration of numerical protection relays (e.g., ABB, Siemens, Schneider).\nLocal and remote control through SCADA and RTU panels with HMI interfaces.\nCommunication protocols (IEC 61850, DNP3, Modbus) for substation automation.\nGrid synchronization with Saudi Electricity Company (SEC) including protection setting approvals.\nIntegration with load dispatch centers and remote monitoring platforms.",
+        image: "/assets/scada.jpg",
       },
       {
         title: "Full Pre-Commissioning and Grid Synchronization",
         description:
           "Pre-energization testing: insulation resistance, contact resistance, CT/VT ratio tests.\nFunctional testing of relays, breakers, isolators, and control logic.\nSecondary injection and end-to-end SCADA signal verification.\nCoordination with SEC for shutdown permits, energization notices, and phased commissioning.\nFinal grid synchronization and issuance of energization certificate.",
+        image: "/assets/grid.jpg",
       },
     ],
   },
@@ -618,75 +614,26 @@ export const en = {
         title: "Desalination and Sewage Treatment Systems",
         description:
           "EPC of reverse osmosis (RO) desalination plants and sewage treatment plants (STPs).",
+        image: "/assets/sewage.jpg",
       },
       {
         title: "Water and Sewage Pipeline Networks",
         description:
           "Design and installation of pressurized and gravity-based water/sewage networks using HDPE, GRP, and DI pipelines.",
+        image: "/assets/pipe.jpg",
       },
       {
         title: "District Cooling Infrastructure",
         description:
           "Implementation of district cooling systems with thermal storage and optimized controls.",
+        image: "/assets/cooling.jpg",
       },
       {
         title: "Stormwater Management Solutions",
         description: "Stormwater drainage systems and urban water channeling.",
+        image: "/assets/stormwater.jpg",
       },
     ],
-  },
-  integrated: {
-    title: "Integrated Facilities Management",
-    hardServices: {
-      title: "Hard Services",
-      services: [
-        {
-          title: "Civil and Architectural Maintenance",
-          description: "Ongoing upkeep of buildings and structures.",
-        },
-        {
-          title: "Electro-mechanical Maintenance",
-          description: "Ensuring optimal performance of essential systems.",
-        },
-        {
-          title: "Fire & Security Systems",
-          description:
-            "Installation and maintenance of safety and surveillance infrastructure.",
-        },
-        {
-          title: "Building Automation & Smart Controls",
-          description: "Integrating automated systems for efficient operation.",
-        },
-        {
-          title: "Intelligent Transportation & Airport Operation Systems",
-          description:
-            "Deploying smart transit and aviation management solutions.",
-        },
-      ],
-    },
-    softServices: {
-      title: "Soft Services",
-      services: [
-        {
-          title: "Cleaning & Sanitization",
-          description:
-            "Maintaining high hygiene standards for workspaces and public areas.",
-        },
-        {
-          title: "Landscaping & Green Spaces",
-          description: "Enhancing aesthetic and environmental sustainability.",
-        },
-        {
-          title: "Waste Management & Recycling",
-          description: "Implementing sustainable waste reduction strategies.",
-        },
-        {
-          title: "Pest Control & Duct Cleaning",
-          description:
-            "Ensuring health and safety compliance through proactive maintenance.",
-        },
-      ],
-    },
   },
   mep: {
     title: "MEP (Mechanical, Electrical & Plumbing) Works",
@@ -695,131 +642,49 @@ export const en = {
         title: "HVAC System Design and Execution",
         description:
           "Load calculation and duct layout using software like HAP or Revit; Chilled water, DX, and VRF/VRV system integration; AHUs, FCUs, exhaust, and fresh air system installation; Energy recovery ventilation systems and thermal zoning; BMS-integrated temperature and humidity control.",
+        image: "/assets/hvac.png",
       },
       {
         title: "Firefighting and Fire Alarm Systems",
         description:
           "Wet, dry, pre-action, and deluge sprinkler system installation; Fire hose reel, extinguisher, and hydrant network design; Smoke extraction and pressurization systems; Addressable and conventional fire alarm panels; Emergency lighting and voice evacuation systems.",
+        image: "/assets/fire.jpg",
       },
       {
         title: "Drainage, Water Supply & Pressurized Systems",
         description:
           "Potable and non-potable water distribution piping; Hot water circulation and solar water heater systems; Sewage and storm drainage piping with cleanouts and vents; Greywater collection and treatment systems; Pumps, valves, PRVs, water hammer arrestors, and backflow preventers.",
+        image: "/assets/water1.jpg",
       },
       {
         title: "Power Distribution & Internal Lighting Systems",
         description:
           "MDBs, SMDBs, DBs, capacitor banks, and main panels; Cable routing (trays, ladders, trunking, and conduits); Load balancing and short circuit protection; LED lighting design with lux level simulation; Emergency lighting with central battery systems.",
+        image: "/assets/power.jpg",
       },
       {
         title: "Smart Building Management Systems (BMS)",
         description:
           "Integration of HVAC, lighting, fire alarm, and access control; Energy monitoring and load scheduling; BACnet, Modbus, or KNX protocol integration; Centralized SCADA dashboard configuration; Alarm, trend log, and user role-based access control.",
+        image: "/assets/building.jpg",
       },
       {
         title: "Low Current Systems",
         description:
           "Structured cabling (Cat6/6A, fiber optics); Access control & biometric entry systems; CCTV backbone and NVR configuration; Public address (PA) and background music (BGM) systems; IPTV, intercom, and master clock systems.",
+        image: "/assets/low.jpg",
       },
       {
         title: "Security & Surveillance Systems",
         description:
           "High-definition CCTV installation (IP-based with night vision); Biometric and RFID-based access control; Perimeter intrusion detection and analytics; Integrated control rooms and real-time alert monitoring; AI-enabled facial recognition and video analytics.",
+        image: "/assets/security.jpg",
       },
       {
         title: "Testing, Commissioning & Maintenance",
         description:
           "Pre-commissioning and functional testing of all systems; TAB (Testing, Adjusting, and Balancing) for HVAC; Megger, continuity, and loop impedance tests for electrical; Fire alarm loop testing and emergency simulations; Preventive maintenance scheduling and SLA-based service.",
-      },
-    ],
-  },
-  preConstruction: {
-    title: "Pre-Construction & Value Engineering",
-    services: [
-      {
-        title: "Value Engineering & Cost Optimization",
-        description:
-          "Analyzing project requirements to identify cost-saving opportunities while maintaining quality and functionality.",
-      },
-      {
-        title: "Design Review & Optimization",
-        description:
-          "Comprehensive review of architectural and engineering designs to enhance efficiency and reduce costs.",
-      },
-      {
-        title: "Constructability Analysis",
-        description:
-          "Evaluating design feasibility and identifying potential construction challenges before project commencement.",
-      },
-      {
-        title: "Project Planning & Scheduling",
-        description:
-          "Developing detailed project timelines and resource allocation strategies for optimal execution.",
-      },
-      {
-        title: "Risk Assessment & Mitigation",
-        description:
-          "Identifying potential project risks and developing strategies to minimize their impact.",
-      },
-      {
-        title: "Material & Technology Selection",
-        description:
-          "Recommending optimal materials and technologies based on project requirements and budget constraints.",
-      },
-      {
-        title: "Sustainability Integration",
-        description:
-          "Incorporating green building practices and sustainable solutions into project planning.",
-      },
-      {
-        title: "Quality Control Planning",
-        description:
-          "Establishing quality standards and inspection protocols for project implementation.",
-      },
-    ],
-  },
-  waterGas: {
-    title: "Water & Gas Infrastructure",
-    services: [
-      {
-        title: "Pumping & Lift Stations",
-        description:
-          "Design, installation, and maintenance of water and wastewater pumping stations for municipal and industrial applications.",
-      },
-      {
-        title: "Seawater Desalination Plants (RO Plants)",
-        description:
-          "Turnkey desalination solutions using reverse osmosis (RO) and advanced membrane technologies.",
-      },
-      {
-        title: "Sewage Treatment Plants (STP)",
-        description:
-          "Development of municipal and industrial wastewater treatment plants, including sludge management solutions.",
-      },
-      {
-        title: "Water & Sewage Networks",
-        description:
-          "Planning, installation, and maintenance of water distribution and sewage collection networks.",
-      },
-      {
-        title: "Operations & Maintenance Services",
-        description:
-          "Long-term maintenance contracts for water treatment and gas distribution facilities.",
-      },
-      {
-        title: "District Cooling Systems",
-        description:
-          "Implementation of centralized cooling plants for commercial and residential developments.",
-      },
-      {
-        title: "Greywater Recycling & Reuse Systems",
-        description:
-          "Design of advanced greywater treatment and recycling systems for sustainable water conservation.",
-      },
-      {
-        title: "Smart Water Grid Solutions",
-        description:
-          "Integration of IoT-enabled water management systems for leak detection and efficiency optimization.",
+        image: "/assets/testing.jpg",
       },
     ],
   },
@@ -831,7 +696,7 @@ export const en = {
         path: "mep",
       },
       {
-        name: "Civil, Structural & Architectural Works",
+        name: "Architectural & Civil Works",
         path: "construction",
       },
       {

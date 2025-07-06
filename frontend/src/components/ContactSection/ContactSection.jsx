@@ -43,13 +43,16 @@ const ContactSection = () => {
     setStatus({ loading: true, error: null, success: false });
 
     try {
-      const response = await fetch("https://blackemerald-email-module.vercel.app/api/contact/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://blackemerald-email-module.vercel.app/api/contact/submit",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) {
         const errorData = await response.json();
@@ -88,15 +91,15 @@ const ContactSection = () => {
         <div className={styles.contactInfo}>
           <div className={styles.contactItem}>
             <img src="/assets/email.png" alt="Email" />
-            <span>admin@blackemerald.net</span>
+            <span>{t("contactSection.contactInfo.email")}</span>
           </div>
           <div className={styles.contactItem}>
             <img src="/assets/phone.png" alt="Phone" />
-            <span>+1 (201) 123 4468</span>
+            <span>{t("contactSection.contactInfo.phone")}</span>
           </div>
           <div className={styles.contactItem}>
             <img src="/assets/location.png" alt="Location" />
-            <span>Makkah, Saudi Arabia123 Street 487 House</span>
+            <span>{t("contactSection.contactInfo.address")}</span>
           </div>
         </div>
       </div>

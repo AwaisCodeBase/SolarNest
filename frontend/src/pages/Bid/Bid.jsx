@@ -11,7 +11,7 @@ const Bid = () => {
   return (
     <>
       <Hero
-        backgroundImage="/assets/bid.jpg"
+        backgroundImage="/assets/bid.png"
         title={t("bid.title")}
       />
       <div>

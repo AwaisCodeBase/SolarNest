@@ -14,7 +14,6 @@ const Contact = () => {
       />
       <ContactSection />
       <div className={styles.map_section}>
-        {/* <img src="/assets/map.png" alt="" /> */}
         <iframe
           title="map"
           className={styles.map}
@@ -23,7 +22,6 @@ const Contact = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
-        {/* <MapSection /> */}
       </div>
     </div>
   );
