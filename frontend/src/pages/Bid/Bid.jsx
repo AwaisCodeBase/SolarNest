@@ -10,10 +10,7 @@ const Bid = () => {
 
   return (
     <>
-      <Hero
-        backgroundImage="/assets/bid.png"
-        title={t("bid.title")}
-      />
+      <Hero backgroundImage="/assets/bid.png" title={t("bid.slogan")} />
       <div>
         <AllServices services={servicesData} title={t("bid.title")} />
       </div>

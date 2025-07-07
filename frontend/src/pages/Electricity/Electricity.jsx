@@ -12,8 +12,8 @@ const Electricity = () => {
     <>
       <Hero
         backgroundImage="/assets/high_voltage.png"
-        title={t("electricity.title")}
-      />
+        title={t("electricity.slogan")}
+      ></Hero>
       <div>
         <AllServices services={servicesData} title={t("electricity.title")} />
       </div>
