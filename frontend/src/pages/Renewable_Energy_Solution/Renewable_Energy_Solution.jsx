@@ -16,8 +16,10 @@ const Renewable_Energy_Solution = () => {
       <>
         <Hero
           backgroundImage="/assets/renew.jpg"
-          title={t("renewableEnergy.title")}
-        />
+          title={t("renewableEnergy.slogan")}
+        >
+          <h1 className={styles.title}>{t("renewableEnergy.title")}</h1>
+        </Hero>
         <div>
           <p>Error loading services. Please try again later.</p>
         </div>
@@ -29,8 +31,10 @@ const Renewable_Energy_Solution = () => {
     <>
       <Hero
         backgroundImage="/assets/renew.jpg"
-        title={t("renewableEnergy.title")}
-      />
+        title={t("renewableEnergy.slogan")}
+      >
+        <h1 className={styles.title}>{t("renewableEnergy.title")}</h1>
+      </Hero>
       <div>
         <AllServices
           services={servicesData}

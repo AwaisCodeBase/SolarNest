@@ -350,43 +350,44 @@ export const en = {
   },
   renewableEnergy: {
     title: "Renewable Energy Solutions",
+    slogan: "Green Power Solutions — Driving a Cleaner Future.",
     services: [
       {
         title: "Turnkey Solar PV Systems",
         description:
           "Full lifecycle services including feasibility study, engineering design, procurement, installation, and O&M.\nRooftop, ground-mounted, and carport PV systems for residential, commercial, and industrial clients.\nString inverter or central inverter configurations with MPPT optimization.\nUse of Tier-1 PV modules and SEC/NOM-certified components.\nGrid-tied or net metering compliant systems as per Saudi regulatory framework.",
-          image: "/assets/solar.jpg",
+        image: "/assets/solar.jpg",
       },
       {
         title:
           "Hybrid Solar-Diesel or Solar-Wind Systems with Battery Energy Storage (BESS)",
         description:
           "Integration of renewable generation with diesel gensets for continuous power supply.\nSmart hybrid controllers for load management, fuel saving, and system optimization.\nDeployment of lithium-ion or LFP-based BESS for peak shaving and load shifting.\nModular system design for scalability and redundancy.\nIdeal for off-grid locations such as remote sites, farms, or temporary construction facilities.",
-          image: "/assets/battery.jpg",
+        image: "/assets/battery.jpg",
       },
       {
         title: "Solar-Powered EV Charging Stations (On-Grid / Off-Grid)",
         description:
           "DC fast-charging and AC Level 2 stations integrated with solar arrays.\nSmart metering and payment platforms for public or private EV infrastructure.\nIntegration with existing power infrastructure or dedicated off-grid BESS support.\nCarport-based solar structures with dual-purpose shading and generation.\nCompatibility with Saudi EV road map and Vision 2030 transportation goals.",
-          image: "/assets/charging.jpg",
+        image: "/assets/charging.jpg",
       },
       {
         title: "Solar Desalination Using Reverse Osmosis (RO)",
         description:
           "Standalone or grid-connected solar-powered desalination systems.\nUse of photovoltaic energy to run high-pressure RO units for freshwater production.\nSkid-mounted, containerized, or stationary systems for coastal or remote areas.\nBrine discharge management and filtration as per MEWA and PME standards.\nEfficient for community water supply, irrigation, and humanitarian applications.",
-          image: "/assets/osmosis.jpg",
+        image: "/assets/osmosis.jpg",
       },
       {
         title: "Remote Monitoring, Thermal Imaging & Performance Optimization",
         description:
           "SCADA-based monitoring platforms for live performance metrics and diagnostics.\nDrone-based thermal imaging for hotspot detection and preventive maintenance.\nFault detection, IV curve tracing, and degradation tracking.\nIntegration with mobile apps for remote visibility and alerting.\nDetailed performance reports, fault history logs, and energy yield assessments.",
-          image: "/assets/thermal.jpg",
+        image: "/assets/thermal.jpg",
       },
       {
         title: "Energy Audits, LEED Compliance & Carbon Reduction Strategies",
         description:
           "Comprehensive energy audits for buildings and industrial facilities.\nLEED, ESTIDAMA, and local sustainability certification consulting.\nCarbon footprint calculations and offset planning aligned with Saudi Green Initiative.\nThermal envelope analysis, lighting retrofits, and HVAC optimization.\nStrategic advisory on ESG reporting, utility rebate programs, and net-zero planning.",
-          image: "/assets/audit.jpg",
+        image: "/assets/audit.jpg",
       },
     ],
   },
@@ -398,6 +399,7 @@ export const en = {
   },
   construction: {
     title: "Architectural & Civil Works",
+    slogan: "Shaping Skylines, Building Legacies",
     services: [
       {
         title: "Earthworks",
@@ -496,6 +498,7 @@ export const en = {
   },
   bid: {
     title: "Bid & Tendering Services",
+    slogan: "Winning Strategies for Successful Bids.",
     services: [
       {
         title: "Comprehensive Etimad & Private Sector Bidding",
@@ -552,6 +555,7 @@ export const en = {
   },
   electricity: {
     title: "High Voltage Electrical Works",
+    slogan: "Wired for the Future, Engineered for Excellence",
     services: [
       {
         title:
@@ -589,6 +593,7 @@ export const en = {
   },
   infrastructure: {
     title: "Infrastructure & Utilities",
+    slogan: "Future-Ready Infrastructure for a Connected World",
     services: [
       {
         title: "Desalination and Sewage Treatment Systems",
@@ -617,6 +622,7 @@ export const en = {
   },
   mep: {
     title: "MEP (Mechanical, Electrical & Plumbing) Works",
+    slogan: "Smart MEP Systems — The Heart of Sustainable Infrastructure.",
     services: [
       {
         title: "HVAC System Design and Execution",

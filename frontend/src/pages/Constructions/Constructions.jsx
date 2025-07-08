@@ -11,8 +11,8 @@ const Constructions = () => {
   return (
     <>
       <Hero
-        backgroundImage="/assets/construct.jpg"
-        title={t("construction.title")}
+        backgroundImage="/assets/construction.png"
+        title={t("construction.slogan")}
       />
       <div>
         <AllServices services={servicesData} title={t("construction.title")} />

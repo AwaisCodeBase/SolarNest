@@ -13,9 +13,7 @@ const MEP = () => {
     console.error("servicesData is not an array:", servicesData);
     return (
       <>
-        <Hero
-        backgroundImage="/assets/mep.png"
-        title={t("mep.title")} />
+        <Hero backgroundImage="/assets/mep.png" title={t("mep.slogan")} />
         <div>
           <p>Error loading services. Please try again later.</p>
         </div>

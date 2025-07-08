@@ -10,10 +10,7 @@ const Infrastructure = () => {
 
   return (
     <>
-      <Hero
-        backgroundImage="/assets/infra.jpg"
-        title={t("infrastructure.title")}
-      />
+      <Hero backgroundImage="/assets/infra.jpg" title="infrastructure.slogan" />
       <div>
         <AllServices
           services={servicesData}
