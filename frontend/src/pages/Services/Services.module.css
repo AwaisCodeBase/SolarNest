@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 80px;
+  margin-top: 5rem;
   overflow-x: hidden;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .service_heading {
-  color: #153318;
+  color: #ffffff;
   font-size: clamp(2.5rem, 5vw, 6rem);
   font-weight: 700;
   margin-bottom: 3rem;

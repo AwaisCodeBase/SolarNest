@@ -7,6 +7,7 @@ const Bolt = () => {
     <div className={styles.sceneContainer}>
         <div className={styles.whitebox}></div>
       <Spline scene="https://prod.spline.design/7IsFIm80cIG3X3CQ/scene.splinecode" />
+      {/* <Spline scene="https://prod.spline.design/7IsFIm80cIG3X3CQ/scene.splinecode" /> */}
     </div>
   );
 };
