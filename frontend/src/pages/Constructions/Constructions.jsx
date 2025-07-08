@@ -11,7 +11,7 @@ const Constructions = () => {
   return (
     <>
       <Hero
-        backgroundImage="/assets/construction.png"
+        backgroundImage="/assets/construct.jpg"
         title={t("construction.slogan")}
       />
       <div>

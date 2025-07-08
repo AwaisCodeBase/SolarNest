@@ -23,7 +23,7 @@ const MEP = () => {
 
   return (
     <>
-      <Hero backgroundImage="/assets/MEP.png" title={t("mep.title")} />
+      <Hero backgroundImage="/assets/MEP.png" title={t("mep.slogan")} />
       <div>
         <AllServices services={servicesData} title={t("mep.title")} />
       </div>
