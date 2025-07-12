@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
-import AnimatiedStats from "../../components/AnimatedStats/AnimatedStats.jsx";
+import AnimatedStats from "../../components/AnimatedStats/AnimatedStats.jsx";
 import RenEnergy from "../../components/RenEnergy/RenEnergy.jsx";
 import Service from "../../components/Service/Service.jsx";
 import Projects from "../../components/Projects/Projects.jsx";
@@ -30,7 +30,6 @@ const Home = () => {
           <source src="/assets/video1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
         {/* Overlay */}
         <div className={styles.overlay}></div>
 
@@ -49,12 +48,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Bolt/>
+      <AnimatedStats />
+      <Clients />
+      {/* <Bolt/> */}
       {/* <Construction />
       <RenEnergy /> */}
       <Service />
       <Projects />
-      <Clients />
       {/* <TeamSection /> */}
       <div className={styles.headingContainer}>
         <div className={styles.heading}>

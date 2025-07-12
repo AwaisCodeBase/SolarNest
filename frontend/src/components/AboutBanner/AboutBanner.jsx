@@ -2,7 +2,7 @@ import React from "react";
 import { useLanguage } from "../../context/LanguageContext";
 import styles from "./Hero.module.css";
 
-const Hero = ({ backgroundImage, title, className }) => {
+const AboutBanner = ({ backgroundImage, title, className }) => {
   const { t } = useLanguage();
 
   return (
@@ -17,4 +17,4 @@ const Hero = ({ backgroundImage, title, className }) => {
   );
 };
 
-export default Hero;
+export default AboutBanner;

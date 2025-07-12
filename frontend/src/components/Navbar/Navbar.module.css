@@ -20,8 +20,8 @@
 }
 
 .logo {
-  height: 50px;
-  width: auto;
+  width: 10rem;
+  height: auto;
   transition: all 0.3s ease;
 }
 

@@ -7,14 +7,28 @@ import { useLanguage } from "../../context/LanguageContext";
 import Service from "../../components/Service/Service.jsx";
 import Values from "../../components/Values/Values.jsx";
 import Vision from "../../components/Vision/Vision.jsx";
+import AboutBanner from "../../components/AboutBanner/AboutBanner.jsx";
 
 const About = () => {
   const { t } = useLanguage();
 
   return (
     <div className={styles.about_container}>
-      <Hero backgroundImage="/assets/about1.png" title="pages.aboutUs" />
+      <AboutBanner backgroundImage="/assets/about1.png" title="pages.aboutUs"  className={styles.smallhero} />
+      {/* <Hero backgroundImage="/assets/about1.png" title="pages.aboutUs"  className={styles.smallhero}/> */}
       <AnimatedStats />
+      <div className={styles.whoWeAreSection}>
+        <div className={styles.whoWeAreBackground}>
+          <div className={styles.whoWeAreContent}>
+            <div className={styles.heading}>
+              <p>{t("about.whoWeAre.heading")}</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.whoWeAreDescription}>
+          <p>{t("about.whoWeAre.description")}</p>
+        </div>
+      </div>
       <div className={styles.missionSection}>
         <div className={styles.missionImage}>
           <img src="/assets/ourMission.png" alt="Our Mission" />
@@ -28,18 +42,7 @@ const About = () => {
           </div>
         </div>
       </div>
-       <div className={styles.whoWeAreSection}>
-        <div className={styles.whoWeAreBackground}>
-          <div className={styles.whoWeAreContent}>
-            <div className={styles.heading}>
-              <p>{t("about.whoWeAre.heading")}</p>
-            </div>
-          </div>
-        </div>
-        <div className={styles.whoWeAreDescription}>
-          <p>{t("about.whoWeAre.description")}</p>
-        </div>
-      </div>
+       
       <Vision />
       <Values />
       <div className={styles.teamSection}>

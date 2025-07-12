@@ -128,22 +128,22 @@ export const en = {
       {
         title: "The Park Mall – Taif",
         description:
-          "Client: Unknown (Private Sector)\nLocation: Taif, Saudi Arabia\nSize: Not specified\nScope of Work: Civil works (steel structure, concrete, excavation), mechanical (HVAC, firefighting, water supply), and electrical systems (MV, LV, BMS)",
+          "Client: Unknown (Private Sector)\nLocation: Taif, Saudi Arabia\nSize: -\nScope of Work: Civil works (steel structure, concrete, excavation), mechanical (HVAC, firefighting, water supply), and electrical systems (MV, LV, BMS)",
       },
       {
         title: "Aircraft Maintenance Hanger – KAIA Phase 1",
         description:
-          "Client: KAIA (likely government/airport authority)\nLocation: Jeddah, Saudi Arabia\nSize: Not specified\nScope of Work: Civil works (foundations, tanks), mechanical systems (firefighting, drainage), and electrical systems (MV, LV, BMS)",
+          "Client: KAIA (likely government/airport authority)\nLocation: Jeddah, Saudi Arabia\nSize: -\nScope of Work: Civil works (foundations, tanks), mechanical systems (firefighting, drainage), and electrical systems (MV, LV, BMS)",
       },
       {
         title: "Meridian Hotel",
         description:
-          "Client: Meridian Group\nLocation: Unknown\nSize: Not specified\nScope of Work: MEP works including firefighting, water supply, MV/LV systems, BMS",
+          "Client: Meridian Group\nLocation: Unknown\nSize: -\nScope of Work: MEP works including firefighting, water supply, MV/LV systems, BMS",
       },
       {
         title: "Administration Building – King Khalid University",
         description:
-          "Client: King Khalid University\nLocation: Abha, Saudi Arabia\nSize: Not specified\nScope of Work: Mechanical (firefighting, drainage, water), Electrical (MV, LV, BMS)",
+          "Client: King Khalid University\nLocation: Abha, Saudi Arabia\nSize: -\nScope of Work: Mechanical (firefighting, drainage, water), Electrical (MV, LV, BMS)",
       },
       {
         title: "Parking – King Abdulaziz University",
@@ -178,7 +178,7 @@ export const en = {
       {
         title: "PP14",
         description:
-          "Client: SEPCO III\nLocation: Not specified\nSize: Not specified\nScope of Work: Tank erection, piping, and mechanical works",
+          "Client: SEPCO III\nLocation: -\nSize: -\nScope of Work: Tank erection, piping, and mechanical works",
       },
       {
         title: "Clariant Masterbatches",
@@ -188,27 +188,27 @@ export const en = {
       {
         title: "Obeikan Lamination Plant",
         description:
-          "Client: Obeikan Glass Company\nLocation: Not specified\nSize: Multi-year (2019–2023)\nScope of Work: Piping, electrical, and mechanical works",
+          "Client: Obeikan Glass Company\nLocation: -\nSize: Multi-year (2019–2023)\nScope of Work: Piping, electrical, and mechanical works",
       },
       {
         title: "Main Administration Building with SEC",
         description:
-          "Client: SEC\nLocation: Yanbu\nSize: Not specified\nScope of Work: Construction of Main Administration Building",
+          "Client: SEC\nLocation: Yanbu\nSize: -\nScope of Work: Construction of Main Administration Building",
       },
       {
         title: "Commercial Tower with Al-Khoraief",
         description:
-          "Client: Al-Khoraief\nLocation: Jeddah\nSize: Not specified\nScope of Work: Construction of commercial tower",
+          "Client: Al-Khoraief\nLocation: Jeddah\nSize: -\nScope of Work: Construction of commercial tower",
       },
       {
         title: "Security Buildings",
         description:
-          "Client: Port Authorities\nLocation: Ras Al Khair Port\nSize: Not specified\nScope of Work: Construction of security buildings",
+          "Client: Port Authorities\nLocation: Ras Al Khair Port\nSize: -\nScope of Work: Construction of security buildings",
       },
       {
         title: "Security Fences",
         description:
-          "Client: Port Authorities\nLocation: Ras Jizan Port\nSize: Not specified\nScope of Work: Construction of security fences",
+          "Client: Port Authorities\nLocation: Ras Jizan Port\nSize: -\nScope of Work: Construction of security fences",
       },
       {
         title: "Electrical Work for 100 Villas",
@@ -218,27 +218,27 @@ export const en = {
       {
         title: "Electrical Work for Sewage Treatment Building",
         description:
-          "Client: King Saud University\nLocation: Bahra\nSize: Not specified\nScope of Work: Installation of generator, transformers, RMUs, ATS, and distribution panels",
+          "Client: King Saud University\nLocation: Bahra\nSize: -\nScope of Work: Installation of generator, transformers, RMUs, ATS, and distribution panels",
       },
       {
         title: "Pipe Welding & Fabrication for Duba Gas Pipeline",
         description:
-          'Client: Not specified\nLocation: Duba\nSize: 4" & 16" Pipelines\nScope of Work: Welding, testing, and installation of gas pipelines',
+          'Client: -\nLocation: Duba\nSize: 4" & 16" Pipelines\nScope of Work: Welding, testing, and installation of gas pipelines',
       },
       {
         title: "Tree Planting and Landscaping (Project No. 5352)",
         description:
-          "Client: RCY\nLocation: Yanbu\nSize: Not specified\nScope of Work: Tree planting, irrigation systems, and landscaping",
+          "Client: RCY\nLocation: Yanbu\nSize: -\nScope of Work: Tree planting, irrigation systems, and landscaping",
       },
       {
         title: "Tree Planting and Landscaping (Project No. 5335)",
         description:
-          "Client: RCY\nLocation: Yanbu\nSize: Not specified\nScope of Work: Tree planting, irrigation systems, and landscaping",
+          "Client: RCY\nLocation: Yanbu\nSize: -\nScope of Work: Tree planting, irrigation systems, and landscaping",
       },
       {
         title: "Maintenance & Operation for Nursing College",
         description:
-          "Client: KAU\nLocation: Jeddah\nSize: Not specified\nScope of Work: Building and system operations and maintenance",
+          "Client: KAU\nLocation: Jeddah\nSize: -\nScope of Work: Building and system operations and maintenance",
       },
       {
         title:
@@ -329,22 +329,22 @@ export const en = {
       {
         title: "Construction of Public and Governmental Buildings",
         description:
-          "Client: Various Government Entities\nLocation: Riyadh, Saudi Arabia\nSize: Not specified\nScope of Work: Turnkey construction services for schools, hospitals, hotels, and related infrastructure",
+          "Client: Various Government Entities\nLocation: Riyadh, Saudi Arabia\nSize: -\nScope of Work: Turnkey construction services for schools, hospitals, hotels, and related infrastructure",
       },
       {
         title: "Construction of Residential Buildings",
         description:
-          "Client: Private and Public Sector\nLocation: Riyadh, Saudi Arabia\nSize: Not specified\nScope of Work: Design and build services for housing projects and residential compounds",
+          "Client: Private and Public Sector\nLocation: Riyadh, Saudi Arabia\nSize: -\nScope of Work: Design and build services for housing projects and residential compounds",
       },
       {
         title: "Construction of Non-Residential Buildings",
         description:
-          "Client: Government and Commercial Clients\nLocation: Riyadh, Saudi Arabia\nSize: Not specified\nScope of Work: Construction of office buildings, commercial facilities, and custom non-residential structures",
+          "Client: Government and Commercial Clients\nLocation: Riyadh, Saudi Arabia\nSize: -\nScope of Work: Construction of office buildings, commercial facilities, and custom non-residential structures",
       },
       {
         title: "Prefab Building Construction",
         description:
-          "Client: Various\nLocation: On-site Across Saudi Arabia\nSize: Not specified\nScope of Work: Installation and assembly of prefabricated buildings at project sites",
+          "Client: Various\nLocation: On-site Across Saudi Arabia\nSize: -\nScope of Work: Installation and assembly of prefabricated buildings at project sites",
       },
     ],
   },
