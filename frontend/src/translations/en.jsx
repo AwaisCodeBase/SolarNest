@@ -50,12 +50,16 @@ export const en = {
     faq: "FAQ",
     copyright: "Copyright © 2025 BlackEmerald",
   },
+  // contact: {
+  //   letsTalk: "Let's talk",
+  //   onSomething: "on something",
+  //   great: "great",
+  //   together: "together",
+  // },
   contact: {
-    letsTalk: "Let's talk",
-    onSomething: "on something",
-    great: "great",
-    together: "together",
+    supportIntro: "We’re here to help let’s talk!",
   },
+  
   services: {
     title: "Our Services",
     items: [
@@ -453,10 +457,10 @@ export const en = {
   },
   contactSection: {
     title: {
-      line1: "Let's talk",
-      line2: "on something",
-      line3: "together",
-      highlight: "great",
+      line1: "We're",
+      line2: "here to",
+      line3: "let's talk!",
+      highlight: "help",
     },
     contactInfo: {
       email: "admin@blackemerald.net",

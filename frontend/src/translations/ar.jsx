@@ -49,12 +49,6 @@ export const ar = {
     faq: "الأسئلة الشائعة",
     copyright: "حقوق النشر © 2025 بلاك إميرالد",
   },
-  contact: {
-    letsTalk: "دعنا نتحدث",
-    onSomething: "عن شيء",
-    great: "رائع",
-    together: "معاً",
-  },
   services: {
     title: "خدماتنا",
     items: [
@@ -493,10 +487,10 @@ export const ar = {
   },
   contactSection: {
     title: {
-      line1: "دعنا نتحدث",
-      line2: "عن شيء",
-      line3: "معاً",
-      highlight: "رائع",
+      line1: "نحن",
+      line2: "هنا ",
+      line3: "دعونا نتحدث",
+      highlight:"للمساعدة",
     },
     contactInfo: {
       email: "admin@blackemerald.net",

@@ -6,7 +6,6 @@ import RenEnergy from "../../components/RenEnergy/RenEnergy.jsx";
 import Service from "../../components/Service/Service.jsx";
 import Projects from "../../components/Projects/Projects.jsx";
 import Construction from "../../components/Construction/Construction.jsx";
-//import TeamSection from "../../components/TeamSection/TeamSection.jsx";
 import { useLanguage } from "../../context/LanguageContext";
 import { en, ar } from "../../translations";
 import Clients from "../../components/Clients/Clients.jsx";
@@ -50,12 +49,8 @@ const Home = () => {
       </div>
       <AnimatedStats />
       <Clients />
-      {/* <Bolt/> */}
-      {/* <Construction />
-      <RenEnergy /> */}
       <Service />
       <Projects />
-      {/* <TeamSection /> */}
       <div className={styles.headingContainer}>
         <div className={styles.heading}>
           <p>{t("home.requestQuote")}</p>

@@ -10,7 +10,7 @@ const Vision = () => {
       <h1 className={styles.title}>{t("vision.title")}</h1>
       <div className={styles.content_wrapper}>
         <div className={styles.image_container}>
-          <div className={`${styles.div1} ${styles.float_animation_1}`}>
+          {/* <div className={`${styles.div1} ${styles.float_animation_1}`}>
             <img
               className={styles.energy_image1}
               src="/assets/construction.png"
@@ -20,10 +20,31 @@ const Vision = () => {
           <div className={`${styles.div2} ${styles.float_animation_2}`}>
             <img
               className={styles.energy_image2}
-              src="/assets/MEP3.png"
+              src="/assets/vision_front.jpg"
               alt={t("vision.title")}
             />
-          </div>
+          </div> */}
+
+<div className={`${styles.div1} ${styles.float_animation_1}`}>
+  <div className={styles.imageBox}>
+    <img
+      className={styles.energy_image1}
+      src="/assets/construction.png"
+      alt={t("vision.title")}
+    />
+  </div>
+</div>
+
+<div className={`${styles.div2} ${styles.float_animation_2}`}>
+  <div className={styles.imageBoxWithRadius}>
+    <img
+      className={styles.energy_image2}
+      src="/assets/vision_front.jpg"
+      alt={t("vision.title")}
+    />
+  </div>
+</div>
+
         </div>
         <div className={styles.description_container}>
           <p className={styles.description}>{t("vision.description")}</p>

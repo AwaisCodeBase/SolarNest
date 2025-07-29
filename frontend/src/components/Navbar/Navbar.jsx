@@ -57,7 +57,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
       <Link to="/" className={styles.logoContainer}>
-        <img src="/assets/new bigger logo2.png" alt="Logo" className={styles.logo} />
+        <img src="/assets/logo1.png" alt="Logo" className={styles.logo} />
       </Link>
 
       <div className={styles.navLinks}>

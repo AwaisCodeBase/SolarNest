@@ -1,9 +1,11 @@
 .contactUs_container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 80vh;
   display: flex;
   flex-direction: column;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 

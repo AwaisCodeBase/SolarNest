@@ -14,8 +14,8 @@ const About = () => {
 
   return (
     <div className={styles.about_container}>
-      <AboutBanner backgroundImage="/assets/about1.png" title="pages.aboutUs"  className={styles.smallhero} />
-      {/* <Hero backgroundImage="/assets/about1.png" title="pages.aboutUs"  className={styles.smallhero}/> */}
+      <AboutBanner backgroundImage="/assets/about2.jpg" title="pages.aboutUs"  className={styles.smallhero} />
+      {/* <Hero backgroundImage="/assets/about2.jpg" title="pages.aboutUs"  className={styles.smallhero}/> */}
       <AnimatedStats />
       <div className={styles.whoWeAreSection}>
         <div className={styles.whoWeAreBackground}>

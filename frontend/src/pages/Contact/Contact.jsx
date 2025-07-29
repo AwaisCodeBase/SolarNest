@@ -7,11 +7,13 @@ import { useLanguage } from "../../context/LanguageContext";
 const Contact = () => {
   const { t } = useLanguage();
   return (
+    <>
     <div className={styles.contactUs_container}>
       <Hero
-        backgroundImage="/assets/contact.png"
+        backgroundImage="/assets/contact1.jpg"
         title="pages.contactUs"
       />
+    </div>
       <ContactSection />
       <div className={styles.map_section}>
         <iframe
@@ -23,7 +25,7 @@ const Contact = () => {
           referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
-    </div>
+   </>
   );
 };
 export default Contact;
