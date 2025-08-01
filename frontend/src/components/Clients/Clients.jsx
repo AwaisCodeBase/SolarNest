@@ -7,7 +7,7 @@ import { en, ar } from "../../translations";
 const clients = [
   {
     id: 1,
-    src: "/assets/client1.png",
+    src: "/assets/client1.jpg",
     alt: "client 1",
   },
   {
@@ -17,7 +17,7 @@ const clients = [
   },
   {
     id: 3,
-    src: "/assets/client3.png",
+    src: "/assets/client3.jpg",
     alt: "client 3",
   },
   {
@@ -32,12 +32,12 @@ const clients = [
   },
   {
     id: 6,
-    src: "/assets/client6.png",
+    src: "/assets/client6.jpg",
     alt: "client 6",
   },
   {
     id: 7,
-    src: "/assets/client7.png",
+    src: "/assets/client7.jpg",
     alt: "client 7",
   },
   {
@@ -47,7 +47,7 @@ const clients = [
   },
   {
     id: 9,
-    src: "/assets/client9.png",
+    src: "/assets/client9(1).png",
     alt: "client 9",
   },
   {
@@ -57,12 +57,12 @@ const clients = [
   },
   {
     id: 11,
-    src: "/assets/client11.png",
+    src: "/assets/client11.jpg",
     alt: "client 11",
   },
   {
     id: 12,
-    src: "/assets/client12.png",
+    src: "/assets/client12.jpg",
     alt: "client 12",
   },
   {
@@ -72,7 +72,7 @@ const clients = [
   },
   {
     id: 14,
-    src: "/assets/client14.png",
+    src: "/assets/client14.jpg",
     alt: "client 14",
   },
   {
