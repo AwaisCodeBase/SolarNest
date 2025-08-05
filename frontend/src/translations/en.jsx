@@ -34,6 +34,7 @@ export const en = {
     p2: "SAUDI ARABIA",
     p3: "Pioneering Sustainable Infrastructure & Engineering Excellence",
     button: "GET IN TOUCH",
+    servicesButton: "SERVICES",
   },
   footer: {
     company: "COMPANY",
@@ -50,12 +51,6 @@ export const en = {
     faq: "FAQ",
     copyright: "Copyright © 2025 BlackEmerald",
   },
-  // contact: {
-  //   letsTalk: "Let's talk",
-  //   onSomething: "on something",
-  //   great: "great",
-  //   together: "together",
-  // },
   contact: {
     supportIntro: "We’re here to help let’s talk!",
   },
@@ -66,43 +61,43 @@ export const en = {
       {
         title: "Construction",
         description:
-          "Custom solar panel installations for residential and commercial properties",
+          "We offer high-quality construction services for residential and commercial projects. Our team ensures timely delivery, safety, and long-term durability.",
       },
       {
         title: "Solar",
-        description: "Battery storage solutions for reliable power backup",
+        description: "We design and install solar panel systems for homes and businesses. Our solutions help reduce energy costs and promote clean, renewable power.",
       },
       {
         title: "Engineering",
-        description: "Electric vehicle charging infrastructure installation",
+        description: "We provide expert civil, electrical, and mechanical engineering solutions. Our focus is on efficient design, innovation, and seamless project execution.",
       },
       {
         title: "Earth Work",
-        description: "Advanced grid management and monitoring systems",
+        description: "From excavation to grading, we handle all types of earthwork with precision. Our equipment and expertise guarantee a strong foundation for any project.",
       },
       {
         title: "Infrastructure",
-        description: "Expert advice on energy efficiency and optimization",
+        description: "We develop essential infrastructure like roads, utilities, and energy systems. Our projects are built to be sustainable, resilient, and future-ready.",
       },
       {
         title: "Bid & Tendering",
-        description: "Regular maintenance and support services",
+        description: "We assist with bid preparation, documentation, and strategy for project acquisition. Our process ensures competitiveness and compliance at every step.",
       },
       {
-        title: "Integerated Facility",
-        description: "Custom energy system design and planning",
+        title: "Integerated Facility Management",
+        description: "We offer complete facility services, including maintenance, security, and energy use. Our integrated approach ensures smooth, cost-effective operations.",
       },
       {
         title: "Technology",
-        description: "Comprehensive energy consumption analysis",
+        description: "We integrate smart technology and automation to enhance energy and facility management. Our solutions drive performance and reduce operational costs.",
       },
       {
         title: "Electricity",
-        description: "End-to-end project management services",
+        description: "We deliver reliable electrical services, from wiring to energy audits. Our systems are safe, efficient, and tailored to client needs.",
       },
       {
         title: "Renewable Energy",
-        description: "24/7 technical support and assistance",
+        description: "We provide solar, wind, and battery solutions to reduce reliance on fossil fuels. Our systems are scalable, eco-friendly, and built for the future.",
       },
     ],
   },

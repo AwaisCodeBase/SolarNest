@@ -42,7 +42,7 @@ const Home = () => {
               <button>{t("hero.button")}</button>
             </Link>
             <Link to="/services" className={styles.btntext}>
-              <button>SERVICES</button>
+              <button>{t("hero.servicesButton")}</button>
             </Link>
           </div>
         </div>
